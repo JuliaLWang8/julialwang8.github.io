@@ -1,7 +1,21 @@
 import './home.scss'
 import Photo from '../../media/me.png'
+import {init} from 'ityped';
+import {useEffect, useRef} from "react";
 
 export default function Home() {
+
+    const textRef = useRef();
+    useEffect(()=>{
+      init(textRef.current, {
+        strings: ["n Engineering Student", " Machine Learning Enthusiast", " Software Developer"],
+        backDelay: 1000, //1second before backspacing
+        backSpeed: 60, //backspacing speed
+        showCursor: true,
+      })
+      //console.log(textRef)
+    }, [])
+
     return (
         <div className="home" id="home">
             <div className="left"> 
@@ -13,9 +27,9 @@ export default function Home() {
                 <div className="wrapper">
                     <h2>Hey! Ich heiße </h2>
                     <h1>JULIA L. WANG</h1>
-                    <h3>I'm a <span>Engineering Student</span></h3>
+                    <h3>I'm a<span ref={textRef}></span></h3>
                 </div>
-                <a href="#portfolio" className="arrow-container">
+                <a href="#about" className="arrow-container">
                     <div className="arrow-down"></div>
                 </a>
             </div>
