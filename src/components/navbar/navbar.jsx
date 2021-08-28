@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './navbar.scss';
+import Logo from '../../media/Logo.png';
 
 function Navbar() {
     const [click, setClick] = useState(false);
@@ -27,8 +28,9 @@ function Navbar() {
             <nav className='navbar'>
                 <div className='navbar-container'>
                     {/* <Link to='/' className='navbar-logo' onClick={closeMobileMenu}> */}
-                    <a href="#home">
-                        <p>Julia L. Wang</p>
+                    <a href="#home" className='navbar-logo'>
+                        <img src={Logo} alt=''></img>
+                        <p> Julia L. Wang</p>
                     </a>    
                     {/* </Link> */}
                     <div className='menu-icon' onClick={handleClick}>
@@ -60,6 +62,13 @@ function Navbar() {
                             <a href="#projects">
                                 <div className='nav-links' onClick={closeMobileMenu}>
                                     Projects
+                                </div>
+                            </a>
+                        </li>
+                        <li className='nav-item'>
+                            <a href="#contact">
+                                <div className='nav-links' onClick={closeMobileMenu}>
+                                    Contact
                                 </div>
                             </a>
                         </li>
