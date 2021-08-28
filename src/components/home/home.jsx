@@ -1,7 +1,9 @@
-import './home.scss'
-import Photo from '../../media/me.png'
+import './home.scss';
+import Photo from '../../media/me.png';
 import {init} from 'ityped';
 import {useEffect, useRef} from "react";
+import { Link } from "react-scroll";
+
 
 export default function Home() {
 
@@ -29,9 +31,12 @@ export default function Home() {
                     <h1>JULIA L. WANG</h1>
                     <h3>I'm a<span ref={textRef}></span></h3>
                 </div>
-                <a href="#about" className="arrow-container">
+                <Link to='about' 
+                    className='arrow-container' activeClass="active"
+                    spy={true} smooth={true} duration={500} offset={-65}
+                >
                     <div className="arrow-down"></div>
-                </a>
+                </Link>
             </div>
         </div>
     )

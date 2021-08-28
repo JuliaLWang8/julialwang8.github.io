@@ -4,6 +4,7 @@
     background-color: #f2f2f2;
     height: 100vh;
     display: flex;
+    scroll-snap-align: start;
 
     .left {
         flex: 0.5;
@@ -12,8 +13,8 @@
 
         .img-container {
             bottom: 0;
-            width: 49vw;
-            height: 49vw;
+            width: 40vw;
+            height: 40vw;
             background-color: $mainColor;
             border-radius: 50%;
             display: flex;
@@ -63,9 +64,24 @@
                     color: $mainColor;
                     font-size: inherit;
                 }
+
+                .ityped-cursor {
+                    animation: blink 1s infinite;
+
+                    @keyframes blink {
+                        50% {
+                            opacity: 1;
+                        }
+                        100% {
+                            opacity: 0;
+                        }
+    
+                    }
+                }
+            
             }
         }
-
+        
         .arrow-container {
             width: 25px;
             animation: bounce 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
@@ -73,11 +89,17 @@
             height: 20px;
             position: absolute;
             bottom: 20px;
-            left: 40%;
+            left: 30%;
+
+            @keyframes bounce {
+                50% {
+                    transform: translateY(-15px);
+                }
+            }
         }
         .arrow-down {
             height: 3px;
-            background: black;
+            background: $mainColor;
             transform: rotate(45deg);
             transform-origin: 0% 0%;
             border-radius: 5px;
@@ -89,17 +111,10 @@
                 bottom: 0;
                 left: 100%;
                 border-radius: 5px;
-                background: black;
+                background: $mainColor;
                 transform: rotate(-90deg);
                 transform-origin: 0% 100%;
             }
         }
-
-        @keyframes bounce {
-            50% {
-                transform: translateY(-15px);
-            }
-        }
-        
     }
 }

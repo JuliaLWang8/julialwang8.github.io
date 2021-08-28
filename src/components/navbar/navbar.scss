@@ -1,21 +1,27 @@
 @import '../../global.scss';
 
 .navbar {
-    background-color: white;
+    background-color: transparent;
     width: 100%;
     height: 65px;
     position: fixed;
     top: 0;
-    box-shadow: 1px 1px 4px $mainColor;
-    opacity: 0.8;
+    // box-shadow: 1px 1px 4px $mainColor;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
     position: fixed;
     top: 0;
-    z-index: 999;
+    z-index: 100;
+
+	&.active{
+		background-color: white;
+		opacity: 0.9;
+		box-shadow: 1px 1px 4px $mainColor;
+	}
 }
+
 
 .navbar-container {
 	display: flex;
@@ -79,6 +85,11 @@
             &:hover {
                  text-decoration: underline $mainColor;
             }
+
+			&.active {
+				color: $mainColor;
+				text-decoration: underline $mainColor;
+			}
         }
     }
 }

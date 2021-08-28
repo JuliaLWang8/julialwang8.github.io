@@ -1,10 +1,12 @@
 import React, {useState, useEffect} from 'react';
 import './navbar.scss';
 import Logo from '../../media/Logo.png';
+import { Link } from "react-scroll";
 
 function Navbar() {
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
+    const [navBar, setNavBar] = useState(false);
 
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
@@ -20,57 +22,73 @@ function Navbar() {
     useEffect(()=> {
         showButton();
     }, []);
-
     window.addEventListener('resize', showButton);
+
+    const changeNavBar = () => {
+        // console.log(window.scrollY)
+        if (window.scrollY >= 70) {
+            setNavBar(true);
+        } else {
+            setNavBar(false);
+        }
+    }
+    window.addEventListener('scroll', changeNavBar);
 
     return (
         <>
-            <nav className='navbar'>
+            <nav className={navBar ? 'navbar active' : 'navbar'}>
                 <div className='navbar-container'>
-                    {/* <Link to='/' className='navbar-logo' onClick={closeMobileMenu}> */}
-                    <a href="#home" className='navbar-logo'>
+                    <Link to='home' 
+                        className='navbar-logo' 
+                        onClick={closeMobileMenu}
+                        spy={true} smooth={true} duration={500}
+                        >
                         <img src={Logo} alt=''></img>
                         <p> Julia L. Wang</p>
-                    </a>    
-                    {/* </Link> */}
+                    </Link>
                     <div className='menu-icon' onClick={handleClick}>
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
                     </div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
-                            <a href="#home" >
-                                <div className='nav-links' onClick={closeMobileMenu}>
-                                    Home
-                                </div>
-                            </a>
+                            <Link to='home' 
+                                className='nav-links' onClick={closeMobileMenu} activeClass="active"
+                                spy={true} smooth={true} duration={500}
+                            >
+                                Home
+                            </Link>
                         </li>
                         <li className='nav-item'>
-                            <a href="#about">
-                                <div className='nav-links' onClick={closeMobileMenu}>
-                                    About
-                                </div>
-                            </a>
+                            <Link to='about' 
+                                className='nav-links' onClick={closeMobileMenu} activeClass="active"
+                                spy={true} smooth={true} duration={500} offset={-65}
+                            >
+                                About
+                            </Link>
                         </li>
                         <li className='nav-item'>
-                            <a href="#resume">
-                                <div className='nav-links' onClick={closeMobileMenu}>
-                                    Resume
-                                </div>
-                            </a>
+                            <Link to='resume' 
+                                className='nav-links' onClick={closeMobileMenu} activeClass="active"
+                                spy={true} smooth={true} duration={500} offset={-65}
+                            >
+                                Resume
+                            </Link>
                         </li>
                         <li className='nav-item'>
-                            <a href="#projects">
-                                <div className='nav-links' onClick={closeMobileMenu}>
-                                    Projects
-                                </div>
-                            </a>
+                            <Link to='projects' 
+                                className='nav-links' onClick={closeMobileMenu} activeClass="active"
+                                spy={true} smooth={true} duration={500} offset={-65}
+                            >
+                                Projects
+                            </Link>
                         </li>
                         <li className='nav-item'>
-                            <a href="#contact">
-                                <div className='nav-links' onClick={closeMobileMenu}>
-                                    Contact
-                                </div>
-                            </a>
+                            <Link to='contact' 
+                                className='nav-links' onClick={closeMobileMenu} activeClass="active"
+                                spy={true} smooth={true} duration={500} offset={-65}
+                            >
+                                Contact
+                            </Link>
                         </li>
                     </ul>
                 </div>

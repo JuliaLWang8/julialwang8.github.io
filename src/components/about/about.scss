@@ -1,3 +1,6 @@
 .about {
     background-color: white;
+    height: calc(100vh - 65px);
+    // top: 65px;
+    position: relative;
 }
