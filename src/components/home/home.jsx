@@ -27,13 +27,13 @@ export default function Home() {
             </div>
             <div className="right">
                 <div className="wrapper">
-                    <h2>Hey! Ich heiße </h2>
+                    <h2>Hello! My name is </h2>
                     <h1>JULIA L. WANG</h1>
                     <h3>I'm a<span ref={textRef}></span></h3>
                 </div>
                 <Link to='about' 
                     className='arrow-container' activeClass="active"
-                    spy={true} smooth={true} duration={500} offset={-65}
+                    spy={true} smooth={true} duration={500}
                 >
                     <div className="arrow-down"></div>
                 </Link>

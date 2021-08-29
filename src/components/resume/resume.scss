@@ -1,4 +1,46 @@
+@import '../../global.scss';
+
 .resume {
-    background-color: pink;
+    background-color: #faf7f8;
     height: 100vh;
+    position: relative;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+
+        h1 {
+            font-family: 'Montserrat';
+            font-weight: lighter;
+            font-size: 60px;
+            margin: 10px 0;
+            color: black;
+            margin-right: 15px;
+        }
+        h2 {
+            font-family: 'Montserrat';
+            font-weight: lighter;
+            font-size: 60px;
+            margin: 10px 0;
+            color: $mainColor;
+        }
+    }
+
+    .row {
+        display: flex;
+        width: 80vw;
+        max-width: 80vw;
+        .nav{
+            flex-grow: 1;
+            border: 1px solid black;
+        }
+        .body {
+            flex-grow: 4;
+            border: 1px solid black;
+        }
+    }
 }
