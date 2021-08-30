@@ -81,20 +81,6 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <Link
-                to="resume"
-                className="nav-links"
-                onClick={closeMobileMenu}
-                activeClass="active"
-                spy={true}
-                smooth={true}
-                duration={500}
-                offset={-65}
-              >
-                Resume
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
                 to="projects"
                 className="nav-links"
                 onClick={closeMobileMenu}
@@ -107,6 +93,21 @@ function Navbar() {
                 Projects
               </Link>
             </li>
+            <li className="nav-item">
+              <Link
+                to="resume"
+                className="nav-links"
+                onClick={closeMobileMenu}
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={-65}
+              >
+                Resume
+              </Link>
+            </li>
+
             <li className="nav-item">
               <Link
                 to="contact"
