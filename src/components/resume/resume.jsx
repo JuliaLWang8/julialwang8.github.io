@@ -9,6 +9,7 @@ import BatteryCharging80Icon from "@material-ui/icons/BatteryCharging80";
 import GroupIcon from "@material-ui/icons/Group";
 import LocalShippingIcon from "@material-ui/icons/LocalShipping";
 import BluetoothConnectedIcon from "@material-ui/icons/BluetoothConnected";
+import CodeIcon from "@material-ui/icons/Code";
 
 export default function Resume() {
   return (
@@ -219,7 +220,18 @@ export default function Resume() {
           </div>
           <div id="skills">
             <h3>SKILLS</h3>
-            <div className="item"></div>
+            <div className="item">
+              <div className="circle">
+                <CodeIcon className="item-icon" />
+              </div>
+              <div className="text">
+                <h6>Languages</h6>
+                <p>
+                  Python, SQL, React, CSS, HTML, Verilog, Flutter, C, MATLAB,
+                  Arduino, Assembly, R, JavaScript
+                </p>
+              </div>
+            </div>
           </div>
           <div id="awards">
             <h3>AWARDS</h3>

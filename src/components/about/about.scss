@@ -49,10 +49,11 @@
             font-size: 20px;
             font-family: "Lora";
 
-            .contact, a {
+            .contactt, a {
                 color: $mainColor;
                 font-weight: bold;
                 cursor: pointer;
+                background-color: none;
             }
         }
     }
@@ -78,6 +79,7 @@
                     margin-right: 10px;
                     margin-left: 10px;
                     color: $secondaryColor;
+                    
                     
                     &:hover {
                         color: $mainColor;

@@ -17,10 +17,11 @@ export default function About() {
             <div className="description">
                 <p>I am a third-year Engineering Science student studying Machine Intelligence and pursuing a minor in Engineering Business at the University of Toronto. I am passionate about innovation and learning, and am interested in AI as a disruptor. In the future, Julia hopes to continue developing her skills, where she hopes to work at the intersection of business and machine learning. </p>
                 <p>Want to know more about me? Download 
+                    {/* TODO: upload resume */}
                     <a href=""> my CV</a> or  
                     <Link
                         to="contact"
-                        className="contact"
+                        className="contactt"
                         activeClass="active"
                         spy={true}
                         smooth={true}

@@ -33,6 +33,7 @@
     display: flex;
     width: 70vw;
     max-width: 70vw;
+    margin-bottom: 70px;
 
     .nav {
     //   border: 1px solid black;
@@ -40,6 +41,8 @@
       width: calc(max(190px, 10vw));
       margin-top: 40px;
     //TODO: on mobile, get rid of nav -- position:fixed;
+    //TODO: make width constant
+
 
       .nav-list {
         text-decoration: none;
