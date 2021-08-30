@@ -67,43 +67,53 @@ export default function Resume() {
           </ul>
         </div>
         <div className="body">
-          <h3 id="education">EDUCATION</h3>
-          <div className="item">
-            <div className="circle">
-              <SchoolIcon className="item-icon" />
+          <div id="education">
+            <h3>EDUCATION</h3>
+            <div className="item">
+              <div className="circle">
+                <SchoolIcon className="item-icon" />
+              </div>
+              <div className="text">
+                <h6>2018-Present</h6>
+                <h4>
+                  BASc in Engineering Science - Machine Intelligence Engineering{" "}
+                </h4>
+                <h5>University of Toronto</h5>
+                <p>
+                  Minor in Business | Relevant courses: Computer Algorithms and
+                  Data Structures, Databases, Statistics, Artificial
+                  Intelligence,
+                </p>
+              </div>
             </div>
-            <div className="text">
-              <h6>2018-Present</h6>
-              <h4>
-                BASc in Engineering Science - Machine Intelligence Engineering{" "}
-              </h4>
-              <h5>University of Toronto</h5>
-              <p>
-                Minor in Business | Relevant courses: Computer Algorithms and
-                Data Structures, Databases, Statistics, Artificial Intelligence,
-              </p>
-            </div>
-          </div>
-          <div className="item">
-            <div className="circle">
-              <SchoolIcon className="item-icon" />
-            </div>
-            <div className="text">
-              <h6>2014-2018</h6>
-              <h4>
-                IB and Ontario Secondary School Diploma
-              </h4>
-              <h5>Guelph Collegiate Vocational Institute</h5>
-              <p>
-                Minor in Business | Relevant courses: Computer Algorithms and
-                Data Structures, Databases, Statistics, Artificial Intelligence,
-              </p>
+            <div className="item">
+              <div className="circle">
+                <SchoolIcon className="item-icon" />
+              </div>
+              <div className="text">
+                <h6>2014-2018</h6>
+                <h4>IB and Ontario Secondary School Diploma</h4>
+                <h5>Guelph Collegiate Vocational Institute</h5>
+                <p>High school double diploma</p>
+              </div>
             </div>
           </div>
-          <h3 id="experiences">EXPERIENCES</h3>
-          <div className="text">
-            <h5>Sep 2020-Jun 2021</h5>
-            <h4>Sofware Developer & Data Engineer</h4>
+          <div id="experiences">
+            <h3>EXPERIENCES</h3>
+            <div className="item">
+              <div className="circle">
+                <SchoolIcon className="item-icon" />
+              </div>
+              <div className="text">
+                <h6>Sep 2020-Jun 2021</h6>
+                <h4>Software Developer & Data Engineer</h4>
+                <h5>Dataraction</h5>
+                <p>
+                Front-end developer for a mobile app in Flutter allowing users to give feedback from chosen criteria using a
+badge system to ensure reliability, implementing AWS and numerous video, notification, and user models.
+                </p>
+              </div>
+            </div>
           </div>
           <h3 id="skills">SKILLS</h3>
           <div className="item"></div>

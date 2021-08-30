@@ -34,21 +34,28 @@
     display: flex;
     width: 70vw;
     max-width: 70vw;
+
     .nav {
-      flex-grow: 1;
-      border: 1px solid black;
+    //   border: 1px solid black;
       position: sticky;
-      // position:fixed;
+      width: calc(max(190px, 10vw));
+      margin-top: 40px;
+    //TODO: on mobile, get rid of nav -- position:fixed;
 
       .nav-list {
         text-decoration: none;
         list-style-type: none;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 100px;
+
         .nav-element {
           margin-bottom: 10px;
           .nav-links {
             color: #000;
             font-family: "Montserrat";
             text-decoration: none;
+            font-size: 20px;
 
             &:hover {
               color: $mainColor;
@@ -58,6 +65,7 @@
               color: $mainColor;
               margin-left: 20px;
               list-style-type: "-";
+              transition: all 0.3s ease;
               // text-decoration: underline $mainColor;
               // border-bottom: 1px solid $mainColor;
             }
@@ -66,8 +74,8 @@
       }
     }
     .body {
-      flex-grow: 3;
-      border: 1px solid black;
+    //   border: 1px solid black;
+        margin-left: 30px;
 
       h3 {
         font-family: "Montserrat";
