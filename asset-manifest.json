@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/julialwang8.github.io/static/css/main.fe7ecd31.chunk.css",
-    "main.js": "/julialwang8.github.io/static/js/main.055e11fd.chunk.js",
-    "main.js.map": "/julialwang8.github.io/static/js/main.055e11fd.chunk.js.map",
-    "runtime-main.js": "/julialwang8.github.io/static/js/runtime-main.d1a59c8b.js",
-    "runtime-main.js.map": "/julialwang8.github.io/static/js/runtime-main.d1a59c8b.js.map",
-    "static/js/2.531aac3e.chunk.js": "/julialwang8.github.io/static/js/2.531aac3e.chunk.js",
-    "static/js/2.531aac3e.chunk.js.map": "/julialwang8.github.io/static/js/2.531aac3e.chunk.js.map",
-    "static/js/3.c0caceab.chunk.js": "/julialwang8.github.io/static/js/3.c0caceab.chunk.js",
-    "static/js/3.c0caceab.chunk.js.map": "/julialwang8.github.io/static/js/3.c0caceab.chunk.js.map",
+    "main.css": "/julialwang8.github.io/static/css/main.7b489497.chunk.css",
+    "main.js": "/julialwang8.github.io/static/js/main.60e00821.chunk.js",
+    "main.js.map": "/julialwang8.github.io/static/js/main.60e00821.chunk.js.map",
+    "runtime-main.js": "/julialwang8.github.io/static/js/runtime-main.53a8bae2.js",
+    "runtime-main.js.map": "/julialwang8.github.io/static/js/runtime-main.53a8bae2.js.map",
+    "static/js/2.fc371b93.chunk.js": "/julialwang8.github.io/static/js/2.fc371b93.chunk.js",
+    "static/js/2.fc371b93.chunk.js.map": "/julialwang8.github.io/static/js/2.fc371b93.chunk.js.map",
+    "static/js/3.5b3ce478.chunk.js": "/julialwang8.github.io/static/js/3.5b3ce478.chunk.js",
+    "static/js/3.5b3ce478.chunk.js.map": "/julialwang8.github.io/static/js/3.5b3ce478.chunk.js.map",
     "index.html": "/julialwang8.github.io/index.html",
-    "static/css/main.fe7ecd31.chunk.css.map": "/julialwang8.github.io/static/css/main.fe7ecd31.chunk.css.map",
-    "static/js/2.531aac3e.chunk.js.LICENSE.txt": "/julialwang8.github.io/static/js/2.531aac3e.chunk.js.LICENSE.txt",
+    "static/css/main.7b489497.chunk.css.map": "/julialwang8.github.io/static/css/main.7b489497.chunk.css.map",
+    "static/js/2.fc371b93.chunk.js.LICENSE.txt": "/julialwang8.github.io/static/js/2.fc371b93.chunk.js.LICENSE.txt",
     "static/media/Logo.ab8d0811.png": "/julialwang8.github.io/static/media/Logo.ab8d0811.png",
     "static/media/me.166e375a.png": "/julialwang8.github.io/static/media/me.166e375a.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.d1a59c8b.js",
-    "static/js/2.531aac3e.chunk.js",
-    "static/css/main.fe7ecd31.chunk.css",
-    "static/js/main.055e11fd.chunk.js"
+    "static/js/runtime-main.53a8bae2.js",
+    "static/js/2.fc371b93.chunk.js",
+    "static/css/main.7b489497.chunk.css",
+    "static/js/main.60e00821.chunk.js"
   ]
 }
