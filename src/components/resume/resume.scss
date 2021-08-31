@@ -57,7 +57,7 @@
             color: #000;
             font-family: "Montserrat";
             text-decoration: none;
-            font-size: 20px;
+            font-size: $mainSize;
 
             &:hover {
               color: $mainColor;
@@ -121,7 +121,7 @@
 
           p {
             font-family: "Lora";
-            font-size: 20px;
+            font-size: $mainSize;
             color: $secondaryColor;
             margin-bottom: 5px;
 

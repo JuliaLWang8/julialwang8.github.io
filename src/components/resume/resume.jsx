@@ -12,6 +12,8 @@ import BluetoothConnectedIcon from "@material-ui/icons/BluetoothConnected";
 import CodeIcon from "@material-ui/icons/Code";
 import ComputerIcon from "@material-ui/icons/Computer";
 import HealingIcon from "@material-ui/icons/Healing";
+import StorageIcon from '@material-ui/icons/Storage';
+import CloudIcon from '@material-ui/icons/Cloud';
 
 export default function Resume() {
   return (
@@ -187,7 +189,8 @@ export default function Resume() {
                   Organized a group of 60+ incoming students by running
                   activities, encouraging participation, and developing an
                   atmosphere of positivity and inclusivity. Assisted in first
-                  aid and led a team of first aid responders during Frosh (orientation) week.
+                  aid and led a team of first aid responders during Frosh
+                  (orientation) week.
                 </p>
               </div>
             </div>
@@ -246,7 +249,7 @@ export default function Resume() {
                 <h6>Languages</h6>
                 <p>
                   Python, SQL, React, CSS, HTML, Verilog, Flutter, C, MATLAB,
-                  Arduino, Assembly, R, JavaScript
+                  Arduino, Assembly, R, JavaScript, LaTeX, Dart, Flask
                 </p>
               </div>
             </div>
@@ -257,8 +260,31 @@ export default function Resume() {
               <div className="text">
                 <h6>Software</h6>
                 <p>
-                  AutoCAD, ModelSIM, Microsoft Suite - Microsoft Word, Microsoft
-                  Excel, Microsoft PowerPoint, Microsoft Power BI
+                  AutoCAD, AWS, ModelSIM, Microsoft Suite - Microsoft Word,
+                  Microsoft Excel, Microsoft PowerPoint, Microsoft Power BI
+                </p>
+              </div>
+            </div>
+            <div className="item">
+              <div className="circle">
+                <CloudIcon className="item-icon" />
+              </div>
+              <div className="text">
+                <h6>Packages</h6>
+                <p>
+                  PyTorch, TensorFlow, Pandas, 
+                </p>
+              </div>
+            </div>
+            <div className="item">
+              <div className="circle">
+                <StorageIcon className="item-icon" />
+              </div>
+              <div className="text">
+                <h6>Databases</h6>
+                <p>
+                  Worked with several database platforms such as MySQL,
+                  PostgreSQL, and MongoDB.
                 </p>
               </div>
             </div>

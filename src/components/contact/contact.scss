@@ -32,77 +32,13 @@
   p {
     font-family: "Lora";
     color: black;
-    font-size: 20px;
+    font-size: $mainSize;
     margin-bottom: 20px;
   }
-
-  .card-container {
+  .row {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin-bottom: 10px;
-
-    .card {
-      background-color: white;
-      height: 281px;
-      width: 255px;
-      box-shadow: 1px 1px 4px $mainColor;
-      margin: 10px;
-      transition: all 1s ease;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      white-space: normal;
-
-      &:hover {
-        transform: scale(1.05);
-        box-shadow: 1px 1px 4px $secondaryColor;
-      }
-      .icon-container {
-        border-radius: 50%;
-        height: 100px;
-        width: 100px;
-        background-color: $mainColor;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-
-        .icon {
-          height: 40px;
-          width: auto;
-          color: white;
-        }
-      }
-      h1 {
-        font-family: "Montserrat";
-        font-weight: normal;
-        font-size: 22px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-      }
-      p {
-        font-family: "Lora";
-        text-align: center;
-        font-size: 20px;
-        white-space: normal;
-
-        a {
-          text-decoration: none;
-          color: $mainColor;
-        }
-      }
-    }
-  }
-
-  .form-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-
+    margin-bottom: 50px;
     .img-wrapper {
       flex: 0.5;
       height: 400px;
@@ -116,29 +52,113 @@
         height: 400px;
       }
     }
-    .form {
-      flex: 0.5;
-      position: relative;
+    .card-container {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
       align-items: center;
-      justify-content: space-around;
+      position: relative;
+      margin-bottom: 10px;
 
-      form {
+      .card {
+        background-color: white;
+        height: 281px;
+        width: 255px;
+        box-shadow: 1px 1px 4px $mainColor;
+        margin: 10px;
+        transition: all 1s ease;
         display: flex;
-        flex-direction:column;
-        width: 70%;
-        height: 70%;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
+        white-space: normal;
 
-        input {
-          width: 300px;
-          height: 30px;
-          font-size: 14px;
-          font-family: 'Montserrat';
+        &:hover {
+          transform: scale(1.05);
+          box-shadow: 1px 1px 4px $secondaryColor;
+        }
+        .icon-container {
+          border-radius: 50%;
+          height: 100px;
+          width: 100px;
+          background-color: $mainColor;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+
+          .icon {
+            height: 40px;
+            width: auto;
+            color: white;
+          }
+        }
+        h1 {
+          font-family: "Montserrat";
+          font-weight: normal;
+          font-size: 22px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+        p {
+          font-family: "Lora";
+          text-align: center;
+          font-size: $mainSize;
+          white-space: normal;
+
+          a {
+            text-decoration: none;
+            color: $mainColor;
+          }
         }
       }
     }
   }
+
+  // .form-container {
+  //   display: flex;
+  //   flex-direction: row;
+  //   justify-content: start;
+
+  //   .img-wrapper {
+  //     flex: 0.5;
+  //     height: 400px;
+  //     width: auto;
+  //     justify-content: center;
+  //     display: flex;
+  //     align-items: flex-end;
+  //     position: relative;
+
+  //     img {
+  //       height: 400px;
+  //     }
+  //   }
+  //   .form {
+  //     flex: 0.5;
+  //     position: relative;
+  //     display: flex;
+  //     flex-direction: column;
+  //     align-items: center;
+  //     justify-content: space-around;
+
+  //     form {
+  //       display: flex;
+  //       flex-direction:column;
+  //       width: 70%;
+  //       height: 70%;
+  //       align-items: center;
+  //       justify-content: center;
+
+  //       input {
+  //         width: 50vw;
+  //         max-width: 590px;
+  //         height: 5vh;
+  //         max-height: 50px;
+  //         font-size: 14px;
+  //         font-family: 'Montserrat';
+  //         margin-bottom: 10px;
+  //       }
+  //     }
+  //   }
+  // }
 }
