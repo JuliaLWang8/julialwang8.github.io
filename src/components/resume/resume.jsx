@@ -10,6 +10,8 @@ import GroupIcon from "@material-ui/icons/Group";
 import LocalShippingIcon from "@material-ui/icons/LocalShipping";
 import BluetoothConnectedIcon from "@material-ui/icons/BluetoothConnected";
 import CodeIcon from "@material-ui/icons/Code";
+import ComputerIcon from "@material-ui/icons/Computer";
+import HealingIcon from "@material-ui/icons/Healing";
 
 export default function Resume() {
   return (
@@ -104,7 +106,7 @@ export default function Resume() {
                 <p>
                   Minor in Business | Relevant courses: Computer Algorithms and
                   Data Structures, Databases, Statistics, Artificial
-                  Intelligence,
+                  Intelligence, Machine Learning
                 </p>
               </div>
             </div>
@@ -175,6 +177,22 @@ export default function Resume() {
             <h3>EXTRA-CURRICULARS</h3>
             <div className="item">
               <div className="circle">
+                <HealingIcon className="item-icon" />
+              </div>
+              <div className="text">
+                <h6>May 2019-Present</h6>
+                <h4>Skule Patrol - Head Patroller</h4>
+                <h5>Frosh Week</h5>
+                <p>
+                  Organized a group of 60+ incoming students by running
+                  activities, encouraging participation, and developing an
+                  atmosphere of positivity and inclusivity. Assisted in first
+                  aid and led a team of first aid responders during Frosh (orientation) week.
+                </p>
+              </div>
+            </div>
+            <div className="item">
+              <div className="circle">
                 <EcoIcon className="item-icon" />
               </div>
               <div className="text">
@@ -232,6 +250,18 @@ export default function Resume() {
                 </p>
               </div>
             </div>
+            <div className="item">
+              <div className="circle">
+                <ComputerIcon className="item-icon" />
+              </div>
+              <div className="text">
+                <h6>Software</h6>
+                <p>
+                  AutoCAD, ModelSIM, Microsoft Suite - Microsoft Word, Microsoft
+                  Excel, Microsoft PowerPoint, Microsoft Power BI
+                </p>
+              </div>
+            </div>
           </div>
           <div id="awards">
             <h3>AWARDS</h3>
@@ -244,7 +274,10 @@ export default function Resume() {
                 <h4>
                   2nd Place Business Pitch and Prototype / 302 Participants
                 </h4>
-                <h5>Agorize AI For Future Business Challenge</h5>
+                <h5>
+                  Agorize AI For Future Business Challenge - Technation, RBC,
+                  Microsoft{" "}
+                </h5>
                 <p>
                   5 month{" "}
                   <a href="https://www.agorize.com/en/challenges/ai-for-future-business-challenge/pages/the-final?lang=en">
