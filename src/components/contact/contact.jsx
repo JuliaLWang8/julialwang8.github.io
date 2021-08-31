@@ -42,7 +42,14 @@ export default function Contact() {
         <div className="img-wrapper">
           <img src={Photo} alt=""/>
         </div>
-        <div className='form'>Contact form here</div>
+        <div className='form'>
+          <form>
+            <input type="text" placeholder="Your Name"/>
+            <input type="text" placeholder="Your email"/>
+            <textarea placeholder="Message"></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
       </div>
     </div>
   );

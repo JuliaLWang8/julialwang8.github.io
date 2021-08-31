@@ -43,6 +43,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    margin-bottom: 10px;
 
     .card {
       background-color: white;
@@ -109,7 +110,7 @@
       justify-content: center;
       display: flex;
       align-items: flex-end;
-      position: absolute;
+      position: relative;
 
       img {
         height: 400px;
@@ -117,6 +118,27 @@
     }
     .form {
       flex: 0.5;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+
+      form {
+        display: flex;
+        flex-direction:column;
+        width: 70%;
+        height: 70%;
+        align-items: center;
+        justify-content: center;
+
+        input {
+          width: 300px;
+          height: 30px;
+          font-size: 14px;
+          font-family: 'Montserrat';
+        }
+      }
     }
   }
 }
