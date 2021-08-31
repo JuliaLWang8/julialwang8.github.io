@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/julialwang8.github.io/static/css/main.fa534210.chunk.css",
-    "main.js": "/julialwang8.github.io/static/js/main.cda8d403.chunk.js",
-    "main.js.map": "/julialwang8.github.io/static/js/main.cda8d403.chunk.js.map",
-    "runtime-main.js": "/julialwang8.github.io/static/js/runtime-main.ddab32ed.js",
-    "runtime-main.js.map": "/julialwang8.github.io/static/js/runtime-main.ddab32ed.js.map",
-    "static/js/2.5afee469.chunk.js": "/julialwang8.github.io/static/js/2.5afee469.chunk.js",
-    "static/js/2.5afee469.chunk.js.map": "/julialwang8.github.io/static/js/2.5afee469.chunk.js.map",
-    "static/js/3.0148435d.chunk.js": "/julialwang8.github.io/static/js/3.0148435d.chunk.js",
-    "static/js/3.0148435d.chunk.js.map": "/julialwang8.github.io/static/js/3.0148435d.chunk.js.map",
-    "index.html": "/julialwang8.github.io/index.html",
-    "static/css/main.fa534210.chunk.css.map": "/julialwang8.github.io/static/css/main.fa534210.chunk.css.map",
-    "static/js/2.5afee469.chunk.js.LICENSE.txt": "/julialwang8.github.io/static/js/2.5afee469.chunk.js.LICENSE.txt",
-    "static/media/Logo.ab8d0811.png": "/julialwang8.github.io/static/media/Logo.ab8d0811.png",
-    "static/media/MeWithRobot.568dcdff.png": "/julialwang8.github.io/static/media/MeWithRobot.568dcdff.png",
-    "static/media/me.166e375a.png": "/julialwang8.github.io/static/media/me.166e375a.png"
+    "main.css": "/static/css/main.79c224cc.chunk.css",
+    "main.js": "/static/js/main.58016e6e.chunk.js",
+    "main.js.map": "/static/js/main.58016e6e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d678a564.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d678a564.js.map",
+    "static/js/2.5afee469.chunk.js": "/static/js/2.5afee469.chunk.js",
+    "static/js/2.5afee469.chunk.js.map": "/static/js/2.5afee469.chunk.js.map",
+    "static/js/3.0148435d.chunk.js": "/static/js/3.0148435d.chunk.js",
+    "static/js/3.0148435d.chunk.js.map": "/static/js/3.0148435d.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.79c224cc.chunk.css.map": "/static/css/main.79c224cc.chunk.css.map",
+    "static/js/2.5afee469.chunk.js.LICENSE.txt": "/static/js/2.5afee469.chunk.js.LICENSE.txt",
+    "static/media/Logo.ab8d0811.png": "/static/media/Logo.ab8d0811.png",
+    "static/media/MeWithRobot.568dcdff.png": "/static/media/MeWithRobot.568dcdff.png",
+    "static/media/me.166e375a.png": "/static/media/me.166e375a.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.ddab32ed.js",
+    "static/js/runtime-main.d678a564.js",
     "static/js/2.5afee469.chunk.js",
-    "static/css/main.fa534210.chunk.css",
-    "static/js/main.cda8d403.chunk.js"
+    "static/css/main.79c224cc.chunk.css",
+    "static/js/main.58016e6e.chunk.js"
   ]
 }
