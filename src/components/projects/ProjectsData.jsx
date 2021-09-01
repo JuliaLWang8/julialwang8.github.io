@@ -1,3 +1,5 @@
+export const marble = require('../../media/MeWithRobot.jpg');
+
 export const listProjects = [
     {
         id: 1,
@@ -31,7 +33,7 @@ export const listProjects = [
         title: "Marble Delivery",
         subtitle: "UofT Eng Kompetition 2020",
         description: "Arduino robot designed within 8hours to follow a route and deliver marbles to target houses upon detection.",
-        img: "",
+        img: marble,
     },
     {
         id: 5,

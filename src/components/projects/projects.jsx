@@ -1,4 +1,7 @@
 import "./projects.scss";
+import {listProjects} from "./ProjectsData.jsx";
+const marble = require('../../media/MeWithRobot.jpg');
+
 
 export default function Projects() {
   return (
@@ -9,18 +12,19 @@ export default function Projects() {
       </div>
       <p>
         These are various projects I have worked on in school,
-        extra-curriculars, and competitions.
+        extra-curriculars, and competitions. Hover to find out more!
       </p>
       <div className="card-wrapper">
-        <div className="proj"></div>
-        <div className="proj"></div>
-        <div className="proj"></div>
-        <div className="proj"></div>
-        <div className="proj"></div>
-        <div className="proj"></div>
-        <div className="proj"></div>
-        <div className="proj"></div>
-        <div className="proj"></div>
+        {listProjects.map((d) => (
+          <div className="proj">
+            <img src={d.img} alt="" />
+            <div className="overlay">
+              <h3>{d.title}</h3>
+              <h4>{d.subtitle}</h4>
+              <p>{d.description}</p>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

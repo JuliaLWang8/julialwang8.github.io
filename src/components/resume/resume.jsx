@@ -108,7 +108,7 @@ export default function Resume() {
                 <p>
                   Minor in Business | Relevant courses: Computer Algorithms and
                   Data Structures, Databases, Statistics, Artificial
-                  Intelligence, Machine Learning
+                  Intelligence, Machine Learning, Machine Intelligence, Software and Neural Networks
                 </p>
               </div>
             </div>
@@ -120,7 +120,7 @@ export default function Resume() {
                 <h6>2014-2018</h6>
                 <h4>IB and Ontario Secondary School Diploma</h4>
                 <h5>Guelph Collegiate Vocational Institute</h5>
-                <p>High school double diploma</p>
+                <p>High school double diploma with IB score of 40.</p>
               </div>
             </div>
           </div>
@@ -214,7 +214,7 @@ export default function Resume() {
               </div>
               <div className="text">
                 <h6>June 2019-June 2020</h6>
-                <h4>Energy Systems Engineer</h4>
+                <h4>Electrical Engineer</h4>
                 <h5>University of Toronto Hyperloop Team</h5>
                 <p>
                   Designing and creating prototypes to make decisions on battery
@@ -249,7 +249,7 @@ export default function Resume() {
                 <h6>Languages</h6>
                 <p>
                   Python, SQL, React, CSS, HTML, Verilog, Flutter, C, MATLAB,
-                  Arduino, Assembly, R, JavaScript, LaTeX, Dart, Flask
+                  C++ (Arduino), Assembly, R, JavaScript, LaTeX, Dart, Flask
                 </p>
               </div>
             </div>

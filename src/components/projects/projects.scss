@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .projects {
-  background-color: #faf7f8;
+  background-color: $mainLightColor;
   // height: 100vh;
   position: relative;
   display: flex;
@@ -44,13 +44,13 @@
     margin-bottom: 65px;
 
     .proj {
-      background-color: white;
+      background-color: $offWhiteColor;
       max-height: 300px;
+      max-width: 420px;
       height: 20vw;
       width: 28vw;
       box-shadow: 1px 1px 4px $mainColor;
       margin: 0.5vw;
-      transition: all 1s ease;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -63,20 +63,70 @@
       &:hover {
         transform: scale(1.05);
         box-shadow: 1px 1px 4px $secondaryColor;
-
-        img {
-          opacity: 0.3;
-          z-index: 0;
-        }
       }
 
       img {
+        display: block;
         height: 100%;
         width: 100%;
         object-fit: cover;
-        z-index: 1;
         position: relative;
       }
+      .blur {
+        backdrop-filter: blur(3px);
+      }
+      .overlay {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        background: rgba(127,84,99, 0.7);
+        opacity: 0;
+        transition: opacity 0.25s;
+        
+        >* {
+          transform: translateY(20px);
+          transition: transform 0.25s;
+        }
+        &:hover {
+          opacity: 1;
+          >* {
+            transform: translateY(0);
+            color: white;
+          }
+        }
+
+        h3 {
+           font-size: $mainSize;
+           font-family: 'Montserrat';
+           font-weight: normal;
+          // position: absolute;
+          // overflow-wrap: break-word;
+          // white-space: normal;
+          // text-align: center;
+          // z-index: 2;
+          // margin: 10px;
+        }
+        h4 {
+          font-family: 'Lora';
+          // font-size: 18px;
+          font-weight: normal;
+          // text-align: center;
+          // position: absolute;
+        }
+        p {
+          font-size: 15px;
+          margin: 10px;
+          // position: absolute;
+          // align-self: flex-end;
+        }
+      }
+      
     }
   }
 }
