@@ -37,6 +37,9 @@
             font-weight: bold;
             font-size: 24px;
             color: $secondaryColor;
+            @include mobile {
+                text-align: center;
+            }
         }
     }
     .description {

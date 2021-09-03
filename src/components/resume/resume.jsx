@@ -239,17 +239,7 @@ export default function Resume() {
                 </p>
               </div>
             </div>
-            <div className="item">
-              <div className="circle">
-                <LocalLibraryIcon className="item-icon" />
-              </div>
-              <div className="text">
-                <h6>Hobbies</h6>
-                <p>
-                  In my free time, I love to read (check out my goodreads)
-                </p>
-              </div>
-            </div>
+            
           </div>
           <div id="skills">
             <h3>SKILLS</h3>
@@ -260,8 +250,8 @@ export default function Resume() {
               <div className="text">
                 <h6>Languages</h6>
                 <p>
-                  Python, SQL, React, CSS, HTML, Verilog, Flutter, C, MATLAB,
-                  C++ (Arduino), Assembly, R, JavaScript, LaTeX, Dart, Flask
+                  Python, SQL, React.js, CSS, HTML, Verilog FPGA, Flutter, C,
+                  C++ (Arduino), MATLAB, ARM Assembly, R, JavaScript, LaTeX, Dart, Flask
                 </p>
               </div>
             </div>
@@ -301,6 +291,17 @@ export default function Resume() {
               </div>
             </div>
           </div>
+          <div className="item">
+              <div className="circle">
+                <LocalLibraryIcon className="item-icon" />
+              </div>
+              <div className="text">
+                <h6>Hobbies</h6>
+                <p>
+                  Reading (check out my goodreads) | Deltiology | Dance | 
+                </p>
+              </div>
+            </div>
           <div id="awards">
             <h3>AWARDS</h3>
             <div className="item">

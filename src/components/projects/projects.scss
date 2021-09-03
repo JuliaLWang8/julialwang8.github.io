@@ -12,6 +12,10 @@
     display: flex;
     flex-direction: row;
     margin-top: 10px;
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+    }
 
     h1 {
       font-family: "Montserrat";
@@ -33,6 +37,9 @@
     font-family: "Lora";
     font-size: $mainSize;
     margin-bottom: 20px;
+    @include mobile {
+      margin: $mainSize;
+    }
   }
   .card-wrapper {
     display: flex;
@@ -59,6 +66,11 @@
       object-fit: cover;
       transition: all 0.5s ease;
       position: relative;
+
+      @include mobile {
+        width: 80vw;
+        height: 50vw;
+      }
 
       &:hover {
         transform: scale(1.05);
@@ -114,41 +126,54 @@
           font-size: $mainSize;
           font-family: "Montserrat";
           font-weight: bold;
-          // position: absolute;
-          // overflow-wrap: break-word;
-          // white-space: normal;
-          // text-align: center;
-          // z-index: 2;
-          // margin: 10px;
+
+          @include mobile {
+          }
         }
         h4 {
           font-family: "Lora";
           // font-size: 18px;
           font-weight: normal;
+          text-align: center;
         }
         p {
           font-size: 18px;
           margin: $mainSize;
-          font-family: 'Montserrat';
+          font-family: "Montserrat";
+
+          @include mobile {
+            font-size: 15px;
+            margin: 3px;
+          }
         }
         .btn-container {
           display: flex;
           flex-direction: row;
           margin-bottom: $mainSize;
+          @include mobile {
+            margin-bottom: 0;
+          }
+
           a {
             text-decoration: none;
-            height: 40px;
-            width: 40px;
-
+            display: flex;
+            margin: 10px;
+            @include mobile {
+              margin: 5px;
+            }
             i {
-              display: flex;
               align-self: center;
               justify-content: center;
               color: white;
-              height: 100%;
-              .fas,
-              .fab {
-                height: 40px;
+              object-fit: cover;
+              font-size: 30px;
+
+              @include mobile {
+                font-size: 20px;
+              }
+
+              &:hover {
+                color: #ccb3bb;
               }
             }
           }
@@ -178,7 +203,7 @@
     //     box-shadow: 0px 0px;
     //     .flip-card-inner {
     //       transform: rotateY(180deg);
-          
+
     //       // transform: scale(1.05);
     //     }
     //   }
@@ -235,7 +260,7 @@
     //     margin: $mainSize;
     //     font-family: 'Montserrat';
     //   }
-      
+
     //   .btn-container {
     //     display: flex;
     //     flex-direction: row;
@@ -259,7 +284,6 @@
     //     }
     //   }
     // }
-
   }
   // .hexagon-container {
   //   /* HEX CONTENT */
@@ -268,7 +292,7 @@
   //     background: $mainLightColor;
   //     // height: 100vh;
   //     width: 80%;
-    
+
   //   * {
   //     margin: 0;
   //     padding: 0;

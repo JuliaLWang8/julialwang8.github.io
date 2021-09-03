@@ -26,6 +26,30 @@ export const listProjects = [
      button1Link: "https://github.com/JuliaLWang8/Timbit-Dispenser-Robot",
   },
   {
+    id: 6,
+    title: "Clarity",
+    subtitle: "Praxis Design Challenge 2020",
+    description:
+      "Arduino robot designed to travel a certain distance and landing a projectile at a specified target.",
+    img: "https://github.com/JuliaLWang8/julialwang8.github.io/blob/master/src/media/ClarityFinal.jpg?raw=true",
+    button1Type: "fas fa-file-alt",
+    button1Link: "https://drive.google.com/file/d/1qRTZm6vK-2Qr4DaVgmjPikN4IiorYhOx/view?usp=sharing",
+  },
+  {
+    id: 5,
+    title: "Jenga Shoe Storage",
+    subtitle: "BATA Shoe Museum Challenge 2020",
+    description:
+      "Iterative design relative to stakeholders, objectives, and client-given metrics to compile a design brief summarizing shoe storage solutions. Converged to a jenga design via testing prototypes.",
+    img: "https://github.com/JuliaLWang8/julialwang8.github.io/blob/master/src/media/BATA.jpg?raw=true",
+    button1Type: "fas fa-file-alt",
+    button1Link:
+      "https://drive.google.com/file/d/1jkT2NdkLkELFpUprD6_Fn6JfBXkQmBAX/view?usp=sharing",
+    button2Type: "fab fa-google-drive",
+    button2Link:
+      "https://drive.google.com/drive/folders/1OUF_zQq6GR_U6VQ_y9f2YZPLVO1Jy56a?usp=sharing",
+  },
+  {
     id: 3,
     title: "2nd Place Robot",
     subtitle: "Robotics for SpaceEx - SEEK 2019 Competition",
@@ -46,41 +70,21 @@ export const listProjects = [
     button1Type: "fab fa-github",
     button1Link: "https://github.com/ntnox/steadymate",
   },
-  {
-    id: 5,
-    title: "BATA Shoe Museum",
-    description:
-      "Iterative design relative to stakeholders, objectives, and client-given metrics to compile a design brief summarizing shoe storage solutions.",
-    img: "https://github.com/JuliaLWang8/julialwang8.github.io/blob/master/src/media/BATA.jpg?raw=true",
-    button1Type: "fas fa-file-alt",
-    button1Link:
-      "https://drive.google.com/file/d/1jkT2NdkLkELFpUprD6_Fn6JfBXkQmBAX/view?usp=sharing",
-    button2Type: "fab fa-google-drive",
-    button2Link:
-      "https://drive.google.com/drive/folders/1OUF_zQq6GR_U6VQ_y9f2YZPLVO1Jy56a?usp=sharing",
-  },
-  {
-    id: 6,
-    title: "Clarity",
-    subtitle: "Praxis Design Challenge 2020",
-    description:
-      "Arduino robot designed to travel a certain distance and landing a projectile at a specified target.",
-    img: "https://github.com/JuliaLWang8/julialwang8.github.io/blob/master/src/media/ClarityFinal.jpg?raw=true",
-    button1Type: "fas fa-file-alt",
-    button1Link: "https://drive.google.com/file/d/1qRTZm6vK-2Qr4DaVgmjPikN4IiorYhOx/view?usp=sharing",
-  },
+
+
   {
     id: 7,
     title: "Projectile Slingshot",
     subtitle: "Praxis Design Challenge 2019",
-    description: "",
+    description: "Designed and prototyped a slingshot to launch a projectile at a specified target using a 3D printer, wood, and elastics.",
     img: "https://github.com/JuliaLWang8/julialwang8.github.io/blob/master/src/media/Pikachu.jpg?raw=true",
   },
   {
     id: 8,
     title: "Matboard Bridge",
+    subtitle: "Civil Engineering Challenge 2018",
     description:
-      "Designed and prototyped a matboard bridge that underwent the Baldwin ",
+      "Designed and prototyped a bridge from 1 piece of matboard designed for Baldwin testing and the capability of supporting a 400N load. Bridge held over 900N.",
     img: "https://github.com/JuliaLWang8/julialwang8.github.io/blob/master/src/media/MatboardBridge.png?raw=true",
     button1Link:
       "https://drive.google.com/file/d/14LQaAkfOKYk9O-XczhYrO21m3VzZXm9T/view?usp=sharing",

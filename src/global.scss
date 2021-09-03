@@ -6,3 +6,10 @@ $secondaryColor: #797979;
 $mainLightColor: #faf7f8;
 $offWhiteColor: #f2f2f2;
 $mainSize: 20px;
+
+$width: 750px;
+@mixin mobile {
+    @media (max-width: #{$width}){
+        @content
+    }
+}

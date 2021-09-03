@@ -12,6 +12,11 @@
     flex-direction: row;
     margin-top: 10px;
 
+    @include mobile {
+      flex-direction: column;
+      align-items: center;  
+    }
+
     h1 {
       font-family: "Montserrat";
       font-weight: lighter;
@@ -39,7 +44,10 @@
       // border: 1px solid black;
       position: sticky;
       margin-top: 40px;
-    //TODO: on mobile, get rid of nav -- position:fixed;
+
+      @include mobile {
+        position: fixed
+      }
 
       .nav-list {
         text-decoration: none;
