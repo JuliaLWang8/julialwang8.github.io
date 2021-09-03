@@ -45,6 +45,7 @@
   font-size: 2rem;
   display: flex;
   align-items: center;
+  position: relative;
 
   img {
     height: 50px;
@@ -53,6 +54,8 @@
 
   p {
     margin-left: 10px;
+    // position: absolute;
+    white-space: nowrap;
   }
 }
 
