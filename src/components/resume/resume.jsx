@@ -14,6 +14,7 @@ import ComputerIcon from "@material-ui/icons/Computer";
 import HealingIcon from "@material-ui/icons/Healing";
 import StorageIcon from '@material-ui/icons/Storage';
 import CloudIcon from '@material-ui/icons/Cloud';
+import LocalLibraryIcon from '@material-ui/icons/LocalLibrary';
 
 export default function Resume() {
   return (
@@ -235,6 +236,17 @@ export default function Resume() {
                   Engaged in discussion with faculty addressing issues and
                   concerns of my peers. Facilitated weekly events promoting
                   positivity, diversity, & inclusivity within the community.
+                </p>
+              </div>
+            </div>
+            <div className="item">
+              <div className="circle">
+                <LocalLibraryIcon className="item-icon" />
+              </div>
+              <div className="text">
+                <h6>Hobbies</h6>
+                <p>
+                  In my free time, I love to read (check out my goodreads)
                 </p>
               </div>
             </div>
