@@ -13,8 +13,8 @@
     margin-top: 10px;
 
     @include mobile {
-      flex-direction: column;
-      align-items: center;  
+      // flex-direction: column;
+      align-items: center;
     }
 
     h1 {
@@ -24,6 +24,9 @@
       margin: 10px 0;
       color: black;
       margin-right: 15px;
+      @include mobile {
+        font-size: 40px;
+      }
     }
     h2 {
       font-family: "Montserrat";
@@ -31,6 +34,9 @@
       font-size: 60px;
       margin: 10px 0;
       color: $mainColor;
+      @include mobile {
+        font-size: 40px;
+      }
     }
   }
 
@@ -46,7 +52,7 @@
       margin-top: 40px;
 
       @include mobile {
-        position: fixed
+        position: fixed;
       }
 
       .nav-list {
@@ -54,7 +60,7 @@
         list-style-type: none;
         position: -webkit-sticky;
         position: sticky;
-        top: 120px;      
+        top: 120px;
         width: 170px;
         max-width: 180px;
         display: inline-block;
@@ -85,8 +91,10 @@
     }
     .body {
       //  border: 1px solid black;
-        margin-left: 30px;
-
+      margin-left: 30px;
+      @include mobile {
+        width: 100%;
+    }
       h3 {
         font-family: "Montserrat";
         font-weight: normal;
@@ -102,24 +110,24 @@
         border-bottom: 1px solid #d6d6d6;
 
         .circle {
-            height: 40px;
-            width: 40px;
-            border-radius: 50%;
-            background-color: $mainColor;
-            margin-right: 10px;
-            margin-left: 10px;
-            align-items:center;
-            justify-content: center;
-            display: flex;
+          height: 40px;
+          width: 40px;
+          border-radius: 50%;
+          background-color: $mainColor;
+          margin-right: 10px;
+          margin-left: 10px;
+          align-items: center;
+          justify-content: center;
+          display: flex;
 
-            .item-icon {
-                width: 40px;
-                // height: auto;
-                vertical-align: middle; 
-                text-align: center; 
-                align-self: center;
-                color: white;
-            }
+          .item-icon {
+            width: 40px;
+            // height: auto;
+            vertical-align: middle;
+            text-align: center;
+            align-self: center;
+            color: white;
+          }
         }
 
         .text {
@@ -134,7 +142,7 @@
             margin-bottom: 5px;
 
             a {
-                color: $mainColor;
+              color: $mainColor;
             }
           }
 

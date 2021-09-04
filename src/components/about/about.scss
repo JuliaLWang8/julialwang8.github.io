@@ -21,6 +21,9 @@
             margin: 10px 0;
             color: black;
             margin-right: 15px;
+            @include mobile {
+                font-size: 40px;
+            }
         }
         h2 {
             font-family: 'Montserrat';
@@ -28,6 +31,9 @@
             font-size: 60px;
             margin: 10px 0;
             color: $mainColor;
+            @include mobile {
+                font-size: 40px;
+            }
         }
     }
     .subtitle {

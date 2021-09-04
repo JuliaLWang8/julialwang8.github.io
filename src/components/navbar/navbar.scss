@@ -47,6 +47,9 @@
   align-items: center;
   position: relative;
 
+  @include mobile {
+    margin-left: -45px;
+  }
   img {
     height: 50px;
     width: 50px;
@@ -84,12 +87,21 @@
       font-family: "Montserrat";
       font-weight: normal;
 
+      @include mobile {
+        color: white;
+      }
       &:hover {
         text-decoration: underline $mainColor;
+        @include mobile {
+          text-decoration: underline #ccb3bb;
+        }
       }
 
       &.active {
         color: $mainColor;
+        @include mobile {
+          color: #ccb3bb;
+        }
         // text-decoration: underline $mainColor;
         // border-bottom: 1px solid $mainColor;
       }
@@ -98,7 +110,7 @@
 }
 
 .fa-bars {
-  color: #fff;
+  color: $secondaryColor;
 }
 .nav-links-mobile {
   display: none;
@@ -107,14 +119,15 @@
   display: none;
 }
 
-@media screen and (max-width: 750px) {
+@include mobile {
   .NavbarItems {
     position: relative;
   }
   .navbar {
-    background: #242424;
+    background-color: white;
+    opacity: 0.9;
     height: 20vw;
-    max-height: 60px;
+    max-height: 65px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -165,23 +178,57 @@
     display: table;
     height: 10vw;
     margin-top: 30px;
+    color: white;
+    font-family: "Montserrat";
     &:hover {
       background-color: #fff;
-      color: #242424;
       border-radius: 0;
     }
   }
   .menu-icon {
     display: block;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 10px;
+    right: -10px;
     transform: translate(-100%, 30%);
     font-size: 1.8rem;
     cursor: pointer;
+
+  .hamburger {
+      width: 32px;
+      height: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      cursor: pointer;
+
+      span {
+        width: 100%;
+        height: 3px;
+        background-color: $mainColor;
+        transform-origin: left;
+        transition: all 2s ease;
+      }
+
+      &.active {
+        span {
+          &:first-child {
+            background-color: $mainColor;
+            transform: rotate(45deg);
+          }
+          &:nth-child(2) {
+            opacity: 0;
+          }
+          &:last-child {
+            background-color: $mainColor;
+            transform: rotate(-45deg);
+          }
+        }
+      }
+    }
   }
   .fa-times {
-    color: #fff;
+    color: $secondaryColor;
     font-size: 2rem;
     display: flex;
   }
@@ -192,8 +239,8 @@
     width: 80%;
     text-decoration: none;
     font-size: 50vw;
-    background-color: #242424;
-    color: #fff;
+    // background-color: #242424;
+    // color: #fff;
     transition: all 0.3s ease-out;
     &:hover {
       background: #fff;

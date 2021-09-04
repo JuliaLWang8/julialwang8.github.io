@@ -14,7 +14,10 @@ function Navbar() {
   const showButton = () => {
     if (window.innerWidth <= 750) {
       setButton(false);
-    } else {
+    } else if (window.innerHeight > window.innerWidth) {
+      setButton(false);
+    }
+    else {
       setButton(true);
     }
   };
@@ -50,7 +53,12 @@ function Navbar() {
             <p> Julia L. Wang</p>
           </Link>
           <div className="menu-icon" onClick={handleClick}>
-            <i className={click ? "fas fa-times" : "fas fa-bars"} />
+            {/* <i className={click ? "fas fa-times" : "fas fa-bars"} /> */}
+            <div className={click ? "hamburger active" : "hamburger"}>
+              <span className="line1"></span>
+              <span className="line2"></span>
+              <span className="line3"></span>
+            </div>
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">

@@ -13,7 +13,6 @@
     flex-direction: row;
     margin-top: 10px;
     @include mobile {
-      flex-direction: column;
       align-items: center;
     }
 
@@ -24,6 +23,9 @@
       margin: 10px 0;
       color: black;
       margin-right: 15px;
+      @include mobile {
+        font-size: 40px;
+      }
     }
     h2 {
       font-family: "Montserrat";
@@ -31,6 +33,9 @@
       font-size: 60px;
       margin: 10px 0;
       color: $mainColor;
+      @include mobile {
+        font-size: 40px;
+      }
     }
   }
   p {
@@ -38,7 +43,9 @@
     font-size: $mainSize;
     margin-bottom: 20px;
     @include mobile {
-      margin: $mainSize;
+      // margin: $mainSize;
+      margin-left: $mainSize;
+      margin-right: $mainSize;
     }
   }
   .card-wrapper {
@@ -70,6 +77,7 @@
       @include mobile {
         width: 80vw;
         height: 50vw;
+        margin: 5px;
       }
 
       &:hover {
