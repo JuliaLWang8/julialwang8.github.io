@@ -99,6 +99,13 @@
         object-fit: scale-down;
         position: relative;
       }
+      .zoom {
+        display: block;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        position: relative;
+      }
 
       .blur {
         backdrop-filter: blur(3px);

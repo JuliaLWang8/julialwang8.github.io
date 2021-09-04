@@ -53,7 +53,7 @@ export default function About() {
         </div>
         <div className="link-wrapper">
           <a
-            href="https://www.linkedin.com/in/julia-long-wang/"
+            href="https://github.com/JuliaLWang8"
             target="_blank"
             rel="noreferrer"
           >

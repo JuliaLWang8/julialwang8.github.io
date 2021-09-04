@@ -90,9 +90,15 @@
       @include mobile {
         color: white;
       }
+      @media screen and (orientation: portrait) {
+        color: white;
+      }
       &:hover {
         text-decoration: underline $mainColor;
         @include mobile {
+          text-decoration: underline #ccb3bb;
+        }
+        @media screen and (orientation: portrait) {
           text-decoration: underline #ccb3bb;
         }
       }
@@ -100,6 +106,9 @@
       &.active {
         color: $mainColor;
         @include mobile {
+          color: #ccb3bb;
+        }
+        @media screen and (orientation: portrait) {
           color: #ccb3bb;
         }
         // text-decoration: underline $mainColor;
@@ -194,7 +203,138 @@
     font-size: 1.8rem;
     cursor: pointer;
 
-  .hamburger {
+    .hamburger {
+      width: 32px;
+      height: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      cursor: pointer;
+
+      span {
+        width: 100%;
+        height: 3px;
+        background-color: $mainColor;
+        transform-origin: left;
+        transition: all 2s ease;
+      }
+
+      &.active {
+        span {
+          &:first-child {
+            background-color: $mainColor;
+            transform: rotate(45deg);
+          }
+          &:nth-child(2) {
+            opacity: 0;
+          }
+          &:last-child {
+            background-color: $mainColor;
+            transform: rotate(-45deg);
+          }
+        }
+      }
+    }
+  }
+  .fa-times {
+    color: $secondaryColor;
+    font-size: 2rem;
+    display: flex;
+  }
+  .nav-links-mobile {
+    display: block;
+    text-align: center;
+    border-radius: 4px;
+    width: 80%;
+    text-decoration: none;
+    font-size: 50vw;
+    // background-color: #242424;
+    // color: #fff;
+    transition: all 0.3s ease-out;
+    &:hover {
+      background: #fff;
+      color: #242424;
+      transition: 250ms;
+    }
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .NavbarItems {
+    position: relative;
+  }
+  .navbar {
+    background-color: white;
+    opacity: 0.9;
+    height: 20vw;
+    max-height: 65px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15vw;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+  }
+  .logoimg {
+    position: relative;
+    height: auto;
+    width: auto;
+    display: block;
+    max-height: 50px;
+    top: 0;
+    left: 0;
+    transform: translate(-300%, 0%);
+  }
+  .nav-menu {
+    height: calc(100vh - min(60px, 20vw));
+    width: 300px;
+    background-color: #737373;
+    position: fixed;
+    right: -200%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 1;
+    transition: all 1s ease;
+  }
+  .nav-menu.active {
+    right: 0;
+    transition: all 1s ease;
+    z-index: 1;
+    height: calc(100vh - min(60px, 20vw));
+  }
+  .nav-item {
+    height: 20vw;
+    max-height: 75px;
+    align-items: center;
+  }
+  .nav-links {
+    text-align: center;
+    align-items: center;
+    width: 300px;
+    display: table;
+    height: 10vw;
+    margin-top: 30px;
+    color: white;
+    font-family: "Montserrat";
+    &:hover {
+      background-color: #fff;
+      border-radius: 0;
+    }
+  }
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: -10px;
+    transform: translate(-100%, 30%);
+    font-size: 1.8rem;
+    cursor: pointer;
+
+    .hamburger {
       width: 32px;
       height: 25px;
       display: flex;

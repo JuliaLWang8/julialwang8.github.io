@@ -5,27 +5,28 @@ import { Link } from "react-scroll";
 
 function Navbar() {
   const [click, setClick] = useState(false);
-  const [button, setButton] = useState(true);
+  // const [button, setButton] = useState(true);
   const [navBar, setNavBar] = useState(false);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
-  const showButton = () => {
-    if (window.innerWidth <= 750) {
-      setButton(false);
-    } else if (window.innerHeight > window.innerWidth) {
-      setButton(false);
-    }
-    else {
-      setButton(true);
-    }
-  };
+  // const showButton = () => {
+  //   if (window.innerWidth <= 750) {
+  //     setButton(false);
+  //     setClick(!click);
+  //   } else if (window.innerHeight > window.innerWidth) {
+  //     setClick(!click);
+  //   }
+  //   else {
+  //     setButton(true);
+  //   }
+  // };
 
-  useEffect(() => {
-    showButton();
-  }, []);
-  window.addEventListener("resize", showButton);
+  // useEffect(() => {
+  //   showButton();
+  // }, []);
+  // window.addEventListener("resize", showButton);
 
   const changeNavBar = () => {
     // console.log(window.scrollY)

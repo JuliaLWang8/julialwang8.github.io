@@ -78,6 +78,7 @@ export const listProjects = [
     subtitle: "Praxis Design Challenge 2019",
     description: "Designed and prototyped a slingshot to launch a projectile at a specified target using a 3D printer, wood, and elastics.",
     img: "https://github.com/JuliaLWang8/julialwang8.github.io/blob/master/src/media/Pikachu.jpg?raw=true",
+    class: "zoom",
   },
   {
     id: 8,

@@ -298,7 +298,7 @@ export default function Resume() {
               <div className="text">
                 <h6>Hobbies</h6>
                 <p>
-                  Reading (check out my goodreads) | Deltiology | Dance | 
+                  Reading (check out my <a href="https://www.goodreads.com/user/show/20074872-julia-wang" target="_blank" rel="noreferrer">goodreads</a>) | Deltiology | Dance | 
                 </p>
               </div>
             </div>
