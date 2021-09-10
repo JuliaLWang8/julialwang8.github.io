@@ -17,16 +17,23 @@ export default function About() {
       <div className="description">
         <p>
           I am a third-year Engineering Science student studying Machine
-          Intelligence and pursuing a minor in Engineering Business at the
+          Learning and pursuing a minor in Engineering Business at the
           University of Toronto. I am passionate about innovation and learning,
           and am interested in AI as a disruptor. In the future, I hope to
-          continue developing my skills and work at the
-          intersection of business and machine learning.{" "}
+          continue developing my skills and work at the intersection of business
+          and machine learning.{" "}
         </p>
         <p>
           Want to know more about me? Download
-          {/* TODO: upload resume */}
-          <a href=""> my CV</a> or
+          <a
+            href="https://github.com/JuliaLWang8/JuliaLWang8/blob/c29c7c2ba00a254abae3b9b9b350ea5a19ba27a8/JuliaWangResume.pdf"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {" "}
+            my CV
+          </a>{" "}
+          or
           <Link
             to="contact"
             className="contactt"

@@ -23,6 +23,7 @@ export default function Resume() {
         <h1>MY</h1>
         <h2>RESUME.</h2>
       </div>
+      
       <div className="row">
         <div className="nav">
           <ul className="nav-list">
@@ -251,7 +252,7 @@ export default function Resume() {
                 <h6>Languages</h6>
                 <p>
                   Python, SQL, React.js, CSS, HTML, Verilog FPGA, Dart, C,
-                  C++ (Arduino), MATLAB, ARM Assembly, R, JavaScript, LaTeX, Flask
+                  C++ (Arduino), MATLAB, ARM Assembly, R, JavaScript, LaTeX
                 </p>
               </div>
             </div>
@@ -274,7 +275,7 @@ export default function Resume() {
               <div className="text">
                 <h6>Packages and Frameworks</h6>
                 <p>
-                  PyTorch, TensorFlow, Pandas, Flutter
+                  PyTorch, TensorFlow, Pandas, Flutter, Flask
                 </p>
               </div>
             </div>
@@ -383,6 +384,29 @@ export default function Resume() {
           </div>
         </div>
       </div>
+      <p>Want to know more about me? Click 
+          <a
+            href="https://github.com/JuliaLWang8/JuliaLWang8/blob/c29c7c2ba00a254abae3b9b9b350ea5a19ba27a8/JuliaWangResume.pdf"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {" "}
+            here 
+          </a>{" for my full CV "}
+          or
+          <Link
+            to="contact"
+            className="contactt"
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            {" "}
+            contact me
+          </Link>
+          .
+        </p>
     </div>
   );
 }

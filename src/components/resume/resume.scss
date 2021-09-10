@@ -44,7 +44,7 @@
     display: flex;
     width: 70vw;
     max-width: 70vw;
-    margin-bottom: 70px;
+    margin-bottom: 10px;
 
     .nav {
       // border: 1px solid black;
@@ -163,6 +163,19 @@
           }
         }
       }
+    }
+  }
+
+  p {
+    font-family: "Lora";
+    margin-top: 10px;
+    margin-bottom: 70px;
+    font-size: $mainSize;
+    a {
+      color: $mainColor;
+      font-weight: bold;
+      cursor: pointer;
+      background-color: none;
     }
   }
 }

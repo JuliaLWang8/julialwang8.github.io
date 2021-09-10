@@ -32,8 +32,10 @@ export const listProjects = [
     description:
       "Arduino robot designed to travel a certain distance and landing a projectile at a specified target.",
     img: "https://github.com/JuliaLWang8/julialwang8.github.io/blob/master/src/media/ClarityFinal.jpg?raw=true",
-    button1Type: "fas fa-file-alt",
-    button1Link: "https://drive.google.com/file/d/1qRTZm6vK-2Qr4DaVgmjPikN4IiorYhOx/view?usp=sharing",
+    button1Type: "fab fa-github",
+    button1Link: "https://github.com/JuliaLWang8/Clarity-Robot",
+    button2Type: "fas fa-file-alt",
+    button2Link: "https://drive.google.com/file/d/1qRTZm6vK-2Qr4DaVgmjPikN4IiorYhOx/view?usp=sharing",
   },
   {
     id: 5,
