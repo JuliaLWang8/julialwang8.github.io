@@ -12,9 +12,9 @@ import BluetoothConnectedIcon from "@material-ui/icons/BluetoothConnected";
 import CodeIcon from "@material-ui/icons/Code";
 import ComputerIcon from "@material-ui/icons/Computer";
 import HealingIcon from "@material-ui/icons/Healing";
-import StorageIcon from '@material-ui/icons/Storage';
-import CloudIcon from '@material-ui/icons/Cloud';
-import LocalLibraryIcon from '@material-ui/icons/LocalLibrary';
+import StorageIcon from "@material-ui/icons/Storage";
+import CloudIcon from "@material-ui/icons/Cloud";
+import LocalLibraryIcon from "@material-ui/icons/LocalLibrary";
 
 export default function Resume() {
   return (
@@ -23,7 +23,7 @@ export default function Resume() {
         <h1>MY</h1>
         <h2>RESUME.</h2>
       </div>
-      
+
       <div className="row">
         <div className="nav">
           <ul className="nav-list">
@@ -102,15 +102,16 @@ export default function Resume() {
                 <SchoolIcon className="item-icon" />
               </div>
               <div className="text">
-                <h6>2018-Present</h6>
+                <h6>Expected graduation: 2023</h6>
                 <h4>
                   BASc in Engineering Science - Machine Intelligence Engineering{" "}
                 </h4>
                 <h5>University of Toronto</h5>
+                <p>Minor in Business | 2018, 19,20 Dean’s Honors List </p>
                 <p>
-                  Minor in Business | Relevant courses: Computer Algorithms and
-                  Data Structures, Databases, Statistics, Artificial
-                  Intelligence, Machine Learning, Machine Intelligence, Software and Neural Networks
+                  Relevant courses: Computer Algorithms and Data Structures,
+                  Databases, Statistics, Artificial Intelligence, Machine
+                  Learning, Machine Intelligence, Software and Neural Networks
                 </p>
               </div>
             </div>
@@ -137,9 +138,14 @@ export default function Resume() {
                 <h4>Data Engineer</h4>
                 <h5>Dataraction</h5>
                 <p>
-                  Documentation and pitching the data flow and pipeline.
-                  Implementation of IBM Watson, Kubernetes, AWS, and Dialogflow
-                  for chatbot and real-time analytics.
+                  Regulated databases, ran raw SQL queries, and aggregated data
+                  using JDBC to develop an internal dashboard providing insights
+                  on user journey and growth; pitched forecasts and marketing
+                  strategy to investors.
+                </p>
+                <p>
+                  Launched a real-time analytics dashboard for streamers on the
+                  streaming service using IBM Cloud and AWS.
                 </p>
               </div>
             </div>
@@ -152,9 +158,14 @@ export default function Resume() {
                 <h4>Software Developer</h4>
                 <h5>Dataraction</h5>
                 <p>
-                  Front-end developer in Flutter allowing users to give feedback
-                  from chosen criteria, implementing AWS and numerous video,
-                  notification, and user models.{" "}
+                  Front-end developer for a Flutter app encouraging user
+                  feedback on videos from chosen criteria. Engineered numerous
+                  video, notification, and user models, a badge system to ensure
+                  reliability, and conducted unit testing.{" "}
+                </p>
+                <p>
+                  Implemented IBM Watson and organized beta testing to design a
+                  chatbot enhancing user experience.
                 </p>
               </div>
             </div>
@@ -171,8 +182,13 @@ export default function Resume() {
                 <p>
                   Executed fluorescent imaging, used a biosafety cabinet to
                   passage cells, and introduced drugs to evaluate effects on the
-                  viability of animal cells. Measured protein synthesis rate in
-                  response to DNA treatments by agarose gel electrophoresis.
+                  viability of animal cells.
+                </p>
+                <p>
+                  Measured protein synthesis rate in response to 4 DNA
+                  treatments by agarose gel electrophoresis. Discovered that the
+                  polymerase chain reaction (PCR) treatment increased synthesis
+                  significantly compared to PBS.
                 </p>
               </div>
             </div>
@@ -181,18 +197,35 @@ export default function Resume() {
             <h3>EXTRA-CURRICULARS</h3>
             <div className="item">
               <div className="circle">
+                <GroupIcon className="item-icon" />
+              </div>
+              <div className="text">
+                <h6>September 2021</h6>
+                <h4>University of Toronto Delegate</h4>
+                <h5>
+                  Professional Engineers of Ontario Student Conference 2021{" "}
+                </h5>
+                <p>
+                  {" "}
+                  Attending the weekend-long PEO-SC conference as a delegate
+                  representing the University of Toronto.
+                </p>
+              </div>
+            </div>
+            <div className="item">
+              <div className="circle">
                 <HealingIcon className="item-icon" />
               </div>
               <div className="text">
                 <h6>May 2019-Present</h6>
                 <h4>Skule Patrol - Head Patroller</h4>
-                <h5>Frosh Week</h5>
+                <h5>Orientation Week Committee</h5>
                 <p>
                   Organized a group of 60+ incoming students by running
                   activities, encouraging participation, and developing an
                   atmosphere of positivity and inclusivity. Assisted in first
                   aid and led a team of first aid responders during Frosh
-                  (orientation) week.
+                  (orientation) week and other engineering events.
                 </p>
               </div>
             </div>
@@ -205,7 +238,7 @@ export default function Resume() {
                 <h4>Environmental Engineer</h4>
                 <h5>Sustainable Engineers Association</h5>
                 <p>
-                  Research numerous plants and environmental impact of a
+                  Analyzed numerous plants and environmental impacts of a
                   greenwall to be implemented on campus post COVID-19.
                 </p>
               </div>
@@ -221,7 +254,8 @@ export default function Resume() {
                 <p>
                   Designing and creating prototypes to make decisions on battery
                   management, development, safety, and cooling mechanisms.
-                  Modelled configurations using AutoCAD.
+                  Modelled configurations using AutoCAD and researched cooling
+                  methods.
                 </p>
               </div>
             </div>
@@ -240,7 +274,6 @@ export default function Resume() {
                 </p>
               </div>
             </div>
-            
           </div>
           <div id="skills">
             <h3>SKILLS</h3>
@@ -251,8 +284,8 @@ export default function Resume() {
               <div className="text">
                 <h6>Languages</h6>
                 <p>
-                  Python, SQL, React.js, CSS, HTML, Verilog FPGA, Dart, C,
-                  C++ (Arduino), MATLAB, ARM Assembly, R, JavaScript, LaTeX
+                  Python, SQL, React.js, CSS, HTML, Verilog FPGA, Dart, C, C++
+                  (Arduino), MATLAB, ARM Assembly, R, JavaScript, LaTeX
                 </p>
               </div>
             </div>
@@ -274,9 +307,7 @@ export default function Resume() {
               </div>
               <div className="text">
                 <h6>Packages and Frameworks</h6>
-                <p>
-                  PyTorch, TensorFlow, Pandas, Flutter, Flask
-                </p>
+                <p>PyTorch, TensorFlow, Pandas, NumPy, Flutter, Flask</p>
               </div>
             </div>
             <div className="item">
@@ -293,16 +324,24 @@ export default function Resume() {
             </div>
           </div>
           <div className="item">
-              <div className="circle">
-                <LocalLibraryIcon className="item-icon" />
-              </div>
-              <div className="text">
-                <h6>Hobbies</h6>
-                <p>
-                  Reading (check out my <a href="https://www.goodreads.com/user/show/20074872-julia-wang" target="_blank" rel="noreferrer">goodreads</a>) | Deltiology | Dance | 
-                </p>
-              </div>
+            <div className="circle">
+              <LocalLibraryIcon className="item-icon" />
             </div>
+            <div className="text">
+              <h6>Hobbies</h6>
+              <p>
+                Reading (check out my{" "}
+                <a
+                  href="https://www.goodreads.com/user/show/20074872-julia-wang"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  goodreads
+                </a>
+                ) | Deltiology | Dance |
+              </p>
+            </div>
+          </div>
           <div id="awards">
             <h3>AWARDS</h3>
             <div className="item">
@@ -323,16 +362,16 @@ export default function Resume() {
                   <a href="https://www.agorize.com/en/challenges/ai-for-future-business-challenge/pages/the-final?lang=en">
                     challenge
                   </a>
-                  : collaborated with team members to pitch a{" "}
-                  <a HREF="https://drive.google.com/file/d/1RhCOv0e4s4cLJpbwAugQ3CnrkDFJsrPD/view?usp=sharing">
-                    logistics solution
-                  </a>{" "}
-                  leveraging ML to streamline b2b and b2c relationships and
-                  transactions. Coded the{" "}
+                  : Spearheaded a business proposal and{" "}
                   <a href="https://github.com/JuliaLWang8/DotsLogistics">
                     prototype
                   </a>{" "}
-                  in React.
+                  using React.js, CSS, and Power BI for a{" "}
+                  <a HREF="https://drive.google.com/file/d/1RhCOv0e4s4cLJpbwAugQ3CnrkDFJsrPD/view?usp=sharing">
+                    logistics solution
+                  </a>{" "}
+                  leveraging ML to streamline B2B and B2B relationships and
+                  transactions.{" "}
                 </p>
               </div>
             </div>
@@ -361,9 +400,10 @@ export default function Resume() {
                 <h4>2nd Place Robot</h4>
                 <h5>UofT Robotics for SpaceEx | SEEK 2019 Competition</h5>
                 <p>
-                  Bluetooth-controlled Arduino robot designed and built within
-                  6h to complete an obstacle course with an autonomous
-                  challenge.
+                  Collaborated to design a Arduino (C++) Bluetooth-controlled
+                  robot within 6 hours which could turn, stop, drive forwards or
+                  backwards, sense obstacles, and completed an obstacle course
+                  with an autonomous challenge.
                 </p>
               </div>
             </div>
@@ -384,29 +424,31 @@ export default function Resume() {
           </div>
         </div>
       </div>
-      <p>Want to know more about me? Click 
-          <a
-            href="https://github.com/JuliaLWang8/JuliaLWang8/blob/c29c7c2ba00a254abae3b9b9b350ea5a19ba27a8/JuliaWangResume.pdf"
-            target="_blank"
-            rel="noreferrer"
-          >
-            {" "}
-            here 
-          </a>{" for my full CV "}
-          or
-          <Link
-            to="contact"
-            className="contactt"
-            activeClass="active"
-            spy={true}
-            smooth={true}
-            duration={500}
-          >
-            {" "}
-            contact me
-          </Link>
-          .
-        </p>
+      <p>
+        Want to know more about me? Click
+        <a
+          href="https://github.com/JuliaLWang8/JuliaLWang8/blob/main/JuliaWangResume.pdf"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {" "}
+          here
+        </a>
+        {" for my full CV "}
+        or
+        <Link
+          to="contact"
+          className="contactt"
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          duration={500}
+        >
+          {" "}
+          contact me
+        </Link>
+        .
+      </p>
     </div>
   );
 }

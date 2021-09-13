@@ -26,7 +26,7 @@ export default function About() {
         <p>
           Want to know more about me? Download
           <a
-            href="https://github.com/JuliaLWang8/JuliaLWang8/blob/c29c7c2ba00a254abae3b9b9b350ea5a19ba27a8/JuliaWangResume.pdf"
+            href="https://github.com/JuliaLWang8/JuliaLWang8/blob/main/JuliaWangResume.pdf"
             target="_blank"
             rel="noreferrer"
           >
