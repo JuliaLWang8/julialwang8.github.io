@@ -18,10 +18,10 @@ export default function About() {
         <p>
           I am a third-year Engineering Science student studying Machine
           Learning and pursuing a minor in Engineering Business at the
-          University of Toronto. I am passionate about innovation and learning,
-          and am interested in AI as a disruptor. In the future, I hope to
-          continue developing my skills and work at the intersection of business
-          and machine learning.{" "}
+          University of Toronto.Passionate about innovation in technology, I am
+          eager make a global impact through hard work, commitment to quality, and a
+          growth mindset. In the future, I hope to continue developing my skills
+          and work at the intersection of business and machine learning.{" "}
         </p>
         <p>
           Want to know more about me? Download
@@ -44,8 +44,7 @@ export default function About() {
           >
             {" "}
             contact me
-          </Link>
-          .
+          </Link> about anything!
         </p>
       </div>
       <div className="links">

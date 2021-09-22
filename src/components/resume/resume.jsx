@@ -147,6 +147,10 @@ export default function Resume() {
                   Launched a real-time analytics dashboard for streamers on the
                   streaming service using IBM Cloud and AWS.
                 </p>
+                <p>
+                  Worked in cross-functional teams, and took part in product
+                  management and development in a fast-paced environment.
+                </p>
               </div>
             </div>
             <div className="item">
@@ -158,10 +162,11 @@ export default function Resume() {
                 <h4>Software Developer</h4>
                 <h5>Dataraction</h5>
                 <p>
-                  Front-end developer for a Flutter app encouraging user
-                  feedback on videos from chosen criteria. Engineered numerous
-                  video, notification, and user models, a badge system to ensure
-                  reliability, and conducted unit testing.{" "}
+                  Front-end developer working on user-facing code for a Flutter
+                  app encouraging user feedback on videos from chosen criteria.
+                  Engineered numerous video, notification, and user models, a
+                  badge system to ensure reliability, as well as conducting unit
+                  testing and optimization.{" "}
                 </p>
                 <p>
                   Implemented IBM Watson and organized beta testing to design a
@@ -175,7 +180,7 @@ export default function Resume() {
               </div>
               <div className="text">
                 <h6>May 2019-August 2019</h6>
-                <h4>Biomedical Research Program Participant</h4>
+                <h4>Biomedical Student Researcher</h4>
                 <h5>
                   UofT Institute of Biomaterials and Biomedical Engineering
                 </h5>
@@ -239,7 +244,10 @@ export default function Resume() {
                 <h5>Sustainable Engineers Association</h5>
                 <p>
                   Analyzed numerous plants and environmental impacts of a
-                  greenwall to be implemented on campus post COVID-19.
+                  Greenwall to be implemented on campus post-COVID-19.
+                  Collaborated with team members to compile a design brief
+                  outlining stakeholders, design considerations, and
+                  convergence.
                 </p>
               </div>
             </div>
