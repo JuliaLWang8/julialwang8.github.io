@@ -18,7 +18,7 @@ export default function About() {
         <p>
           I am a third-year Engineering Science student studying Machine
           Learning and pursuing a minor in Engineering Business at the
-          University of Toronto.Passionate about innovation in technology, I am
+          University of Toronto. Passionate about innovation in technology, I am
           eager make a global impact through hard work, commitment to quality, and a
           growth mindset. In the future, I hope to continue developing my skills
           and work at the intersection of business and machine learning.{" "}

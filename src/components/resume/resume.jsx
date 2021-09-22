@@ -292,7 +292,7 @@ export default function Resume() {
               <div className="text">
                 <h6>Languages</h6>
                 <p>
-                  Python, SQL, React.js, CSS, HTML, Verilog FPGA, Dart, C, C++
+                  Python, SQL, CSS, HTML, Verilog FPGA, Dart, C, C++
                   (Arduino), MATLAB, ARM Assembly, R, JavaScript, LaTeX
                 </p>
               </div>
@@ -304,7 +304,7 @@ export default function Resume() {
               <div className="text">
                 <h6>Software</h6>
                 <p>
-                  AutoCAD, AWS, ModelSIM, Microsoft Suite - Microsoft Word,
+                  AutoCAD, AWS, ModelSIM, Fusion360, Microsoft Suite - Microsoft Word,
                   Microsoft Excel, Microsoft PowerPoint, Microsoft Power BI
                 </p>
               </div>
@@ -314,8 +314,8 @@ export default function Resume() {
                 <CloudIcon className="item-icon" />
               </div>
               <div className="text">
-                <h6>Packages and Frameworks</h6>
-                <p>PyTorch, TensorFlow, Pandas, NumPy, Flutter, Flask</p>
+                <h6>Packages and Libraries</h6>
+                <p>PyTorch, TensorFlow, Pandas, NumPy, Flutter, Flask, Reac.js (this site!), </p>
               </div>
             </div>
             <div className="item">
