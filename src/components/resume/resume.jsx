@@ -107,7 +107,7 @@ export default function Resume() {
                   BASc in Engineering Science - Machine Intelligence Engineering{" "}
                 </h4>
                 <h5>University of Toronto</h5>
-                <p>Minor in Business | 2018, 19,20 Dean’s Honors List </p>
+                <p>Minor in Business | CGPA: 3.67 | 2018, 19,20 Dean’s Honors List </p>
                 <p>
                   Relevant courses: Computer Algorithms and Data Structures,
                   Databases, Statistics, Artificial Intelligence, Machine
@@ -202,6 +202,27 @@ export default function Resume() {
             <h3>EXTRA-CURRICULARS</h3>
             <div className="item">
               <div className="circle">
+                <CodeIcon className="item-icon" />
+              </div>
+              <div className="text">
+                <h6>September 2021 - Present</h6>
+                <h4>Project Developer</h4>
+                <h5>
+                  University of Toronto Machine Intelligence Student Team{" "}
+                </h5>
+                <p>
+                  {" "}
+                  Developing a deep CNN for ECG Analysis to diagnose
+                  cardiovascular disease. </p><p>Year-long project over a
+                  complete research process, including comprehending academic
+                  papers, developing CNN models, collecting and training data,
+                  comparing with other models, and making improvements on the
+                  current machine learning frameworks.
+                </p>
+              </div>
+            </div>
+            <div className="item">
+              <div className="circle">
                 <GroupIcon className="item-icon" />
               </div>
               <div className="text">
@@ -292,8 +313,8 @@ export default function Resume() {
               <div className="text">
                 <h6>Languages</h6>
                 <p>
-                  Python, SQL, CSS, HTML, Verilog FPGA, Dart, C, C++
-                  (Arduino), MATLAB, ARM Assembly, R, JavaScript, LaTeX
+                  Python, SQL, CSS, HTML, Verilog FPGA, Dart, C, C++ (Arduino),
+                  MATLAB, ARM Assembly, R, JavaScript, LaTeX
                 </p>
               </div>
             </div>
@@ -304,8 +325,9 @@ export default function Resume() {
               <div className="text">
                 <h6>Software</h6>
                 <p>
-                  AutoCAD, AWS, ModelSIM, Fusion360, Microsoft Suite - Microsoft Word,
-                  Microsoft Excel, Microsoft PowerPoint, Microsoft Power BI
+                  AutoCAD, AWS, ModelSIM, Fusion360, Microsoft Suite - Microsoft
+                  Word, Microsoft Excel, Microsoft PowerPoint, Microsoft Power
+                  BI
                 </p>
               </div>
             </div>
@@ -315,7 +337,10 @@ export default function Resume() {
               </div>
               <div className="text">
                 <h6>Packages and Libraries</h6>
-                <p>PyTorch, TensorFlow, Pandas, NumPy, Flutter, Flask, Reac.js (this site!), </p>
+                <p>
+                  PyTorch, TensorFlow, Pandas, NumPy, Flutter, Flask, Reac.js
+                  (this site!),{" "}
+                </p>
               </div>
             </div>
             <div className="item">
@@ -352,6 +377,21 @@ export default function Resume() {
           </div>
           <div id="awards">
             <h3>AWARDS</h3>
+            <div className="item">
+              <div className="circle">
+                <SchoolIcon className="item-icon" />
+              </div>
+              <div className="text">
+                <h6>October 2021</h6>
+                <h4>Mario And Dorothy Pesando Scholarship in Engineering</h4>
+                <h5>University of Toronto </h5>
+                <p>
+                  In honor of Mario Pesando, a UofT engineering alumni who was
+                  Chief Flight Test Engineer of the Avro Arrow. Awarded for
+                  academic excellence.
+                </p>
+              </div>
+            </div>
             <div className="item">
               <div className="circle">
                 <LocalShippingIcon className="item-icon" />
@@ -424,7 +464,7 @@ export default function Resume() {
                 <h4>Lachlan Dales Mckellar Scholarship & Dean's Merit Award</h4>
                 <h5>University of Toronto</h5>
                 <p>
-                  For achieving high standing in prerequisite courses for
+                  $10000 for achieving high standing in prerequisite courses for
                   Engineering Science.
                 </p>
               </div>

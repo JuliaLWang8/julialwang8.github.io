@@ -57,6 +57,13 @@ export default function Contact() {
           </div>
         </div>
       </div>
+      <p>Like this website? Check out my full React.js and SCSS code on this <a
+                href="https://github.com/JuliaLWang8/julialwang8.github.io"
+                target="_blank"
+                rel="noreferrer"
+              >
+                GitHub repository
+              </a>.</p>
       {/* <div className="form-container">
         <div className='form'>
           <form>

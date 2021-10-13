@@ -4,9 +4,9 @@ export const listProjects = [
   {
     id: 1,
     title: "DotsLogistics",
-    subtitle: "2nd Place/125 - Agorize AI For Future Business 2021",
+    subtitle: "2nd Place/302 - Agorize AI For Business 2021 - $3000",
     description:
-      "Logistics solution leveraging ML to streamline b2b and b2c relationships and transactions. Prototype was coded in React.js.",
+      "Logistics solution tailored towards supporting B2B and B2C relationships. DotsLogistics leverages AI to connect companies to find partners and complete transactions. Prototype was coded in React.js.",
     img: "https://github.com/JuliaLWang8/julialwang8.github.io/blob/master/src/media/DotsLogistics1.png?raw=true",
     button1Type: "fas fa-video",
     button1Link:
@@ -19,7 +19,7 @@ export const listProjects = [
     title: "TIMBIT Dispenser",
     subtitle: "UofT Eng Kompetition (UTEK) 2020",
     description:
-      "Arduino (C++) robot designed within 8hours to follow a marked route via sensors and deliver marbles to target houses upon detection.",
+      "Arduino (C++) robot designed within 8 hours to follow a marked route via sensors and deliver marbles to target houses upon detection. Utilized IR sensors and a servo motor to output marbles.",
     img: "https://github.com/JuliaLWang8/julialwang8.github.io/blob/master/src/media/MeWithRobot.jpg?raw=true",
      class: "vertical",
      button1Type: "fab fa-github",
@@ -30,7 +30,7 @@ export const listProjects = [
     title: "Clarity",
     subtitle: "Praxis Design Challenge 2020",
     description:
-      "Arduino robot designed to travel a certain distance and landing a projectile at a specified target.",
+      "Arduino (C++) robot designed to land a load at a specified target. Upon detection of a weight using IR sensors, Clarity drives towards a predetermined target and outputs the load via a latch controlled by a servo motor.",
     img: "https://github.com/JuliaLWang8/julialwang8.github.io/blob/master/src/media/ClarityFinal.jpg?raw=true",
     button1Type: "fab fa-github",
     button1Link: "https://github.com/JuliaLWang8/Clarity-Robot",
@@ -67,7 +67,7 @@ export const listProjects = [
     title: "SteadyMate",
     subtitle: "UofT Biomedical Engineering Competition 2019",
     description:
-      "A functional Bluetooth body temperature monitor bracelet for children with CIPA.",
+      "A functional Bluetooth Arduino body temperature monitor bracelet and mobile app for children with CIPA. As their body temperature exceeds 38 degrees, an auditory buzzer, vibration feedback, and a flashing light alerts the child to the situation.",
     img: "https://raw.githubusercontent.com/ntnox/steadymate/master/Steadmate_Device.jpg",
     button1Type: "fab fa-github",
     button1Link: "https://github.com/ntnox/steadymate",

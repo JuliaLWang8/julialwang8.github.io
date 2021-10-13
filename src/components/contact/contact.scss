@@ -45,6 +45,13 @@
     font-size: $mainSize;
     margin-bottom: 20px;
 
+    a {
+      color: $mainColor;
+      font-weight: bold;
+      cursor: pointer;
+      background-color: none;
+    }
+
     @include mobile {
       margin: 10px;
       text-align: center;
