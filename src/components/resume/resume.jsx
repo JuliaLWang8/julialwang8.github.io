@@ -15,6 +15,7 @@ import HealingIcon from "@material-ui/icons/Healing";
 import StorageIcon from "@material-ui/icons/Storage";
 import CloudIcon from "@material-ui/icons/Cloud";
 import LocalLibraryIcon from "@material-ui/icons/LocalLibrary";
+import CodeIcon from "@mui/icons-material/Code";
 
 export default function Resume() {
   return (
@@ -102,12 +103,12 @@ export default function Resume() {
                 <SchoolIcon className="item-icon" />
               </div>
               <div className="text">
-                <h6>Expected graduation: 2023</h6>
+                <h6>Expected graduation: 2024</h6>
                 <h4>
                   BASc in Engineering Science - Machine Intelligence Engineering{" "}
                 </h4>
                 <h5>University of Toronto</h5>
-                <p>Minor in Business | CGPA: 3.67 | 2018, 19,20 Dean’s Honors List </p>
+                <p>Minor in Business | CGPA: 3.68 | Dean’s Honors List </p>
                 <p>
                   Relevant courses: Computer Algorithms and Data Structures,
                   Databases, Statistics, Artificial Intelligence, Machine
@@ -131,6 +132,30 @@ export default function Resume() {
             <h3>WORK EXPERIENCE</h3>
             <div className="item">
               <div className="circle">
+                <CodeIcon className="item-icon" />
+              </div>
+              <div className="text">
+                <h6>May 2022 - Present</h6>
+                <h4>Software Engineering Intern</h4>
+                <h5>Intel Corporation</h5>
+                <p>
+                  Developed backend and user-facing GUI using C++ and Python to
+                  automate matching waves for the Signal Tap Logic Analyzer,
+                  maximizing signal visibility for system-level debugging.
+                  Conducted unit and regression tests.
+                </p>
+                <p>
+                  Collaborated as a cohort leader to host weekly events for 25+
+                  interns, including managing intern cohort budget.
+                </p>
+                <p>
+                  Worked in cross-functional teams, and took part in product
+                  management and development in a fast-paced environment.
+                </p>
+              </div>
+            </div>
+            <div className="item">
+              <div className="circle">
                 <EqualizerIcon className="item-icon" />
               </div>
               <div className="text">
@@ -146,10 +171,6 @@ export default function Resume() {
                 <p>
                   Launched a real-time analytics dashboard for streamers on the
                   streaming service using IBM Cloud and AWS.
-                </p>
-                <p>
-                  Worked in cross-functional teams, and took part in product
-                  management and development in a fast-paced environment.
                 </p>
               </div>
             </div>
@@ -205,7 +226,7 @@ export default function Resume() {
                 <CodeIcon className="item-icon" />
               </div>
               <div className="text">
-                <h6>September 2021 - Present</h6>
+                <h6>September 2021 - May 2022</h6>
                 <h4>Project Developer</h4>
                 <h5>
                   University of Toronto Machine Intelligence Student Team{" "}
@@ -213,11 +234,14 @@ export default function Resume() {
                 <p>
                   {" "}
                   Developing a deep CNN for ECG Analysis to diagnose
-                  cardiovascular disease. </p><p>Year-long project over a
-                  complete research process, including comprehending academic
-                  papers, developing CNN models, collecting and training data,
-                  comparing with other models, and making improvements on the
-                  current machine learning frameworks.
+                  cardiovascular disease.{" "}
+                </p>
+                <p>
+                  Year-long project over a complete research process, including
+                  comprehending academic papers, developing CNN models,
+                  collecting and training data, comparing with other models, and
+                  making improvements on the current machine learning
+                  frameworks.
                 </p>
               </div>
             </div>
