@@ -12,16 +12,15 @@ export default function About() {
         <h2>ME.</h2>
       </div>
       <div className="subtitle">
-        <h4>UofT Machine Intelligence Engineering Student</h4>
+        <h4>SWE @ Intel • ML and AI Engineering @ UofT</h4>
       </div>
       <div className="description">
         <p>
-          I am a third-year Engineering Science student studying Machine
-          Learning and pursuing a minor in Engineering Business at the
+          I am a rising senior in Machine
+          Learning & Artificial Intelligence and have completed a minor in Business at the
           University of Toronto. Passionate about innovation in technology, I am
           eager make a global impact through hard work, commitment to quality, and a
-          growth mindset. In the future, I hope to continue developing my skills
-          and work at the intersection of business and machine learning.{" "}
+          growth mindset. I have worked as a software engineer at Intel Corporation and as a data engineer at a start-up. In the future, I hope to work at the intersection of business and machine learning.{" "}
         </p>
         <p>
           Want to know more about me? Download
@@ -31,7 +30,7 @@ export default function About() {
             rel="noreferrer"
           >
             {" "}
-            my CV
+            my resume
           </a>{" "}
           or
           <Link

@@ -1,11 +1,11 @@
 import "./App.scss";
 import "./global.scss";
-import Navbar from "./components/navbar/Navbar";
-import Home from "./components/home/Home";
-import About from "./components/about/About";
-import Resume from "./components/resume/Resume";
-import Projects from "./components/projects/Projects";
-import Contact from "./components/contact/Contact";
+import Navbar from "./components/navbar/navbar";
+import Home from "./components/home/home";
+import About from "./components/about/about";
+import Resume from "./components/resume/resume";
+import Projects from "./components/projects/projects";
+import Contact from "./components/contact/contact";
 
 function App() {
   return (

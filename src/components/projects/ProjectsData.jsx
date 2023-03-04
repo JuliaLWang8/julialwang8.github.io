@@ -2,24 +2,53 @@ export const marble = require("../../media/MeWithRobot.jpg");
 
 export const listProjects = [
   {
+    id: 11,
+    title: "GCN Retail Recommender",
+    subtitle: "3rd Place - Daisy Intelligence Hackathon 2023",
+    description:
+      "Used sBERT and GCN in Python to output embeddings to predict item-user similarity as a proxy for products to recommend.",
+    img: "https://github.com/JuliaLWang8/julialwang8.github.io/blob/master/src/media/GCN.png?raw=true",
+    button1Type: "fab fa-github",
+    button1Link: "https://github.com/JuliaLWang8/RetailRecommender",
+  },
+  {
+    id: 10,
+    title: "NAS for Recividism",
+    subtitle: "1st Place - MLH AIHacks4Good 2022",
+    description:
+      "Neural Architecture Search in Python to predict recidivism. A Controller NN trained by RL uses the reward and fairness metric from a Child NN towards tuning.",
+    img: "https://github.com/JuliaLWang8/julialwang8.github.io/blob/master/src/media/NAS.png?raw=true",
+    button1Type: "fab fa-github",
+    button1Link: "https://github.com/JuliaLWang8/Predicting-Recidivism",
+  },
+  {
+    id: 9,
+    title: "Pokémon Battling RL",
+    description:
+      "Coded RL Agents in Python for Pokémon battling on Pokémon Showdown. Tuned hyperparameters according to policy choice and trained against a minimax player.",
+    img: "https://github.com/JuliaLWang8/julialwang8.github.io/blob/master/src/media/PokemonRL.png?raw=true",
+    button1Type: "fab fa-github",
+    button1Link: "https://github.com/JuliaLWang8/Pokemon-Battling-RL",
+  },
+  {
     id: 1,
     title: "DotsLogistics",
-    subtitle: "2nd Place/302 - Agorize AI For Business 2021 - $3000",
+    subtitle: "2nd Place - Agorize AI For Business 2021",
     description:
-      "Logistics solution tailored towards supporting B2B and B2C relationships. DotsLogistics leverages AI to connect companies to find partners and complete transactions. Prototype was coded in React.js.",
+      "Tailored to support B2B and B2C relationships, DotsLogistics leverages AI to connect companies with partners. Prototype coded in React.js.",
     img: "https://github.com/JuliaLWang8/julialwang8.github.io/blob/master/src/media/DotsLogistics1.png?raw=true",
-    button1Type: "fas fa-video",
-    button1Link:
+    button2Type: "fas fa-video",
+    button2Link:
       "https://drive.google.com/drive/u/0/folders/1fNZNdVjtwI-BbeOmP8N2J_77IMrn-yvH",
-    button2Type: "fab fa-github",
-    button2Link: "https://github.com/JuliaLWang8/DotsLogistics",
+    button1Type: "fab fa-github",
+    button1Link: "https://github.com/JuliaLWang8/DotsLogistics",
   },
   {
     id: 2,
     title: "TIMBIT Dispenser",
     subtitle: "UofT Eng Kompetition (UTEK) 2020",
     description:
-      "Arduino (C++) robot designed within 8 hours to follow a marked route via sensors and deliver marbles to target houses upon detection. Utilized IR sensors and a servo motor to output marbles.",
+      "Arduino (C++) robot designed within 8 hours to follow a marked route via IR sensors and deliver marbles via servo motor to houses upon detection.",
     img: "https://github.com/JuliaLWang8/julialwang8.github.io/blob/master/src/media/MeWithRobot.jpg?raw=true",
      class: "vertical",
      button1Type: "fab fa-github",
@@ -30,7 +59,7 @@ export const listProjects = [
     title: "Clarity",
     subtitle: "Praxis Design Challenge 2020",
     description:
-      "Arduino (C++) robot designed to land a load at a specified target. Upon detection of a weight using IR sensors, Clarity drives towards a predetermined target and outputs the load via a latch controlled by a servo motor.",
+      "Arduino (C++) robot detects loads using IR sensors, then auto drives towards a predetermined target and outputs the load via a servo motor-controlled latch.",
     img: "https://github.com/JuliaLWang8/julialwang8.github.io/blob/master/src/media/ClarityFinal.jpg?raw=true",
     button1Type: "fab fa-github",
     button1Link: "https://github.com/JuliaLWang8/Clarity-Robot",
@@ -42,7 +71,7 @@ export const listProjects = [
     title: "Jenga Shoe Storage",
     subtitle: "BATA Shoe Museum Challenge 2020",
     description:
-      "Iterative design relative to stakeholders, objectives, and client-given metrics to compile a design brief summarizing shoe storage solutions. Converged to a jenga design via testing prototypes.",
+      "Jenga shoe storage design relative to stakeholders, objectives, and client-given metrics. Compiled a design brief summarizing solutions.",
     img: "https://github.com/JuliaLWang8/julialwang8.github.io/blob/master/src/media/BATA.jpg?raw=true",
     button1Type: "fas fa-file-alt",
     button1Link:
@@ -65,9 +94,9 @@ export const listProjects = [
   {
     id: 4,
     title: "SteadyMate",
-    subtitle: "UofT Biomedical Engineering Competition 2019",
+    subtitle: "UofT Biomedical Eng Competition 2019",
     description:
-      "A functional Bluetooth Arduino body temperature monitor bracelet and mobile app for children with CIPA. As their body temperature exceeds 38 degrees, an auditory buzzer, vibration feedback, and a flashing light alerts the child to the situation.",
+      "A Bluetooth Arduino body temperature monitor bracelet and mobile app for children with CIPA, alerting them when their temperature exceeds a threshold.",
     img: "https://raw.githubusercontent.com/ntnox/steadymate/master/Steadmate_Device.jpg",
     button1Type: "fab fa-github",
     button1Link: "https://github.com/ntnox/steadymate",

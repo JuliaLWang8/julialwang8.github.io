@@ -9,8 +9,7 @@ export default function Projects() {
         <h2>PROJECTS.</h2>
       </div>
       <p>
-        These are various projects I have worked on in school,
-        extra-curriculars, and competitions. Hover to find out more!
+        Various projects and hackathon submissions I have contributed to, hover for more information.
       </p>
       <div className="card-wrapper">
       {listProjects.map((d) => (

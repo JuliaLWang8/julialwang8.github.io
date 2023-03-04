@@ -10,7 +10,7 @@ export default function Home() {
     const textRef = useRef();
     useEffect(()=>{
       init(textRef.current, {
-        strings: ["n Engineering Student", " Machine Learning Enthusiast", " Software Developer"],
+        strings: ["n Engineering Student", " Machine Learning Enthusiast", " Software Engineer"],
         backDelay: 1000, //1second before backspacing
         backSpeed: 60, //backspacing speed
         showCursor: true,

@@ -15,7 +15,6 @@ import HealingIcon from "@material-ui/icons/Healing";
 import StorageIcon from "@material-ui/icons/Storage";
 import CloudIcon from "@material-ui/icons/Cloud";
 import LocalLibraryIcon from "@material-ui/icons/LocalLibrary";
-import CodeIcon from "@mui/icons-material/Code";
 
 export default function Resume() {
   return (

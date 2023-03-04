@@ -30,8 +30,8 @@
   max-width: 1500px;
 
   p {
-    font-family: "Lora";
-    font-weight: bold;
+    font-family: "Montserrat";
+    font-weight: regular;
     font-size: 30px;
     color: $secondaryColor;
   }
@@ -84,7 +84,7 @@
       height: 100%;
       font-size: $mainSize;
       padding: 0.5rem 1rem;
-      font-family: "Montserrat";
+      font-family: "Manrope";
       font-weight: normal;
 
       @include mobile {
