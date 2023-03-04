@@ -20,7 +20,8 @@ export default function About() {
           Learning & Artificial Intelligence and have completed a minor in Business at the
           University of Toronto. Passionate about innovation in technology, I am
           eager make a global impact through hard work, commitment to quality, and a
-          growth mindset. I have worked as a software engineer at Intel Corporation and as a data engineer at a start-up. In the future, I hope to work at the intersection of business and machine learning.{" "}
+          growth mindset. I have worked as a software engineer at Intel Corporation 
+          and as a data engineer at a start-up. In the future, I hope to work at the intersection of business and machine learning.{" "}
         </p>
         <p>
           Want to know more about me? Download
@@ -43,7 +44,7 @@ export default function About() {
           >
             {" "}
             contact me
-          </Link> about anything!
+          </Link>.
         </p>
       </div>
       <div className="links">

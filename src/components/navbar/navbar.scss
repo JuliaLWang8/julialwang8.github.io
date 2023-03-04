@@ -13,6 +13,8 @@
   position: fixed;
   top: 0;
   z-index: 100;
+  background-color: $mainLightColor;
+  box-shadow: 1px 1px 4px $mainColor;
 
   &.active {
     background-color: white;
@@ -30,8 +32,8 @@
   max-width: 1500px;
 
   p {
-    font-family: "Montserrat";
-    font-weight: regular;
+    font-family: "Manrope";
+    font-weight: bold;
     font-size: 30px;
     color: $secondaryColor;
   }
@@ -77,6 +79,7 @@
     height: 65px;
 
     .nav-links {
+      cursor: pointer;
       color: black;
       display: flex;
       align-items: center;
@@ -85,7 +88,7 @@
       font-size: $mainSize;
       padding: 0.5rem 1rem;
       font-family: "Manrope";
-      font-weight: normal;
+      font-weight: bold;
 
       @include mobile {
         color: white;

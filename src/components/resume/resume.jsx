@@ -63,7 +63,7 @@ export default function Resume() {
                 smooth={true}
                 duration={500}
               >
-                Clubs
+                Extra-curriculars
               </Link>
             </li>
             <li className="nav-element">
@@ -102,9 +102,9 @@ export default function Resume() {
                 <SchoolIcon className="item-icon" />
               </div>
               <div className="text">
-                <h6>Expected graduation: 2024</h6>
+                <h6>Expected graduation: April 2024</h6>
                 <h4>
-                  BASc in Engineering Science - Machine Intelligence Engineering{" "}
+                  B.A.Sc. in Engineering Science - Machine Intelligence Engineering{" "}
                 </h4>
                 <h5>University of Toronto</h5>
                 <p>Minor in Business | CGPA: 3.68 | Dean’s Honors List </p>
@@ -136,21 +136,18 @@ export default function Resume() {
               <div className="text">
                 <h6>May 2022 - Present</h6>
                 <h4>Software Engineering Intern</h4>
-                <h5>Intel Corporation</h5>
-                <p>
-                  Developed backend and user-facing GUI using C++ and Python to
-                  automate matching waves for the Signal Tap Logic Analyzer,
-                  maximizing signal visibility for system-level debugging.
-                  Conducted unit and regression tests.
-                </p>
+                <h5>Intel Corporation • San Francisco Bay Area</h5>
+                <p>Agile development in C++ for Quartus Prime software including: </p>
+                <ul>
+                  <li>Automating signal name matching between a logic analyzer and a simulator. </li>
+                  <li>Developing backend and GUI updates to streamline signal grouping UX based on client requests. </li>
+                  <li>Test-based development to implement clock tracing interfaces and algorithms, conducted unit and regression tests. </li>
+                </ul>
                 <p>
                   Collaborated as a cohort leader to host weekly events for 25+
                   interns, including managing intern cohort budget.
                 </p>
-                <p>
-                  Worked in cross-functional teams, and took part in product
-                  management and development in a fast-paced environment.
-                </p>
+                <p>Guest speaker at the 2022 Intel AI Global Impact Festival.</p>
               </div>
             </div>
             <div className="item">
@@ -160,7 +157,7 @@ export default function Resume() {
               <div className="text">
                 <h6>Jan 2021-Jun 2021</h6>
                 <h4>Data Engineer</h4>
-                <h5>Dataraction</h5>
+                <h5>Dataraction, Inc. • Toronto</h5>
                 <p>
                   Regulated databases, ran raw SQL queries, and aggregated data
                   using JDBC to develop an internal dashboard providing insights
@@ -180,7 +177,7 @@ export default function Resume() {
               <div className="text">
                 <h6>Sep 2020-Dec 2020</h6>
                 <h4>Software Developer</h4>
-                <h5>Dataraction</h5>
+                <h5>Dataraction, Inc. • Toronto</h5>
                 <p>
                   Front-end developer working on user-facing code for a Flutter
                   app encouraging user feedback on videos from chosen criteria.
@@ -336,7 +333,7 @@ export default function Resume() {
               <div className="text">
                 <h6>Languages</h6>
                 <p>
-                  Python, SQL, CSS, HTML, Verilog FPGA, Dart, C, C++ (Arduino),
+                  C++, Python, SQL, CSS, HTML, Verilog FPGA, Dart, C,
                   MATLAB, ARM Assembly, R, JavaScript, LaTeX
                 </p>
               </div>
@@ -361,7 +358,7 @@ export default function Resume() {
               <div className="text">
                 <h6>Packages and Libraries</h6>
                 <p>
-                  PyTorch, TensorFlow, Pandas, NumPy, Flutter, Flask, Reac.js
+                  PyTorch, TensorFlow, Pandas, NumPy, Flutter, Flask, React.js
                   (this site!),{" "}
                 </p>
               </div>
@@ -415,7 +412,7 @@ export default function Resume() {
                 </p>
               </div>
             </div>
-            <div className="item">
+            {/* <div className="item">
               <div className="circle">
                 <LocalShippingIcon className="item-icon" />
               </div>
@@ -445,7 +442,7 @@ export default function Resume() {
                   transactions.{" "}
                 </p>
               </div>
-            </div>
+            </div> */}
             <div className="item">
               <div className="circle">
                 <SchoolIcon className="item-icon" />
@@ -462,7 +459,7 @@ export default function Resume() {
                 </p>
               </div>
             </div>
-            <div className="item">
+            {/* <div className="item">
               <div className="circle">
                 <BluetoothConnectedIcon className="item-icon" />
               </div>
@@ -477,7 +474,7 @@ export default function Resume() {
                   with an autonomous challenge.
                 </p>
               </div>
-            </div>
+            </div> */}
             <div className="item">
               <div className="circle">
                 <SchoolIcon className="item-icon" />
@@ -505,7 +502,7 @@ export default function Resume() {
           {" "}
           here
         </a>
-        {" for my full CV "}
+        {" for my full resume "}
         or
         <Link
           to="contact"

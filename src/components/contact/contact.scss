@@ -116,20 +116,22 @@
           }
         }
         h1 {
-          font-family: "Montserrat";
-          font-weight: normal;
+          font-family: "Manrope";
+          font-weight: bold;
           font-size: 22px;
           margin-top: 10px;
           margin-bottom: 10px;
         }
         p {
-          font-family: "Manrope";
+          font-family: "Montserrat";
           text-align: center;
           font-size: $mainSize;
           white-space: normal;
+          font-weight: normal;
 
           a {
             text-decoration: none;
+            font-weight: normal;
             color: $mainColor;
           }
         }

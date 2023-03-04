@@ -11,7 +11,7 @@ export default function Contact() {
         <h1>CONTACT</h1>
         <h2>ME.</h2>
       </div>
-      <p>Feel free to reach out to me about anything! </p>
+      <p>Feel free to reach out to me about anything. </p>
       <div className="row">
         {/* <div className="img-wrapper">
           <img src={Photo} alt="" />
@@ -21,9 +21,9 @@ export default function Contact() {
             <div className="icon-container">
               <CallIcon className="icon" />
             </div>
-            <h1>Contact Number</h1>
+            <h1>Phone</h1>
             <p>
-              <a href="tel:+14088540152">+1 408 854 0152</a>
+              <a href="tel:+14088540152">+1(408) 854-0152</a>
             </p>
             <div></div>
           </div>
@@ -31,7 +31,7 @@ export default function Contact() {
             <div className="icon-container">
               <EmailIcon className="icon" />
             </div>
-            <h1>Email Address</h1>
+            <h1>Email </h1>
             <p>
               <a href="mailto:julialong.wang@mail.utoronto.ca">
                 julialong.wang@ mail.utoronto.ca
@@ -50,7 +50,7 @@ export default function Contact() {
                 target="_blank"
                 rel="noreferrer"
               >
-                Click for my LinkedIn
+                LinkedIn
               </a>
             </p>
             <div></div>
