@@ -27,6 +27,19 @@ export default function Resume() {
       <div className="row">
         <div className="nav">
           <ul className="nav-list">
+          <li className="nav-element">
+              <Link
+                to="experiences"
+                className="nav-links"
+                activeClass="active"
+                spy={true}
+                offset={-65}
+                smooth={true}
+                duration={500}
+              >
+                Experience
+              </Link>
+            </li>
             <li className="nav-element">
               <Link
                 to="education"
@@ -42,7 +55,7 @@ export default function Resume() {
             </li>
             <li className="nav-element">
               <Link
-                to="experiences"
+                to="skills"
                 className="nav-links"
                 activeClass="active"
                 spy={true}
@@ -50,7 +63,7 @@ export default function Resume() {
                 smooth={true}
                 duration={500}
               >
-                Experience
+                Skills
               </Link>
             </li>
             <li className="nav-element">
@@ -64,19 +77,6 @@ export default function Resume() {
                 duration={500}
               >
                 Extra-curriculars
-              </Link>
-            </li>
-            <li className="nav-element">
-              <Link
-                to="skills"
-                className="nav-links"
-                activeClass="active"
-                spy={true}
-                offset={-65}
-                smooth={true}
-                duration={500}
-              >
-                Skills
               </Link>
             </li>
             <li className="nav-element">
@@ -95,39 +95,7 @@ export default function Resume() {
           </ul>
         </div>
         <div className="body">
-          <div id="education">
-            <h3>EDUCATION</h3>
-            <div className="item">
-              <div className="circle">
-                <SchoolIcon className="item-icon" />
-              </div>
-              <div className="text">
-                <h6>Expected graduation: April 2024</h6>
-                <h4>
-                  B.A.Sc. in Engineering Science - Machine Intelligence Engineering{" "}
-                </h4>
-                <h5>University of Toronto</h5>
-                <p>Minor in Business | CGPA: 3.68 | Dean’s Honors List </p>
-                <p>
-                  Relevant courses: Computer Algorithms and Data Structures,
-                  Databases, Statistics, Artificial Intelligence, Machine
-                  Learning, Machine Intelligence, Software and Neural Networks
-                </p>
-              </div>
-            </div>
-            <div className="item">
-              <div className="circle">
-                <SchoolIcon className="item-icon" />
-              </div>
-              <div className="text">
-                <h6>2014-2018</h6>
-                <h4>IB and Ontario Secondary School Diploma</h4>
-                <h5>Guelph Collegiate Vocational Institute</h5>
-                <p>High school double diploma with IB score of 40.</p>
-              </div>
-            </div>
-          </div>
-          <div id="experiences">
+        <div id="experiences">
             <h3>WORK EXPERIENCE</h3>
             <div className="item">
               <div className="circle">
@@ -199,7 +167,7 @@ export default function Resume() {
                 <h6>May 2019-August 2019</h6>
                 <h4>Biomedical Student Researcher</h4>
                 <h5>
-                  UofT Institute of Biomaterials and Biomedical Engineering
+                  UofT Institute of Biomaterials and Biomedical Engineering • Toronto
                 </h5>
                 <p>
                   Executed fluorescent imaging, used a biosafety cabinet to
@@ -215,6 +183,111 @@ export default function Resume() {
               </div>
             </div>
           </div>
+
+          <div id="education">
+            <h3>EDUCATION</h3>
+            <div className="item">
+              <div className="circle">
+                <SchoolIcon className="item-icon" />
+              </div>
+              <div className="text">
+                <h6>Expected graduation: April 2024</h6>
+                <h4>
+                  B.A.S. in Engineering Science - Machine Intelligence Engineering{" "}
+                </h4>
+                <h5>University of Toronto</h5>
+                <p>Minor in Business | CGPA: 3.68 | Dean’s Honors List </p>
+                <p>
+                  Relevant courses: Computer Algorithms and Data Structures,
+                  Databases, Statistics, Artificial Intelligence, Machine
+                  Learning, Machine Intelligence, Software and Neural Networks
+                </p>
+              </div>
+            </div>
+            {/* <div className="item">
+              <div className="circle">
+                <SchoolIcon className="item-icon" />
+              </div>
+              <div className="text">
+                <h6>2014-2018</h6>
+                <h4>IB and Ontario Secondary School Diploma</h4>
+                <h5>Guelph Collegiate Vocational Institute</h5>
+                <p>High school double diploma with IB score of 40.</p>
+              </div>
+            </div> */}
+          </div>
+          <div id="skills">
+            <h3>SKILLS</h3>
+            <div className="item">
+              <div className="circle">
+                <CodeIcon className="item-icon" />
+              </div>
+              <div className="text">
+                <h6>Languages</h6>
+                <p>
+                  C++, C, Python, SQL, Verilog FPGA, CSS, HTML, Dart,
+                  MATLAB, ARM Assembly, R, JavaScript, LaTeX
+                </p>
+              </div>
+            </div>
+            {/* <div className="item">
+              <div className="circle">
+                <CloudIcon className="item-icon" />
+              </div>
+              <div className="text">
+                <h6>Packages and Libraries</h6>
+                <p>
+                  PyTorch, TensorFlow, Pandas, NumPy, Flutter, Flask, React.js
+                  {" "}
+                </p>
+              </div>
+            </div> */}
+            <div className="item">
+              <div className="circle">
+                <StorageIcon className="item-icon" />
+              </div>
+              <div className="text">
+                <h6>ML Project Experience</h6>
+                <p>
+                  Convolutional neural networks (CNN), reinforcement learning (RL), deep learning (DL),
+                  neural architecture search (NAS), generative adversarial networks (GAN),
+                  graph neural networks (GNN), graph convolutional networks (GCN), BERT, k-means clustering
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="item">
+              <div className="circle">
+                <ComputerIcon className="item-icon" />
+              </div>
+              <div className="text">
+                <h6>Software</h6>
+                <p>
+                  AutoCAD, AWS, ModelSIM, Fusion360, IBM Watson, Microsoft Suite - Microsoft
+                  Word, Microsoft Excel, Microsoft PowerPoint, Microsoft Power
+                  BI
+                </p>
+              </div>
+            </div>
+          {/* <div className="item">
+            <div className="circle">
+              <LocalLibraryIcon className="item-icon" />
+            </div>
+            <div className="text">
+              <h6>Hobbies</h6>
+              <p>
+                Reading (check out my{" "}
+                <a
+                  href="https://www.goodreads.com/user/show/20074872-julia-wang"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  goodreads
+                </a>
+                ) | Deltiology | Dance |
+              </p>
+            </div>
+          </div> */}
           <div id="clubs">
             <h3>EXTRA-CURRICULARS</h3>
             <div className="item">
@@ -324,77 +397,7 @@ export default function Resume() {
               </div>
             </div>
           </div>
-          <div id="skills">
-            <h3>SKILLS</h3>
-            <div className="item">
-              <div className="circle">
-                <CodeIcon className="item-icon" />
-              </div>
-              <div className="text">
-                <h6>Languages</h6>
-                <p>
-                  C++, Python, SQL, CSS, HTML, Verilog FPGA, Dart, C,
-                  MATLAB, ARM Assembly, R, JavaScript, LaTeX
-                </p>
-              </div>
-            </div>
-            <div className="item">
-              <div className="circle">
-                <ComputerIcon className="item-icon" />
-              </div>
-              <div className="text">
-                <h6>Software</h6>
-                <p>
-                  AutoCAD, AWS, ModelSIM, Fusion360, Microsoft Suite - Microsoft
-                  Word, Microsoft Excel, Microsoft PowerPoint, Microsoft Power
-                  BI
-                </p>
-              </div>
-            </div>
-            <div className="item">
-              <div className="circle">
-                <CloudIcon className="item-icon" />
-              </div>
-              <div className="text">
-                <h6>Packages and Libraries</h6>
-                <p>
-                  PyTorch, TensorFlow, Pandas, NumPy, Flutter, Flask, React.js
-                  (this site!),{" "}
-                </p>
-              </div>
-            </div>
-            <div className="item">
-              <div className="circle">
-                <StorageIcon className="item-icon" />
-              </div>
-              <div className="text">
-                <h6>Databases</h6>
-                <p>
-                  Worked with several database platforms such as MySQL,
-                  PostgreSQL, and MongoDB.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="item">
-            <div className="circle">
-              <LocalLibraryIcon className="item-icon" />
-            </div>
-            <div className="text">
-              <h6>Hobbies</h6>
-              <p>
-                Reading (check out my{" "}
-                <a
-                  href="https://www.goodreads.com/user/show/20074872-julia-wang"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  goodreads
-                </a>
-                ) | Deltiology | Dance |
-              </p>
-            </div>
-          </div>
+          
           <div id="awards">
             <h3>AWARDS</h3>
             <div className="item">

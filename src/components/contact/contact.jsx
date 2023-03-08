@@ -11,7 +11,6 @@ export default function Contact() {
         <h1>CONTACT</h1>
         <h2>ME.</h2>
       </div>
-      <p>Feel free to reach out to me about anything. </p>
       <div className="row">
         {/* <div className="img-wrapper">
           <img src={Photo} alt="" />
