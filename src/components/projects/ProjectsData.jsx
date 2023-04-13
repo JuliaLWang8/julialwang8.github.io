@@ -2,6 +2,16 @@ export const marble = require("../../media/MeWithRobot.jpg");
 
 export const listProjects = [
   {
+    id: 12,
+    title: "Custom Keyboard",
+    subtitle: "RP2040 Stamp Microcontroller",
+    description:
+      "Used kmk firmware in Python to program keyboard, including OLED, RGB LED, rotary encoder, and custom macros.",
+    img: "https://github.com/JuliaLWang8/Custom-Keyboard/blob/main/Keyboard.jpg?raw=true",
+    button1Type: "fab fa-github",
+    button1Link: "https://github.com/JuliaLWang8/Custom-Keyboard",
+  },
+  {
     id: 11,
     title: "GCN Retail Recommender",
     subtitle: "3rd Place - Daisy Intelligence Hackathon 2023",
