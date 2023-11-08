@@ -24,6 +24,9 @@
         flex: 0.5;
         overflow: hidden;
         position: relative;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
         @media screen and (orientation:portrait) {
             align-items: center;
             justify-content: center;
@@ -38,9 +41,8 @@
             background-color: $mainColor;
             border-radius: 50%;
             display: flex;
+            justify-content: center;
             align-items: flex-end;
-            float: right;
-            position: absolute;
             z-index: 5;
 
             @include mobile{
@@ -58,7 +60,7 @@
             }
 
             img {
-                width: 100%;
+                width: 75%;
             }
         }
     }
