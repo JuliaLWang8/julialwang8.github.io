@@ -16,7 +16,7 @@ export default function About() {
       </div>
       <div className="description">
         <p>
-          I am a rising senior in Machine
+          I am a senior in Machine
           Learning & Artificial Intelligence and have completed a minor in Business at the
           University of Toronto. Passionate about innovation in technology, I am
           eager make a global impact through hard work, commitment to quality, and a

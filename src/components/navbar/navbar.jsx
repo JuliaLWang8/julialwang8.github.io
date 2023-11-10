@@ -85,7 +85,7 @@ function Navbar() {
                 smooth={true}
                 duration={500}
               >
-                About
+                ABOUT
               </Link>
             </li>
             <li className="nav-item">
@@ -99,7 +99,7 @@ function Navbar() {
                 duration={500}
                 offset={-65}
               >
-                Projects
+                PROJECTS
               </Link>
             </li>
             <li className="nav-item">
@@ -113,7 +113,7 @@ function Navbar() {
                 duration={500}
                 offset={-65}
               >
-                Resume
+                RESUME
               </Link>
             </li>
 
@@ -128,7 +128,7 @@ function Navbar() {
                 duration={500}
                 offset={-65}
               >
-                Contact
+                CONTACT
               </Link>
             </li>
           </ul>

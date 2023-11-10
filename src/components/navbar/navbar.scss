@@ -32,8 +32,8 @@
   max-width: 1500px;
 
   p {
-    font-family: "Manrope";
-    font-weight: bold;
+    font-family: "Montserrat";
+    // font-weight: bold;
     font-size: 30px;
     color: $secondaryColor;
   }
@@ -87,8 +87,8 @@
       height: 100%;
       font-size: $mainSize;
       padding: 0.5rem 1rem;
-      font-family: "Manrope";
-      font-weight: bold;
+      font-family: "Montserrat";
+      // font-weight: bold;
 
       @include mobile {
         color: white;
