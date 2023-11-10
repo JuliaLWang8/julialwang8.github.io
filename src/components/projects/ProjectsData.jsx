@@ -32,7 +32,7 @@ export const listProjects = [
     img: "https://github.com/JuliaLWang8/julialwang8.github.io/blob/master/src/media/NAS.png?raw=true",
     button1Type: "fab fa-github",
     button1Link: "https://github.com/JuliaLWang8/Predicting-Recidivism",
-    tech : ["Python", "NAS", "RL", "RNN"],
+    tech : ["Python", "Pytorch", "NAS", "RL", "RNN"],
   },
   {
     id: 9,
@@ -42,7 +42,7 @@ export const listProjects = [
     img: "https://github.com/JuliaLWang8/julialwang8.github.io/blob/master/src/media/PokemonRL.png?raw=true",
     button1Type: "fab fa-github",
     button1Link: "https://github.com/JuliaLWang8/Pokemon-Battling-RL",
-    tech : ["Python", "PyTorch", "RL"],
+    tech : ["Python", "Keras", "RL"],
   },
   {
     id: 1,
@@ -56,7 +56,7 @@ export const listProjects = [
       "https://drive.google.com/drive/u/0/folders/1fNZNdVjtwI-BbeOmP8N2J_77IMrn-yvH",
     button1Type: "fab fa-github",
     button1Link: "https://github.com/JuliaLWang8/DotsLogistics",
-    tech : ["React.js", "Flask"],
+    tech : ["React.js"],
   },
   {
     id: 2,
@@ -83,20 +83,7 @@ export const listProjects = [
     button2Link: "https://drive.google.com/file/d/1qRTZm6vK-2Qr4DaVgmjPikN4IiorYhOx/view?usp=sharing",
     tech : ["Arduino", "C++"],
   },
-  {
-    id: 5,
-    title: "Jenga Shoe Storage",
-    subtitle: "BATA Shoe Museum Challenge 2020",
-    description:
-      "Jenga shoe storage design relative to stakeholders, objectives, and client-given metrics. Compiled a design brief summarizing solutions.",
-    img: "https://github.com/JuliaLWang8/julialwang8.github.io/blob/master/src/media/BATA.jpg?raw=true",
-    button1Type: "fas fa-file-alt",
-    button1Link:
-      "https://drive.google.com/file/d/1jkT2NdkLkELFpUprD6_Fn6JfBXkQmBAX/view?usp=sharing",
-    button2Type: "fab fa-google-drive",
-    button2Link:
-      "https://drive.google.com/drive/folders/1OUF_zQq6GR_U6VQ_y9f2YZPLVO1Jy56a?usp=sharing"
-  },
+
   {
     id: 3,
     title: "2nd Place Robot",
@@ -120,16 +107,6 @@ export const listProjects = [
     button1Link: "https://github.com/ntnox/steadymate",
     tech : ["Arduino", "C++"],
   },
-
-
-  {
-    id: 7,
-    title: "Projectile Slingshot",
-    subtitle: "Praxis Design Challenge 2019",
-    description: "Designed and prototyped a slingshot to launch a projectile at a specified target using a 3D printer, wood, and elastics.",
-    img: "https://github.com/JuliaLWang8/julialwang8.github.io/blob/master/src/media/Pikachu.jpg?raw=true",
-    class: "zoom",
-  },
   {
     id: 8,
     title: "Matboard Bridge",
@@ -140,6 +117,31 @@ export const listProjects = [
     button1Link:
       "https://drive.google.com/file/d/14LQaAkfOKYk9O-XczhYrO21m3VzZXm9T/view?usp=sharing",
     button1Type: "fas fa-file-alt",
+  },
+
+  {
+    id: 7,
+    title: "Projectile Slingshot",
+    subtitle: "Praxis Design Challenge 2019",
+    description: "Designed and prototyped a slingshot to launch a projectile at a specified target using a 3D printer, wood, and elastics.",
+    img: "https://github.com/JuliaLWang8/julialwang8.github.io/blob/master/src/media/Pikachu.jpg?raw=true",
+    class: "zoom",
+  },
+
+
+  {
+    id: 5,
+    title: "Jenga Shoe Storage",
+    subtitle: "BATA Shoe Museum Challenge 2020",
+    description:
+      "Jenga shoe storage design relative to stakeholders, objectives, and client-given metrics. Compiled a design brief summarizing solutions.",
+    img: "https://github.com/JuliaLWang8/julialwang8.github.io/blob/master/src/media/BATA.jpg?raw=true",
+    button1Type: "fas fa-file-alt",
+    button1Link:
+      "https://drive.google.com/file/d/1jkT2NdkLkELFpUprD6_Fn6JfBXkQmBAX/view?usp=sharing",
+    button2Type: "fab fa-google-drive",
+    button2Link:
+      "https://drive.google.com/drive/folders/1OUF_zQq6GR_U6VQ_y9f2YZPLVO1Jy56a?usp=sharing"
   },
   // {
   //   id: 8,

@@ -7,6 +7,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 45px;
 
   .title {
     display: flex;
@@ -44,165 +45,10 @@
     margin-bottom: 20px;
     @include mobile {
       // margin: $mainSize;
-      margin-left: $mainSize;
       margin-right: $mainSize;
     }
   }
   
-  // .card-wrapper {
-  //   display: flex;
-  //   flex-direction: row;
-  //   flex-wrap: wrap;
-  //   justify-content: center;
-  //   align-items: center;
-  //   position: relative;
-  //   margin-bottom: 65px;
-
-  //   .proj {
-  //     background-color: #b9ae9c;
-  //     max-height: 300px;
-  //     max-width: 420px;
-  //     height: 20vw;
-  //     width: 28vw;
-  //     box-shadow: 1px 1px 4px $mainColor;
-  //     margin: 0.5vw;
-  //     display: flex;
-  //     flex-direction: column;
-  //     align-items: center;
-  //     justify-content: center;
-  //     white-space: normal;
-  //     object-fit: cover;
-  //     transition: all 0.5s ease;
-  //     position: relative;
-
-  //     @include mobile {
-  //       width: 80vw;
-  //       height: 50vw;
-  //       margin: 5px;
-  //     }
-
-  //     &:hover {
-  //       transform: scale(1.05);
-  //       box-shadow: 1px 1px 4px $secondaryColor;
-  //     }
-
-  //     img {
-  //       display: block;
-  //       height: 100%;
-  //       width: 100%;
-  //       object-fit: cover;
-  //       position: relative;
-  //     }
-  //     .vertical {
-  //       display: block;
-  //       height: 100%;
-  //       width: 100%;
-  //       object-fit: scale-down;
-  //       position: relative;
-  //     }
-  //     .zoom {
-  //       display: block;
-  //       height: 100%;
-  //       width: 100%;
-  //       object-fit: cover;
-  //       position: relative;
-  //     }
-
-  //     .blur {
-  //       backdrop-filter: blur(3px);
-  //     }
-
-  //     .overlay {
-  //       width: 100%;
-  //       height: 100%;
-  //       display: flex;
-  //       top: 0;
-  //       left: 0;
-  //       flex-direction: column;
-  //       position: absolute;
-  //       align-items: center;
-  //       justify-content: center;
-  //       background: rgba(127, 84, 99, 0.8);
-  //       opacity: 0;
-  //       transition: opacity 0.25s;
-
-  //       > * {
-  //         transform: translateY(20px);
-  //         transition: transform 0.25s;
-  //       }
-  //       &:hover {
-  //         opacity: 1;
-  //         > * {
-  //           transform: translateY(0);
-  //           color: white;
-  //         }
-  //       }
-
-  //       h3 {
-  //         font-size: $mainSize;
-  //         font-family: "Montserrat";
-  //         font-weight: bold;
-
-  //         @include mobile {
-  //         }
-  //       }
-  //       h4 {
-  //         font-family: "Manrope";
-  //         // font-size: 18px;
-  //         font-weight: normal;
-  //         text-align: center;
-  //       }
-  //       p {
-  //         font-size: 18px;
-  //         margin-top: $mainSize;
-  //         margin-left: $mainSize;
-  //         margin-right: $mainSize;
-  //         margin-bottom: 0;
-  //         font-family: "Montserrat";
-
-  //         @include mobile {
-  //           font-size: 15px;
-  //           margin: 3px;
-  //         }
-  //       }
-  //       .btn-container {
-  //         display: flex;
-  //         flex-direction: row;
-  //         margin-bottom: $mainSize;
-  //         @include mobile {
-  //           margin-bottom: 0;
-  //         }
-
-  //         a {
-  //           text-decoration: none;
-  //           display: flex;
-  //           margin: 10px;
-  //           @include mobile {
-  //             margin: 5px;
-  //           }
-  //           i {
-  //             align-self: center;
-  //             justify-content: center;
-  //             color: white;
-  //             object-fit: cover;
-  //             font-size: 30px;
-
-  //             @include mobile {
-  //               font-size: 20px;
-  //             }
-
-  //             &:hover {
-  //               color: #ccb3bb;
-  //             }
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-
-  // }
-
-
   .card-wrapper {
     display: flex;
     flex-direction: row;
@@ -210,7 +56,6 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-bottom: 65px;
     gap: 20px;
 
     .proj {
@@ -229,10 +74,13 @@
       border-style: solid;
       border-width: thin;
       height: auto;
+      overflow: hidden;
 
       @include mobile {
-        width: 50vw;
+        width: 80vw;
         margin: 5px;
+        flex-direction: column;
+        margin: 20px;
       }
 
       &:hover {
@@ -253,10 +101,26 @@
 
   img {
     display: block;
-    width: 100%;
+    width: 133px;
+    height: 75px;
     object-fit: cover;
     position: relative;
+    object-position: bottom;
+  }
 
+  @include mobile {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    img {
+      width: 100%;
+      height: 50%;
+      max-height: 25vh;
+      object-fit: cover;
+      object-position: bottom;
+    }
   }
 }
 
@@ -268,6 +132,12 @@
   padding-left: 1vw;
   padding-top: 1vw;
   padding-bottom: 1vw;
+  padding-right: 1vw;
+
+  @include mobile {
+    padding: 20px;
+    margin: 0;
+  }
 
   .project-title {
     color: $mainColor;
@@ -275,10 +145,6 @@
     font-family: "Montserrat";
     margin-bottom: 0;
     font-weight: bold;
-
-    @include mobile {
-      font-size: 20px;
-    }
 
     a {
       color: $secondaryColor;
@@ -299,6 +165,10 @@
         -ms-transition: transform 0.2s ease-out;
         -o-transition: transform 0.2s ease-out;
         transition: transform 0.2s ease-out;
+    }
+
+    @include mobile {
+
     }
 
 }
@@ -359,102 +229,42 @@
         transition: 0.5s ease-out;
     }
   }
+
+  .right-arrow {
+    margin-top: 30px;
+    background-color: transparent;
+    border: none;
+    font-family: "Montserrat";
+    color: $secondaryColor;
+    font-size: $mainSize;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    &::after {
+      display: inline-block;
+      padding-left: 8px;
+      content: "\0279E"; // arrow right unicode
+      -webkit-transition: transform 0.2s ease-out;
+      -moz-transition: transform 0.2s ease-out;
+      -ms-transition: transform 0.2s ease-out;
+      -o-transition: transform 0.2s ease-out;
+      transition: transform 0.2s ease-out;
+    }
+
+    &:hover {
+        color: $mainColor;
+        text-decoration: underline;
+        text-underline-position: below;
+        cursor: pointer;
+
+        &::after {
+            -webkit-transform: translateX(5px);
+            -moz-transform: translateX(5px);
+            -ms-transform: translateX(5px);
+            -o-transform: translateX(5px);
+            transform: translateX(5px);
+        }
+    }
+  }
 }
-  
-
-
-
-// .card-wrapper {
-//     display: flex;
-//     flex-direction: row;
-//     flex-wrap: wrap;
-//     justify-content: center;
-//     align-items: center;
-//     position: relative;
-//     margin-bottom: 65px;
-
-// .proj {
-//   position: relative;
-//     cursor: default;
-//     transition: var(--transition);
-//     box-shadow: 1px 1px 4px $secondaryColor;
-
-//     a {
-//       position: relative;
-//       z-index: 1;
-//     }
-
-//       .left {
-//         color: $mainColor;
-//         img {
-//           width: 40px;
-//           height: 40px;
-//         }
-//       }
-
-//       .project-links {
-//         display: flex;
-//         align-items: center;
-//         margin-right: -10px;
-//         color: var(--light-slate);
-
-//         a {
-//           // ${({ theme }) => theme.mixins.flexCenter};
-//           padding: 5px 7px;
-
-//           svg {
-//             width: 20px;
-//             height: 20px;
-//           }
-//         }
-//       }
-//     }
-
-//     .project-title {
-//       margin: 0 0 10px;
-//       color: var(--lightest-slate);
-//       font-size: var(--fz-xxl);
-
-//       a {
-//         position: static;
-
-//         &:before {
-//           content: '';
-//           display: block;
-//           position: absolute;
-//           z-index: 0;
-//           width: 100%;
-//           height: 100%;
-//           top: 0;
-//           left: 0;
-//         }
-//       }
-//     }
-
-//     .project-description {
-//       color: var(--light-slate);
-//       font-size: 17px;
-
-//     }
-
-//     .project-tech-list {
-//       display: flex;
-//       align-items: flex-end;
-//       flex-grow: 1;
-//       flex-wrap: wrap;
-//       padding: 0;
-//       margin: 20px 0 0 0;
-//       list-style: none;
-
-//       li {
-//         font-family: "Montserrat";
-//         font-size: 20px;
-//         line-height: 1.75;
-
-//         &:not(:last-of-type) {
-//           margin-right: 15px;
-//         }
-//       }
-//     }
-// }
-// }

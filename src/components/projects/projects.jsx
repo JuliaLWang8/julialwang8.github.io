@@ -1,19 +1,19 @@
 import "./projects.scss";
 import { listProjects } from "./ProjectsData.jsx";
 import React from 'react';
-// import styled from 'styled-components';
-// import { Icon } from '@components/icons';
+import { useState } from "react";
 
 export default function Projects() {
+  const [showAll, setShowAll] = useState(false);
+  const projectsToShow = showAll ? listProjects : listProjects.slice(0, 6);
+  
+
   return (
     <div className="projects" id="projects">
       <div className="title">
         <h1>MY</h1>
         <h2>PROJECTS.</h2>
       </div>
-      <p>
-        Various projects and hackathon submissions I have contributed to, hover for more information.
-      </p>
       {/* <div className="card-wrapper">
       {listProjects.map((d) => (
           <div className="proj">
@@ -36,7 +36,8 @@ export default function Projects() {
       </div> */}
       
       <div className="card-wrapper">
-      {listProjects.map((d) => (
+        
+      {projectsToShow.map((d) => (
           <a href={d.button1Link} target="_blank" rel="noreferrer" className="proj">
             <div className="left">
                 <img src={d.img} alt="" className={d.class} />
@@ -60,6 +61,10 @@ export default function Projects() {
           </a>
         ))}
       </div>
+      {!showAll && (
+        <button className="right-arrow" onClick={() => setShowAll(true)}>Show More</button>
+      )}
+      
     </div>
   );
 }
