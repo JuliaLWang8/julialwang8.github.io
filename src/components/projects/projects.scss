@@ -49,259 +49,259 @@
     }
   }
   
-  // .card-wrapper {
-  //   display: flex;
-  //   flex-direction: row;
-  //   flex-wrap: wrap;
-  //   justify-content: center;
-  //   align-items: center;
-  //   position: relative;
-  //   margin-bottom: 65px;
+  .card-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 65px;
 
-  //   .proj {
-  //     background-color: #b9ae9c;
-  //     max-height: 300px;
-  //     max-width: 420px;
-  //     height: 20vw;
-  //     width: 28vw;
-  //     box-shadow: 1px 1px 4px $mainColor;
-  //     margin: 0.5vw;
-  //     display: flex;
-  //     flex-direction: column;
-  //     align-items: center;
-  //     justify-content: center;
-  //     white-space: normal;
-  //     object-fit: cover;
-  //     transition: all 0.5s ease;
-  //     position: relative;
+    .proj {
+      background-color: #b9ae9c;
+      max-height: 300px;
+      max-width: 420px;
+      height: 20vw;
+      width: 28vw;
+      box-shadow: 1px 1px 4px $mainColor;
+      margin: 0.5vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      white-space: normal;
+      object-fit: cover;
+      transition: all 0.5s ease;
+      position: relative;
 
-  //     @include mobile {
-  //       width: 80vw;
-  //       height: 50vw;
-  //       margin: 5px;
-  //     }
+      @include mobile {
+        width: 80vw;
+        height: 50vw;
+        margin: 5px;
+      }
 
-  //     &:hover {
-  //       transform: scale(1.05);
-  //       box-shadow: 1px 1px 4px $secondaryColor;
-  //     }
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 1px 1px 4px $secondaryColor;
+      }
 
-  //     img {
-  //       display: block;
-  //       height: 100%;
-  //       width: 100%;
-  //       object-fit: cover;
-  //       position: relative;
-  //     }
-  //     .vertical {
-  //       display: block;
-  //       height: 100%;
-  //       width: 100%;
-  //       object-fit: scale-down;
-  //       position: relative;
-  //     }
-  //     .zoom {
-  //       display: block;
-  //       height: 100%;
-  //       width: 100%;
-  //       object-fit: cover;
-  //       position: relative;
-  //     }
+      img {
+        display: block;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        position: relative;
+      }
+      .vertical {
+        display: block;
+        height: 100%;
+        width: 100%;
+        object-fit: scale-down;
+        position: relative;
+      }
+      .zoom {
+        display: block;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        position: relative;
+      }
 
-  //     .blur {
-  //       backdrop-filter: blur(3px);
-  //     }
+      .blur {
+        backdrop-filter: blur(3px);
+      }
 
-  //     .overlay {
-  //       width: 100%;
-  //       height: 100%;
-  //       display: flex;
-  //       top: 0;
-  //       left: 0;
-  //       flex-direction: column;
-  //       position: absolute;
-  //       align-items: center;
-  //       justify-content: center;
-  //       background: rgba(127, 84, 99, 0.8);
-  //       opacity: 0;
-  //       transition: opacity 0.25s;
+      .overlay {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        background: rgba(127, 84, 99, 0.8);
+        opacity: 0;
+        transition: opacity 0.25s;
 
-  //       > * {
-  //         transform: translateY(20px);
-  //         transition: transform 0.25s;
-  //       }
-  //       &:hover {
-  //         opacity: 1;
-  //         > * {
-  //           transform: translateY(0);
-  //           color: white;
-  //         }
-  //       }
+        > * {
+          transform: translateY(20px);
+          transition: transform 0.25s;
+        }
+        &:hover {
+          opacity: 1;
+          > * {
+            transform: translateY(0);
+            color: white;
+          }
+        }
 
-  //       h3 {
-  //         font-size: $mainSize;
-  //         font-family: "Montserrat";
-  //         font-weight: bold;
+        h3 {
+          font-size: $mainSize;
+          font-family: "Montserrat";
+          font-weight: bold;
 
-  //         @include mobile {
-  //         }
-  //       }
-  //       h4 {
-  //         font-family: "Manrope";
-  //         // font-size: 18px;
-  //         font-weight: normal;
-  //         text-align: center;
-  //       }
-  //       p {
-  //         font-size: 18px;
-  //         margin-top: $mainSize;
-  //         margin-left: $mainSize;
-  //         margin-right: $mainSize;
-  //         margin-bottom: 0;
-  //         font-family: "Montserrat";
+          @include mobile {
+          }
+        }
+        h4 {
+          font-family: "Manrope";
+          // font-size: 18px;
+          font-weight: normal;
+          text-align: center;
+        }
+        p {
+          font-size: 18px;
+          margin-top: $mainSize;
+          margin-left: $mainSize;
+          margin-right: $mainSize;
+          margin-bottom: 0;
+          font-family: "Montserrat";
 
-  //         @include mobile {
-  //           font-size: 15px;
-  //           margin: 3px;
-  //         }
-  //       }
-  //       .btn-container {
-  //         display: flex;
-  //         flex-direction: row;
-  //         margin-bottom: $mainSize;
-  //         @include mobile {
-  //           margin-bottom: 0;
-  //         }
+          @include mobile {
+            font-size: 15px;
+            margin: 3px;
+          }
+        }
+        .btn-container {
+          display: flex;
+          flex-direction: row;
+          margin-bottom: $mainSize;
+          @include mobile {
+            margin-bottom: 0;
+          }
 
-  //         a {
-  //           text-decoration: none;
-  //           display: flex;
-  //           margin: 10px;
-  //           @include mobile {
-  //             margin: 5px;
-  //           }
-  //           i {
-  //             align-self: center;
-  //             justify-content: center;
-  //             color: white;
-  //             object-fit: cover;
-  //             font-size: 30px;
+          a {
+            text-decoration: none;
+            display: flex;
+            margin: 10px;
+            @include mobile {
+              margin: 5px;
+            }
+            i {
+              align-self: center;
+              justify-content: center;
+              color: white;
+              object-fit: cover;
+              font-size: 30px;
 
-  //             @include mobile {
-  //               font-size: 20px;
-  //             }
+              @include mobile {
+                font-size: 20px;
+              }
 
-  //             &:hover {
-  //               color: #ccb3bb;
-  //             }
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
+              &:hover {
+                color: #ccb3bb;
+              }
+            }
+          }
+        }
+      }
+    }
 
-  //   // .flip-card {
-  //   //   background-color: transparent;
-  //   //   max-height: 300px;
-  //   //   max-width: 420px;
-  //   //   height: 20vw;
-  //   //   width: 28vw;
-  //   //   margin: 0.5vw;
-  //   //   // border: 1px solid #f1f1f1;
-  //   //   perspective: 1000px;
-  //   //   display: flex;
-  //   //   flex-direction: column;
-  //   //   align-items: center;
-  //   //   justify-content: center;
-  //   //   white-space: normal;
-  //   //   object-fit: cover;
-  //   //  transition: all 0.5s ease;
-  //   //   position: relative;
+    // .flip-card {
+    //   background-color: transparent;
+    //   max-height: 300px;
+    //   max-width: 420px;
+    //   height: 20vw;
+    //   width: 28vw;
+    //   margin: 0.5vw;
+    //   // border: 1px solid #f1f1f1;
+    //   perspective: 1000px;
+    //   display: flex;
+    //   flex-direction: column;
+    //   align-items: center;
+    //   justify-content: center;
+    //   white-space: normal;
+    //   object-fit: cover;
+    //  transition: all 0.5s ease;
+    //   position: relative;
 
-  //   //   &:hover {
-  //   //     box-shadow: 0px 0px;
-  //   //     .flip-card-inner {
-  //   //       transform: rotateY(180deg);
+    //   &:hover {
+    //     box-shadow: 0px 0px;
+    //     .flip-card-inner {
+    //       transform: rotateY(180deg);
 
-  //   //       // transform: scale(1.05);
-  //   //     }
-  //   //   }
-  //   // }
-  //   // .flip-card-inner {
-  //   //   position: relative;
-  //   //   width: 100%;
-  //   //   height: 100%;
-  //   //   text-align: center;
-  //   //   transition: transform 0.8s;
-  //   //   transform-style: preserve-3d;
+    //       // transform: scale(1.05);
+    //     }
+    //   }
+    // }
+    // .flip-card-inner {
+    //   position: relative;
+    //   width: 100%;
+    //   height: 100%;
+    //   text-align: center;
+    //   transition: transform 0.8s;
+    //   transform-style: preserve-3d;
 
-  //   //   img {
-  //   //     display: block;
-  //   //     height: 100%;
-  //   //     width: 100%;
-  //   //     object-fit: cover;
-  //   //     position: relative;
-  //   //     box-shadow: 1px 1px 4px $mainColor;
-  //   //   }
+    //   img {
+    //     display: block;
+    //     height: 100%;
+    //     width: 100%;
+    //     object-fit: cover;
+    //     position: relative;
+    //     box-shadow: 1px 1px 4px $mainColor;
+    //   }
 
-  //   // }
-  //   // .flip-card-front {
-  //   //   position: absolute;
-  //   //   width: 100%;
-  //   //   height: 100%;
-  //   //   -webkit-backface-visibility: hidden;
-  //   //   backface-visibility: hidden;
-  //   //   background-color: #bbb;
-  //   //   color: black;
-  //   // }
-  //   // .flip-card-back {
-  //   //   position: absolute;
-  //   //   width: 100%;
-  //   //   height: 100%;
-  //   //   -webkit-backface-visibility: hidden;
-  //   //   backface-visibility: hidden;
-  //   //   background-color: $mainColor;
-  //   //   color: white;
-  //   //   transform: rotateY(180deg);
+    // }
+    // .flip-card-front {
+    //   position: absolute;
+    //   width: 100%;
+    //   height: 100%;
+    //   -webkit-backface-visibility: hidden;
+    //   backface-visibility: hidden;
+    //   background-color: #bbb;
+    //   color: black;
+    // }
+    // .flip-card-back {
+    //   position: absolute;
+    //   width: 100%;
+    //   height: 100%;
+    //   -webkit-backface-visibility: hidden;
+    //   backface-visibility: hidden;
+    //   background-color: $mainColor;
+    //   color: white;
+    //   transform: rotateY(180deg);
 
-  //   //   h3 {
-  //   //     font-size: $mainSize;
-  //   //     font-family: "Montserrat";
-  //   //     font-weight: normal;
-  //   //   }
-  //   //   h4 {
-  //   //     font-family: "Manrope";
-  //   //     // font-size: 18px;
-  //   //     font-weight: normal;
-  //   //   }
-  //   //   p {
-  //   //     font-size: 15px;
-  //   //     margin: $mainSize;
-  //   //     font-family: 'Montserrat';
-  //   //   }
+    //   h3 {
+    //     font-size: $mainSize;
+    //     font-family: "Montserrat";
+    //     font-weight: normal;
+    //   }
+    //   h4 {
+    //     font-family: "Manrope";
+    //     // font-size: 18px;
+    //     font-weight: normal;
+    //   }
+    //   p {
+    //     font-size: 15px;
+    //     margin: $mainSize;
+    //     font-family: 'Montserrat';
+    //   }
 
-  //   //   .btn-container {
-  //   //     display: flex;
-  //   //     flex-direction: row;
-  //   //     margin-bottom: $mainSize;
-  //   //     a {
-  //   //       text-decoration: none;
-  //   //       height: 40px;
-  //   //       width: 40px;
+    //   .btn-container {
+    //     display: flex;
+    //     flex-direction: row;
+    //     margin-bottom: $mainSize;
+    //     a {
+    //       text-decoration: none;
+    //       height: 40px;
+    //       width: 40px;
 
-  //   //       i {
-  //   //         display: flex;
-  //   //         align-self: center;
-  //   //         justify-content: center;
-  //   //         color: white;
-  //   //         height: 100%;
-  //   //         .fas,
-  //   //         .fab {
-  //   //           height: 40px;
-  //   //         }
-  //   //       }
-  //   //     }
-  //   //   }
-  //   // }
-  // }
+    //       i {
+    //         display: flex;
+    //         align-self: center;
+    //         justify-content: center;
+    //         color: white;
+    //         height: 100%;
+    //         .fas,
+    //         .fab {
+    //           height: 40px;
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
+  }
 }

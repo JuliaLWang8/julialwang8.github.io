@@ -82,7 +82,7 @@
             justify-content: center;
             @include mobile {
                 display: flex-start;
-                justify-content: start;
+                justify-content: flex-start;
             }
 
             h2 {

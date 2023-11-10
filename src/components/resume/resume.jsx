@@ -102,14 +102,14 @@ export default function Resume() {
                 <CodeIcon className="item-icon" />
               </div>
               <div className="text">
-                <h6>May 2022 - Present</h6>
+                <h6>May 2022 - May 2023</h6>
                 <h4>Software Engineering Intern</h4>
-                <h5>Intel Corporation • San Francisco Bay Area</h5>
+                <h5>Intel • San Francisco Bay Area</h5>
                 <p>Agile development in C++ for Quartus Prime software including: </p>
                 <ul>
                   <li>Automating signal name matching between a logic analyzer and a simulator. </li>
                   <li>Developing backend and GUI updates to streamline signal grouping UX based on client requests. </li>
-                  <li>Test-based development to implement clock tracing interfaces and algorithms, conducted unit and regression tests. </li>
+                  <li>Test-driven development to implement clock tracing interfaces and algorithms, conduct unit and regression tests, resulting in a 2x improvement in runtime. </li>
                 </ul>
                 <p>
                   Collaborated as a cohort leader to host weekly events for 25+
@@ -405,6 +405,19 @@ export default function Resume() {
                 <SchoolIcon className="item-icon" />
               </div>
               <div className="text">
+                <h6>October 2023</h6>
+                <h4>Jeffrey Skoll Scholarship in Business</h4>
+                <h5>University of Toronto </h5>
+                <p>
+                  $10,000 for academic excellence in the Business Minor.
+                </p>
+              </div>
+            </div>
+            <div className="item">
+              <div className="circle">
+                <SchoolIcon className="item-icon" />
+              </div>
+              <div className="text">
                 <h6>October 2021</h6>
                 <h4>Mario And Dorothy Pesando Scholarship in Engineering</h4>
                 <h5>University of Toronto </h5>
@@ -415,37 +428,6 @@ export default function Resume() {
                 </p>
               </div>
             </div>
-            {/* <div className="item">
-              <div className="circle">
-                <LocalShippingIcon className="item-icon" />
-              </div>
-              <div className="text">
-                <h6>October 2020-April 2021</h6>
-                <h4>
-                  2nd Place Business Pitch and Prototype / 302 Participants
-                </h4>
-                <h5>
-                  Agorize AI For Future Business Challenge - Technation, RBC,
-                  Microsoft{" "}
-                </h5>
-                <p>
-                  5 month{" "}
-                  <a href="https://www.agorize.com/en/challenges/ai-for-future-business-challenge/pages/the-final?lang=en">
-                    challenge
-                  </a>
-                  : Spearheaded a business proposal and{" "}
-                  <a href="https://github.com/JuliaLWang8/DotsLogistics">
-                    prototype
-                  </a>{" "}
-                  using React.js, CSS, and Power BI for a{" "}
-                  <a HREF="https://drive.google.com/file/d/1RhCOv0e4s4cLJpbwAugQ3CnrkDFJsrPD/view?usp=sharing">
-                    logistics solution
-                  </a>{" "}
-                  leveraging ML to streamline B2B and B2B relationships and
-                  transactions.{" "}
-                </p>
-              </div>
-            </div> */}
             <div className="item">
               <div className="circle">
                 <SchoolIcon className="item-icon" />
