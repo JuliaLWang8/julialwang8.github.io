@@ -49,6 +49,160 @@
     }
   }
   
+  // .card-wrapper {
+  //   display: flex;
+  //   flex-direction: row;
+  //   flex-wrap: wrap;
+  //   justify-content: center;
+  //   align-items: center;
+  //   position: relative;
+  //   margin-bottom: 65px;
+
+  //   .proj {
+  //     background-color: #b9ae9c;
+  //     max-height: 300px;
+  //     max-width: 420px;
+  //     height: 20vw;
+  //     width: 28vw;
+  //     box-shadow: 1px 1px 4px $mainColor;
+  //     margin: 0.5vw;
+  //     display: flex;
+  //     flex-direction: column;
+  //     align-items: center;
+  //     justify-content: center;
+  //     white-space: normal;
+  //     object-fit: cover;
+  //     transition: all 0.5s ease;
+  //     position: relative;
+
+  //     @include mobile {
+  //       width: 80vw;
+  //       height: 50vw;
+  //       margin: 5px;
+  //     }
+
+  //     &:hover {
+  //       transform: scale(1.05);
+  //       box-shadow: 1px 1px 4px $secondaryColor;
+  //     }
+
+  //     img {
+  //       display: block;
+  //       height: 100%;
+  //       width: 100%;
+  //       object-fit: cover;
+  //       position: relative;
+  //     }
+  //     .vertical {
+  //       display: block;
+  //       height: 100%;
+  //       width: 100%;
+  //       object-fit: scale-down;
+  //       position: relative;
+  //     }
+  //     .zoom {
+  //       display: block;
+  //       height: 100%;
+  //       width: 100%;
+  //       object-fit: cover;
+  //       position: relative;
+  //     }
+
+  //     .blur {
+  //       backdrop-filter: blur(3px);
+  //     }
+
+  //     .overlay {
+  //       width: 100%;
+  //       height: 100%;
+  //       display: flex;
+  //       top: 0;
+  //       left: 0;
+  //       flex-direction: column;
+  //       position: absolute;
+  //       align-items: center;
+  //       justify-content: center;
+  //       background: rgba(127, 84, 99, 0.8);
+  //       opacity: 0;
+  //       transition: opacity 0.25s;
+
+  //       > * {
+  //         transform: translateY(20px);
+  //         transition: transform 0.25s;
+  //       }
+  //       &:hover {
+  //         opacity: 1;
+  //         > * {
+  //           transform: translateY(0);
+  //           color: white;
+  //         }
+  //       }
+
+  //       h3 {
+  //         font-size: $mainSize;
+  //         font-family: "Montserrat";
+  //         font-weight: bold;
+
+  //         @include mobile {
+  //         }
+  //       }
+  //       h4 {
+  //         font-family: "Manrope";
+  //         // font-size: 18px;
+  //         font-weight: normal;
+  //         text-align: center;
+  //       }
+  //       p {
+  //         font-size: 18px;
+  //         margin-top: $mainSize;
+  //         margin-left: $mainSize;
+  //         margin-right: $mainSize;
+  //         margin-bottom: 0;
+  //         font-family: "Montserrat";
+
+  //         @include mobile {
+  //           font-size: 15px;
+  //           margin: 3px;
+  //         }
+  //       }
+  //       .btn-container {
+  //         display: flex;
+  //         flex-direction: row;
+  //         margin-bottom: $mainSize;
+  //         @include mobile {
+  //           margin-bottom: 0;
+  //         }
+
+  //         a {
+  //           text-decoration: none;
+  //           display: flex;
+  //           margin: 10px;
+  //           @include mobile {
+  //             margin: 5px;
+  //           }
+  //           i {
+  //             align-self: center;
+  //             justify-content: center;
+  //             color: white;
+  //             object-fit: cover;
+  //             font-size: 30px;
+
+  //             @include mobile {
+  //               font-size: 20px;
+  //             }
+
+  //             &:hover {
+  //               color: #ccb3bb;
+  //             }
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+
+  // }
+
+
   .card-wrapper {
     display: flex;
     flex-direction: row;
@@ -59,21 +213,25 @@
     margin-bottom: 65px;
 
     .proj {
-      background-color: #b9ae9c;
-      max-height: 300px;
-      max-width: 420px;
-      height: 20vw;
-      width: 28vw;
-      box-shadow: 1px 1px 4px $mainColor;
+      background-color: #f2f2f2;
+      // max-height: 300px;
+      // max-width: 420px;
+      // height: 20vw;
+      width: 45vw;
       margin: 0.5vw;
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      flex-direction: row;
+      // justify-content: center;
       white-space: normal;
       object-fit: cover;
       transition: all 0.5s ease;
       position: relative;
+      border-radius: 10px;
+      border-color: #e3e4e6;
+      border-style: solid;
+      border-width: thin;
+      background-color: #f2f2f2;
+      height: auto;
 
       @include mobile {
         width: 80vw;
@@ -82,226 +240,216 @@
       }
 
       &:hover {
-        transform: scale(1.05);
-        box-shadow: 1px 1px 4px $secondaryColor;
+        // transform: scale(1.05);
+        border-color: transparent;
+        box-shadow:0 4px 8px 0 $mainColor, 0 6px 20px 0 $mainColor;
       }
 
-      img {
-        display: block;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        position: relative;
-      }
-      .vertical {
-        display: block;
-        height: 100%;
-        width: 100%;
-        object-fit: scale-down;
-        position: relative;
-      }
-      .zoom {
-        display: block;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        position: relative;
-      }
+.left {
+  bottom: -2px;
+  right: 3vw;
+  width: 150px; // set width to 150px
+  height: 35vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 5;
+  padding: 1vw;
 
-      .blur {
-        backdrop-filter: blur(3px);
-      }
-
-      .overlay {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        top: 0;
-        left: 0;
-        flex-direction: column;
-        position: absolute;
-        align-items: center;
-        justify-content: center;
-        background: rgba(127, 84, 99, 0.8);
-        opacity: 0;
-        transition: opacity 0.25s;
-
-        > * {
-          transform: translateY(20px);
-          transition: transform 0.25s;
-        }
-        &:hover {
-          opacity: 1;
-          > * {
-            transform: translateY(0);
-            color: white;
-          }
-        }
-
-        h3 {
-          font-size: $mainSize;
-          font-family: "Montserrat";
-          font-weight: bold;
-
-          @include mobile {
-          }
-        }
-        h4 {
-          font-family: "Manrope";
-          // font-size: 18px;
-          font-weight: normal;
-          text-align: center;
-        }
-        p {
-          font-size: 18px;
-          margin-top: $mainSize;
-          margin-left: $mainSize;
-          margin-right: $mainSize;
-          margin-bottom: 0;
-          font-family: "Montserrat";
-
-          @include mobile {
-            font-size: 15px;
-            margin: 3px;
-          }
-        }
-        .btn-container {
-          display: flex;
-          flex-direction: row;
-          margin-bottom: $mainSize;
-          @include mobile {
-            margin-bottom: 0;
-          }
-
-          a {
-            text-decoration: none;
-            display: flex;
-            margin: 10px;
-            @include mobile {
-              margin: 5px;
-            }
-            i {
-              align-self: center;
-              justify-content: center;
-              color: white;
-              object-fit: cover;
-              font-size: 30px;
-
-              @include mobile {
-                font-size: 20px;
-              }
-
-              &:hover {
-                color: #ccb3bb;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    // .flip-card {
-    //   background-color: transparent;
-    //   max-height: 300px;
-    //   max-width: 420px;
-    //   height: 20vw;
-    //   width: 28vw;
-    //   margin: 0.5vw;
-    //   // border: 1px solid #f1f1f1;
-    //   perspective: 1000px;
-    //   display: flex;
-    //   flex-direction: column;
-    //   align-items: center;
-    //   justify-content: center;
-    //   white-space: normal;
-    //   object-fit: cover;
-    //  transition: all 0.5s ease;
-    //   position: relative;
-
-    //   &:hover {
-    //     box-shadow: 0px 0px;
-    //     .flip-card-inner {
-    //       transform: rotateY(180deg);
-
-    //       // transform: scale(1.05);
-    //     }
-    //   }
-    // }
-    // .flip-card-inner {
-    //   position: relative;
-    //   width: 100%;
-    //   height: 100%;
-    //   text-align: center;
-    //   transition: transform 0.8s;
-    //   transform-style: preserve-3d;
-
-    //   img {
-    //     display: block;
-    //     height: 100%;
-    //     width: 100%;
-    //     object-fit: cover;
-    //     position: relative;
-    //     box-shadow: 1px 1px 4px $mainColor;
-    //   }
-
-    // }
-    // .flip-card-front {
-    //   position: absolute;
-    //   width: 100%;
-    //   height: 100%;
-    //   -webkit-backface-visibility: hidden;
-    //   backface-visibility: hidden;
-    //   background-color: #bbb;
-    //   color: black;
-    // }
-    // .flip-card-back {
-    //   position: absolute;
-    //   width: 100%;
-    //   height: 100%;
-    //   -webkit-backface-visibility: hidden;
-    //   backface-visibility: hidden;
-    //   background-color: $mainColor;
-    //   color: white;
-    //   transform: rotateY(180deg);
-
-    //   h3 {
-    //     font-size: $mainSize;
-    //     font-family: "Montserrat";
-    //     font-weight: normal;
-    //   }
-    //   h4 {
-    //     font-family: "Manrope";
-    //     // font-size: 18px;
-    //     font-weight: normal;
-    //   }
-    //   p {
-    //     font-size: 15px;
-    //     margin: $mainSize;
-    //     font-family: 'Montserrat';
-    //   }
-
-    //   .btn-container {
-    //     display: flex;
-    //     flex-direction: row;
-    //     margin-bottom: $mainSize;
-    //     a {
-    //       text-decoration: none;
-    //       height: 40px;
-    //       width: 40px;
-
-    //       i {
-    //         display: flex;
-    //         align-self: center;
-    //         justify-content: center;
-    //         color: white;
-    //         height: 100%;
-    //         .fas,
-    //         .fab {
-    //           height: 40px;
-    //         }
-    //       }
-    //     }
-    //   }
-    // }
+  img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
   }
 }
+
+.right {
+  flex: 1; // set flex to 1 to take up the rest of the width
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1vw;
+  justify-content: top;
+  align-items: flex-start;
+
+  .project-title {
+    color: $mainColor;
+    font-size: $mainSize;
+    font-family: "Montserrat";
+    margin-bottom: 0;
+    margin-top: 1vw;
+    font-weight: bold;
+
+    @include mobile {
+      font-size: 20px;
+    }
+
+    a {
+      color: $secondaryColor;
+      
+    }
+  }
+
+  .arrow {
+    color: $secondaryColor;
+    margin: 1em 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+    &::after {
+        display: inline-block;
+        content: "\2197"; // arrow unicode
+        padding-left: 1px;
+        -webkit-transition: transform 0.3s ease-out;
+        -moz-transition: transform 0.3s ease-out;
+        -ms-transition: transform 0.3s ease-out;
+        -o-transition: transform 0.3s ease-out;
+        transition: transform 0.3s ease-out;
+    }
+
+}
+
+
+  .project-description {
+    color: black;
+    font-size: 17px;
+    font-family: "Manrope";
+    margin-bottom: 0;
+    margin-top: 1vw;
+    @include mobile {
+      font-size: 15px;
+    }
+  }
+
+  ul > li {
+    display: inline-block;
+    margin-right: 1vw;
+    background-color: $mainColor;
+    color: white;
+    border-radius: 5px;
+    padding: 3px;
+  }
+
+  @media screen and (orientation:portrait) {
+    justify-content: center;
+  }
+}
+      
+    }
+
+    .proj:hover > .right .project-title a {
+      color: $mainColor;
+    }
+
+    .proj:hover > .right .arrow {
+      color: $mainColor;
+
+        &::after {
+            -webkit-transform: translate(4px, -4px);
+            -moz-transform: translate(4px, -4px);
+            -ms-transform: translate(4px, -4px);
+            -o-transform: translate(4px, -4px);
+            transform: translate(4px, -4px);
+   
+        }
+    }
+    }
+  }
+  
+
+
+
+// .card-wrapper {
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     justify-content: center;
+//     align-items: center;
+//     position: relative;
+//     margin-bottom: 65px;
+
+// .proj {
+//   position: relative;
+//     cursor: default;
+//     transition: var(--transition);
+//     box-shadow: 1px 1px 4px $secondaryColor;
+
+//     a {
+//       position: relative;
+//       z-index: 1;
+//     }
+
+//       .left {
+//         color: $mainColor;
+//         img {
+//           width: 40px;
+//           height: 40px;
+//         }
+//       }
+
+//       .project-links {
+//         display: flex;
+//         align-items: center;
+//         margin-right: -10px;
+//         color: var(--light-slate);
+
+//         a {
+//           // ${({ theme }) => theme.mixins.flexCenter};
+//           padding: 5px 7px;
+
+//           svg {
+//             width: 20px;
+//             height: 20px;
+//           }
+//         }
+//       }
+//     }
+
+//     .project-title {
+//       margin: 0 0 10px;
+//       color: var(--lightest-slate);
+//       font-size: var(--fz-xxl);
+
+//       a {
+//         position: static;
+
+//         &:before {
+//           content: '';
+//           display: block;
+//           position: absolute;
+//           z-index: 0;
+//           width: 100%;
+//           height: 100%;
+//           top: 0;
+//           left: 0;
+//         }
+//       }
+//     }
+
+//     .project-description {
+//       color: var(--light-slate);
+//       font-size: 17px;
+
+//     }
+
+//     .project-tech-list {
+//       display: flex;
+//       align-items: flex-end;
+//       flex-grow: 1;
+//       flex-wrap: wrap;
+//       padding: 0;
+//       margin: 20px 0 0 0;
+//       list-style: none;
+
+//       li {
+//         font-family: "Montserrat";
+//         font-size: 20px;
+//         line-height: 1.75;
+
+//         &:not(:last-of-type) {
+//           margin-right: 15px;
+//         }
+//       }
+//     }
+// }
+// }
