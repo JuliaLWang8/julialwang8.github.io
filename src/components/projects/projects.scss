@@ -211,17 +211,15 @@
     align-items: center;
     position: relative;
     margin-bottom: 65px;
+    gap: 20px;
 
     .proj {
-      background-color: #f2f2f2;
-      // max-height: 300px;
-      // max-width: 420px;
-      // height: 20vw;
+      background-color: white;
       width: 45vw;
+      // min-width: ;
       margin: 0.5vw;
       display: flex;
       flex-direction: row;
-      // justify-content: center;
       white-space: normal;
       object-fit: cover;
       transition: all 0.5s ease;
@@ -230,12 +228,10 @@
       border-color: #e3e4e6;
       border-style: solid;
       border-width: thin;
-      background-color: #f2f2f2;
       height: auto;
 
       @include mobile {
-        width: 80vw;
-        height: 50vw;
+        width: 50vw;
         margin: 5px;
       }
 
@@ -249,7 +245,6 @@
   bottom: -2px;
   right: 3vw;
   width: 150px; // set width to 150px
-  height: 35vw;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -261,6 +256,7 @@
     width: 100%;
     object-fit: cover;
     position: relative;
+
   }
 }
 
@@ -270,15 +266,14 @@
   display: flex;
   flex-direction: column;
   padding-left: 1vw;
-  justify-content: top;
-  align-items: flex-start;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
 
   .project-title {
     color: $mainColor;
     font-size: $mainSize;
     font-family: "Montserrat";
     margin-bottom: 0;
-    margin-top: 1vw;
     font-weight: bold;
 
     @include mobile {
@@ -293,18 +288,17 @@
 
   .arrow {
     color: $secondaryColor;
-    margin: 1em 0;
     font-family: Arial, Helvetica, sans-serif;
 
     &::after {
         display: inline-block;
         content: "\2197"; // arrow unicode
         padding-left: 1px;
-        -webkit-transition: transform 0.3s ease-out;
-        -moz-transition: transform 0.3s ease-out;
-        -ms-transition: transform 0.3s ease-out;
-        -o-transition: transform 0.3s ease-out;
-        transition: transform 0.3s ease-out;
+        -webkit-transition: transform 0.2s ease-out;
+        -moz-transition: transform 0.2s ease-out;
+        -ms-transition: transform 0.2s ease-out;
+        -o-transition: transform 0.2s ease-out;
+        transition: transform 0.2s ease-out;
     }
 
 }
@@ -312,23 +306,29 @@
 
   .project-description {
     color: black;
-    font-size: 17px;
+    font-size: $mainSize - 3;
     font-family: "Manrope";
     margin-bottom: 0;
-    margin-top: 1vw;
     @include mobile {
       font-size: 15px;
     }
   }
 
-  ul > li {
+  ul {
+    margin-top: 1vh;
+  li {
     display: inline-block;
-    margin-right: 1vw;
+    margin-right: 4px;
     background-color: $mainColor;
     color: white;
-    border-radius: 5px;
+    border-radius: 12px;
     padding: 3px;
+    font-family: "Manrope";
+    font-size: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
+}
 
   @media screen and (orientation:portrait) {
     justify-content: center;
@@ -353,8 +353,13 @@
    
         }
     }
+    .proj:hover > .left img {
+        box-shadow: 0 0 0 #9d9d9d, 0 2px 7px 0 #9d9d9d;
+        // box-shadow:0 0 0 3px #9d9d9d;
+        transition: 0.5s ease-out;
     }
   }
+}
   
 
 

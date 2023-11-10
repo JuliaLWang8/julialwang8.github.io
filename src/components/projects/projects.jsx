@@ -37,7 +37,7 @@ export default function Projects() {
       
       <div className="card-wrapper">
       {listProjects.map((d) => (
-          <div className="proj">
+          <a href={d.button1Link} target="_blank" rel="noreferrer" className="proj">
             <div className="left">
                 <img src={d.img} alt="" className={d.class} />
             </div>
@@ -57,7 +57,7 @@ export default function Projects() {
                   </ul>
                 )}
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </div>

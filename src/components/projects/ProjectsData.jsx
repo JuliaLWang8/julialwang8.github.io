@@ -10,6 +10,7 @@ export const listProjects = [
     img: "https://github.com/JuliaLWang8/Custom-Keyboard/blob/main/Keyboard.jpg?raw=true",
     button1Type: "fab fa-github",
     button1Link: "https://github.com/JuliaLWang8/Custom-Keyboard",
+    tech : ["Python", "C++", "RP2040"],
   },
   {
     id: 11,
@@ -20,6 +21,7 @@ export const listProjects = [
     img: "https://github.com/JuliaLWang8/julialwang8.github.io/blob/master/src/media/GCN.png?raw=true",
     button1Type: "fab fa-github",
     button1Link: "https://github.com/JuliaLWang8/RetailRecommender",
+    tech : ["Python", "PyTorch", "sBERT", "GCN"],
   },
   {
     id: 10,
@@ -30,6 +32,7 @@ export const listProjects = [
     img: "https://github.com/JuliaLWang8/julialwang8.github.io/blob/master/src/media/NAS.png?raw=true",
     button1Type: "fab fa-github",
     button1Link: "https://github.com/JuliaLWang8/Predicting-Recidivism",
+    tech : ["Python", "NAS", "RL", "RNN"],
   },
   {
     id: 9,
@@ -39,6 +42,7 @@ export const listProjects = [
     img: "https://github.com/JuliaLWang8/julialwang8.github.io/blob/master/src/media/PokemonRL.png?raw=true",
     button1Type: "fab fa-github",
     button1Link: "https://github.com/JuliaLWang8/Pokemon-Battling-RL",
+    tech : ["Python", "PyTorch", "RL"],
   },
   {
     id: 1,
@@ -52,6 +56,7 @@ export const listProjects = [
       "https://drive.google.com/drive/u/0/folders/1fNZNdVjtwI-BbeOmP8N2J_77IMrn-yvH",
     button1Type: "fab fa-github",
     button1Link: "https://github.com/JuliaLWang8/DotsLogistics",
+    tech : ["React.js", "Flask"],
   },
   {
     id: 2,
@@ -63,6 +68,7 @@ export const listProjects = [
      class: "vertical",
      button1Type: "fab fa-github",
      button1Link: "https://github.com/JuliaLWang8/Timbit-Dispenser-Robot",
+    tech : ["Arduino", "C++"],
   },
   {
     id: 6,
@@ -75,6 +81,7 @@ export const listProjects = [
     button1Link: "https://github.com/JuliaLWang8/Clarity-Robot",
     button2Type: "fas fa-file-alt",
     button2Link: "https://drive.google.com/file/d/1qRTZm6vK-2Qr4DaVgmjPikN4IiorYhOx/view?usp=sharing",
+    tech : ["Arduino", "C++"],
   },
   {
     id: 5,
@@ -88,7 +95,7 @@ export const listProjects = [
       "https://drive.google.com/file/d/1jkT2NdkLkELFpUprD6_Fn6JfBXkQmBAX/view?usp=sharing",
     button2Type: "fab fa-google-drive",
     button2Link:
-      "https://drive.google.com/drive/folders/1OUF_zQq6GR_U6VQ_y9f2YZPLVO1Jy56a?usp=sharing",
+      "https://drive.google.com/drive/folders/1OUF_zQq6GR_U6VQ_y9f2YZPLVO1Jy56a?usp=sharing"
   },
   {
     id: 3,
@@ -100,6 +107,7 @@ export const listProjects = [
     button1Type: "fas fa-video",
     button1Link:
       "https://drive.google.com/file/d/1arArSZtApMOUZ98M3RPNkBzbZBE-N-c8/view?usp=sharing",
+      tech : ["Arduino", "C++"],
   },
   {
     id: 4,
@@ -110,6 +118,7 @@ export const listProjects = [
     img: "https://raw.githubusercontent.com/ntnox/steadymate/master/Steadmate_Device.jpg",
     button1Type: "fab fa-github",
     button1Link: "https://github.com/ntnox/steadymate",
+    tech : ["Arduino", "C++"],
   },
 
 
