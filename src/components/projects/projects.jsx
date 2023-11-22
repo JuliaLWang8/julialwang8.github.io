@@ -14,39 +14,17 @@ export default function Projects() {
         <h1>MY</h1>
         <h2>PROJECTS.</h2>
       </div>
-      {/* <div className="card-wrapper">
-      {listProjects.map((d) => (
-          <div className="proj">
-            <img src={d.img} alt="" className={d.class} />
-            <div className="overlay">
-              <h3>{d.title}</h3>
-              <h4>{d.subtitle}</h4>
-              <p>{d.description}</p>
-              <div className="btn-container">
-                <a href={d.button1Link} target="_blank" rel="noreferrer">
-                  <i class={d.button1Type}></i>
-                </a>
-                <a href={d.button2Link} target="_blank" rel="noreferrer">
-                  <i class={d.button2Type}></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div> */}
       
       <div className="card-wrapper">
         
       {projectsToShow.map((d) => (
-          <a href={d.button1Link} target="_blank" rel="noreferrer" className="proj">
+          <a href={d.button1Link} target="_blank" rel="noreferrer" className="proj" key={d.id}>
             <div className="left">
                 <img src={d.img} alt="" className={d.class} />
             </div>
             <div className="right">
                 <p className="project-title arrow">
-                  <a href={d.button1Link} target="_blank" rel="noreferrer">
                     {d.title}
-                  </a>
                 </p>
                 <div className="project-description">{d.description}</div>
 
