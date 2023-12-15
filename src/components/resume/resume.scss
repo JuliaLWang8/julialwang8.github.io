@@ -39,103 +39,12 @@
     }
   }
 
-  .row {
-    display: flex;
-    width: 40vw;
-    max-width: 40vw;
-    margin-bottom: 10px;
-
-    .body {
-      //  border: 1px solid black;
-      margin-left: 30px;
-      @include mobile {
-        width: 100%;
-    }
-      h3 {
-        font-family: "Montserrat";
-        font-weight: normal;
-        font-size: 30px;
-        margin-top: 30px;
-        color: $mainColor;
-      }
-      .item {
-        margin-top: 10px;
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 10px;
-        border-bottom: 1px solid #d6d6d6;
-
-        .circle {
-          height: 40px;
-          width: 40px;
-          border-radius: 50%;
-          background-color: $mainColor;
-          margin-right: 10px;
-          margin-left: 10px;
-          align-items: center;
-          justify-content: center;
-          display: flex;
-
-          .item-icon {
-            width: 40px;
-            // height: auto;
-            vertical-align: middle;
-            text-align: center;
-            align-self: center;
-            color: white;
-          }
-        }
-
-        .text {
-          display: flex;
-          flex-direction: column;
-          margin-bottom: 20px;
-
-          p {
-            font-family: "Manrope";
-            font-size: $mainSize;
-            color: $secondaryColor;
-            margin-bottom: 1px;
-
-            a {
-              color: $mainColor;
-            }
-          }
-          ul {
-            font-family: "Manrope";
-            font-size: 18px;
-            color: $secondaryColor;
-            margin-bottom: 1px;
-
-            a {
-              color: $mainColor;
-            }
-          }
-
-          h4 {
-            font-family: "Montserrat";
-            font-weight: normal;
-            font-size: 23px;
-          }
-          h5 {
-            font-family: "Manrope";
-            font-size: 18px;
-          }
-          h6 {
-            font-family: "Manrope";
-            font-size: 18px;
-            color: $mainColor;
-          }
-        }
-      }
-    }
-  }
 
   p {
     font-family: "Manrope";
-    margin-top: 10px;
-    margin-bottom: 70px;
     font-size: $mainSize;
+    max-width: $contentWidth;
+
     a {
       color: $mainColor;
       font-weight: bold;

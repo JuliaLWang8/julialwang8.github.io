@@ -1,7 +1,6 @@
 import "./home.scss";
 import Photo from "../../media/me.png";
-import { init } from "ityped";
-import { useEffect, useRef } from "react";
+import { useEffect, useState } from "react";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import EmailIcon from "@material-ui/icons/Email";
@@ -10,9 +9,29 @@ import { Link } from "react-scroll";
 import About from "../about/about";
 import Resume from "../resume/resume";
 import Projects from "../projects/projects";
-import Contact from "../contact/contact";
 
 export default function Home() {
+    const [navBar, setNavBar] = useState(false);
+
+  
+    const handleResize = () => {
+      if (window.innerWidth > 768) {
+        setNavBar(true);
+      } else {
+        setNavBar(false);
+      }
+    };
+  
+    useEffect(() => {
+      handleResize();
+      window.addEventListener("resize", handleResize);
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }, []);
+  
+    window.addEventListener("resize", handleResize);
+
   return (
     <div className="home" id="home">
       <div className="left">
@@ -22,6 +41,7 @@ export default function Home() {
           </div>
           <h1>Julia L. Wang</h1>
           <h2>Software Engineer</h2>
+          {navBar ? 
           <div className="nav">
             <ul className="nav-list">
               <li className="nav-element">
@@ -78,6 +98,7 @@ export default function Home() {
               </li>
             </ul>
           </div>
+            : <div></div>}
         </div>
         <div className="links">
           <div className="link-wrapper">
