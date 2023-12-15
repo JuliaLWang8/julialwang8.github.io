@@ -11,7 +11,7 @@ function Navbar() {
   const closeMobileMenu = () => setClick(false);
 
   const handleResize = () => {
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth <= 942) {
       setNavBar(true);
     } else {
       setNavBar(false);
@@ -68,6 +68,20 @@ function Navbar() {
               </li>
               <li className="nav-item">
                 <Link
+                  to="experiences"
+                  className="nav-links"
+                  onClick={closeMobileMenu}
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  offset={-65}
+                >
+                  EXPERIENCE
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
                   to="projects"
                   className="nav-links"
                   onClick={closeMobileMenu}
@@ -78,35 +92,6 @@ function Navbar() {
                   offset={-65}
                 >
                   PROJECTS
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  to="resume"
-                  className="nav-links"
-                  onClick={closeMobileMenu}
-                  activeClass="active"
-                  spy={true}
-                  smooth={true}
-                  duration={500}
-                  offset={-65}
-                >
-                  RESUME
-                </Link>
-              </li>
-
-              <li className="nav-item">
-                <Link
-                  to="contact"
-                  className="nav-links"
-                  onClick={closeMobileMenu}
-                  activeClass="active"
-                  spy={true}
-                  smooth={true}
-                  duration={500}
-                  offset={-65}
-                >
-                  CONTACT
                 </Link>
               </li>
             </ul>

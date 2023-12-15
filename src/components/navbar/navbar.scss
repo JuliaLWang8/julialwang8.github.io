@@ -84,7 +84,6 @@
       display: flex;
       align-items: center;
       text-decoration: none;
-      height: 100%;
       font-size: $mainSize;
       padding: 0.5rem 1rem;
       font-family: "Montserrat";
@@ -160,7 +159,7 @@
     transform: translate(-300%, 0%);
   }
   .nav-menu {
-    height: calc(100vh - min(60px, 20vw));
+    height: calc(100vh - 65px);
     width: 300px;
     background-color: #737373;
     position: fixed;
@@ -189,7 +188,6 @@
     width: 300px;
     display: table;
     height: 10vw;
-    margin-top: 30px;
     color: white;
     font-family: "Montserrat";
     &:hover {
@@ -219,7 +217,7 @@
         height: 3px;
         background-color: $mainColor;
         transform-origin: left;
-        transition: all 2s ease;
+        transition: all 1s ease;
       }
 
       &.active {
@@ -253,7 +251,7 @@
     font-size: 50vw;
     // background-color: #242424;
     // color: #fff;
-    transition: all 0.3s ease-out;
+    transition: all 0.5s ease-out;
     &:hover {
       background: #fff;
       color: #242424;
@@ -307,7 +305,8 @@
     right: 0;
     transition: all 1s ease;
     z-index: 1;
-    height: calc(100vh - min(60px, 20vw));
+    height: calc(100vh - 65px);
+    padding-bottom: 30px;
   }
   .nav-item {
     height: 20vw;
@@ -350,7 +349,7 @@
         height: 3px;
         background-color: $mainColor;
         transform-origin: left;
-        transition: all 0.3s ease;
+        transition: all 1s ease;
       }
 
       &.active {

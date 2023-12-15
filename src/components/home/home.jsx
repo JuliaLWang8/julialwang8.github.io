@@ -16,7 +16,7 @@ export default function Home() {
 
   
     const handleResize = () => {
-      if (window.innerWidth > 768) {
+      if (window.innerWidth > 942) {
         setNavBar(true);
       } else {
         setNavBar(false);
@@ -108,7 +108,7 @@ export default function Home() {
             </a>
           </div>
           <div className="link-wrapper">
-            <a href="mailto:julialong.wang@mail.utoronto.ca">
+            <a href="mailto:wang.julia08@gmail.com">
               <EmailIcon className="link" />
             </a>
           </div>

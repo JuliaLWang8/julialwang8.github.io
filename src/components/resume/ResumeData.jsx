@@ -22,7 +22,7 @@ export const listExperiences = [
     title: "Data Engineer Co-op",
     company: "Dataraction, Inc. • Toronto",
     description:
-      "Managed databases and aggregated data, contributing to the development of an internal dashboard for comprehensive insights",
+      "Managed databases and aggregated data, contributing to the development of an internal dashboard.",
     additionalInfo: [
         "Regulated databases, ran raw SQL queries, and aggregated data using JDBC to develop an internal dashboard providing insights on user journey and growth; pitched forecasts and marketing strategy to investors.",
       "Launched a real-time analytics dashboard for streamers on the streaming service using IBM Cloud and AWS.",

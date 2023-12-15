@@ -9,8 +9,8 @@
   @include mobile {
     flex-direction: column;
     padding-top: 65px;
-    height: calc(100vh - 65px);
-    //   align-items: center;
+      align-items: center;
+      justify-content: center;
   }
   @media screen and (orientation: portrait) {
     flex-direction: column;
@@ -25,19 +25,25 @@
     flex-direction: column;
 
     padding-left: calc(40vw - min(25vw, 350px));
-    padding-top:$mainPadding;
-    padding-bottom:$mainPadding;
+    padding-top: $mainPadding;
+    padding-bottom: $mainPadding;
     text-align: left;
 
     @media screen and (orientation: portrait) {
       align-items: center;
       justify-content: center;
       display: flex;
+      padding: $mainPadding;
     }
     .left-top {
       position: sticky;
-      top:$mainPadding;
+      top: $mainPadding;
       right: 0;
+
+      @include mobile {
+        position: relative;
+        top: 0;
+      }
 
       .img-container {
         bottom: -2px;
@@ -60,7 +66,6 @@
           width: 80vw;
           max-height: 400px;
           max-width: 400px;
-          // align-items: flex-start;
         }
         @media screen and (orientation: portrait) {
           height: 80vw;
@@ -84,6 +89,8 @@
 
       @include mobile {
         font-size: 40px;
+        text-align: center;
+        position: relative;
       }
     }
     h2 {
@@ -92,6 +99,12 @@
       color: $secondaryColor;
       font-weight: normal;
       font-size: 30px;
+
+      @include mobile {
+        font-size: 20px;
+        text-align: center;
+        position: relative;
+      }
     }
     .nav {
       // border: 1px solid black;
@@ -99,7 +112,7 @@
       margin-top: 40px;
 
       @include mobile {
-        position: fixed;
+        position: relative;
       }
 
       .nav-list {
@@ -152,7 +165,12 @@
       display: flex;
       flex-direction: row;
       position: sticky;
-      bottom:$mainPadding;
+      bottom: $mainPadding;
+
+      @include mobile {
+        margin-top: 60px;
+        position: relative;
+      }
 
       .link-wrapper {
         display: flex;
@@ -196,18 +214,19 @@
   .right {
     flex: 0.6;
     position: relative;
-    padding-left:$mainPadding;
-    padding-top:$mainPadding;
+    padding-left: $mainPadding;
+    padding-top: $mainPadding;
     padding-right: calc(60vw - $contentWidth - 10vw);
 
     @media screen and (orientation: portrait) {
       justify-content: center;
       align-items: center;
       display: flex;
+      flex-direction: column;
     }
 
     > * {
-      margin-bottom:$mainPadding;
+      margin-bottom: $mainPadding;
     }
   }
 }
