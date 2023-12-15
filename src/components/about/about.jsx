@@ -7,13 +7,13 @@ import { Link } from "react-scroll";
 export default function About() {
   return (
     <div className="about" id="about">
-      <div className="title">
+      {/* <div className="title">
         <h1>ABOUT</h1>
         <h2>ME.</h2>
       </div>
       <div className="subtitle">
         <h4>SWE @ Intel • ML and AI Engineering @ UofT</h4>
-      </div>
+      </div> */}
       <div className="description">
         <p>
           I am a senior in Machine
@@ -23,7 +23,7 @@ export default function About() {
           growth mindset. I have worked as a software engineer at Intel Corporation 
           and as a data engineer at a start-up. In the future, I hope to work at the intersection of business and machine learning.{" "}
         </p>
-        <p>
+        {/* <p>
           Want to know more about me? Download
           <a
             href="https://github.com/JuliaLWang8/JuliaLWang8/blob/main/JuliaWangResume.pdf"
@@ -45,32 +45,7 @@ export default function About() {
             {" "}
             contact me
           </Link>.
-        </p>
-      </div>
-      <div className="links">
-        <div className="link-wrapper">
-          <a
-            href="https://www.linkedin.com/in/julia-long-wang/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <LinkedInIcon className="link" />
-          </a>
-        </div>
-        <div className="link-wrapper">
-          <a
-            href="https://github.com/JuliaLWang8"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <GitHubIcon className="link-smaller" />
-          </a>
-        </div>
-        <div className="link-wrapper">
-          <a href="mailto:julialong.wang@mail.utoronto.ca">
-            <EmailIcon className="link" />
-          </a>
-        </div>
+        </p> */}
       </div>
     </div>
   );

@@ -1,7 +1,6 @@
 @import "../../global.scss";
 
 .resume {
-  background-color: white;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -42,54 +41,10 @@
 
   .row {
     display: flex;
-    width: 80vw;
-    max-width: 80vw;
+    width: 40vw;
+    max-width: 40vw;
     margin-bottom: 10px;
 
-    .nav {
-      // border: 1px solid black;
-      position: sticky;
-      margin-top: 40px;
-
-      @include mobile {
-        position: fixed;
-      }
-
-      .nav-list {
-        text-decoration: none;
-        list-style-type: none;
-        position: -webkit-sticky;
-        position: sticky;
-        top: 120px;
-        width: 180px;
-        max-width: 180px;
-        display: inline-block;
-
-        .nav-element {
-          margin-bottom: 10px;
-          .nav-links {
-            cursor: pointer;
-            color: #000;
-            font-family: "Manrope";
-            text-decoration: none;
-            font-size: $mainSize;
-
-            &:hover {
-              color: $mainColor;
-            }
-
-            &.active {
-              color: $mainColor;
-              margin-left: 20px;
-              list-style-type: "-";
-              transition: all 0.3s ease;
-              // text-decoration: underline $mainColor;
-              // border-bottom: 1px solid $mainColor;
-            }
-          }
-        }
-      }
-    }
     .body {
       //  border: 1px solid black;
       margin-left: 30px;

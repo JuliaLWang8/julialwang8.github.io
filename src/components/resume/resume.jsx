@@ -25,75 +25,7 @@ export default function Resume() {
       </div>
 
       <div className="row">
-        <div className="nav">
-          <ul className="nav-list">
-          <li className="nav-element">
-              <Link
-                to="experiences"
-                className="nav-links"
-                activeClass="active"
-                spy={true}
-                offset={-65}
-                smooth={true}
-                duration={500}
-              >
-                Experience
-              </Link>
-            </li>
-            <li className="nav-element">
-              <Link
-                to="education"
-                className="nav-links"
-                activeClass="active"
-                spy={true}
-                offset={-65}
-                smooth={true}
-                duration={500}
-              >
-                Education
-              </Link>
-            </li>
-            <li className="nav-element">
-              <Link
-                to="skills"
-                className="nav-links"
-                activeClass="active"
-                spy={true}
-                offset={-65}
-                smooth={true}
-                duration={500}
-              >
-                Skills
-              </Link>
-            </li>
-            <li className="nav-element">
-              <Link
-                to="clubs"
-                className="nav-links"
-                activeClass="active"
-                spy={true}
-                offset={-65}
-                smooth={true}
-                duration={500}
-              >
-                Extra-curriculars
-              </Link>
-            </li>
-            <li className="nav-element">
-              <Link
-                to="awards"
-                className="nav-links"
-                activeClass="active"
-                spy={true}
-                offset={-65}
-                smooth={true}
-                duration={500}
-              >
-                Awards
-              </Link>
-            </li>
-          </ul>
-        </div>
+        
         <div className="body">
         <div id="experiences">
             <h3>WORK EXPERIENCE</h3>
