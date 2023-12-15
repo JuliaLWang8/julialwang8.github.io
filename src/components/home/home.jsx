@@ -83,19 +83,6 @@ export default function Home() {
                   PROJECTS
                 </Link>
               </li>
-              <li className="nav-element">
-                <Link
-                  to="awards"
-                  className="nav-links"
-                  activeClass="active"
-                  spy={true}
-                  offset={-65}
-                  smooth={true}
-                  duration={500}
-                >
-                  AWARDS
-                </Link>
-              </li>
             </ul>
           </div>
             : <div></div>}

@@ -28,6 +28,7 @@ export const listExperiences = [
       "Launched a real-time analytics dashboard for streamers on the streaming service using IBM Cloud and AWS.",
     ],
     tech: ["SQL", "JavaScript", "IBM Cloud", "AWS"],
+    button1Link: "https://dotslive.com/home"
   },
   {
     startDate: "SEP -- DEC 2020",
@@ -40,6 +41,7 @@ export const listExperiences = [
       "Implemented IBM Watson and organized beta testing to design a chatbot enhancing user experience.",
     ],
     tech: ["Dart", "Flutter"],
+    button1Link: "https://dotslive.com/home"
   },
   {
     startDate: "MAY -- AUG 2019",
