@@ -12,9 +12,6 @@ export default function Contact() {
         <h2>ME.</h2>
       </div>
       <div className="row">
-        {/* <div className="img-wrapper">
-          <img src={Photo} alt="" />
-        </div> */}
         <div className="card-container">
           <div className="card">
             <div className="icon-container">
@@ -63,16 +60,6 @@ export default function Contact() {
               >
                 GitHub repository
               </a>.</p>
-      {/* <div className="form-container">
-        <div className='form'>
-          <form>
-            <input type="text" placeholder="Your Name"/>
-            <input type="text" placeholder="Your email"/>
-            <textarea placeholder="Message"></textarea>
-            <button type="submit">Send</button>
-          </form>
-        </div>
-      </div> */}
     </div>
   );
 }

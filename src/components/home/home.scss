@@ -25,8 +25,8 @@
     flex-direction: column;
 
     padding-left: calc(40vw - min(25vw, 350px));
-    padding-top: 5vw;
-    padding-bottom: 5vw;
+    padding-top:$mainPadding;
+    padding-bottom:$mainPadding;
     text-align: left;
 
     @media screen and (orientation: portrait) {
@@ -36,7 +36,7 @@
     }
     .left-top {
       position: sticky;
-      top: 5vw;
+      top:$mainPadding;
       right: 0;
 
       .img-container {
@@ -122,13 +122,13 @@
             font-size: $mainSize;
 
             &::before {
-                display: inline-block;
-                content: "";
-                border-top: 1.5px solid $secondaryColor;
-                width: 30px;
-                transform: translateY(-5px);
-                justify-content: center;
-                margin-right: 5px;
+              display: inline-block;
+              content: "";
+              border-top: 1.5px solid $secondaryColor;
+              width: 30px;
+              transform: translateY(-5px);
+              justify-content: center;
+              margin-right: 5px;
             }
 
             &:hover {
@@ -152,7 +152,7 @@
       display: flex;
       flex-direction: row;
       position: sticky;
-      bottom: 5vw;
+      bottom:$mainPadding;
 
       .link-wrapper {
         display: flex;
@@ -171,7 +171,7 @@
             color: #bebebe;
 
             &:hover {
-                transition: all 1s ease out;
+              transition: all 1s ease out;
               color: $mainColor;
             }
           }
@@ -184,7 +184,7 @@
             color: #bebebe;
 
             &:hover {
-                transition: all 1s ease out;
+              transition: all 1s ease out;
               color: $mainColor;
             }
           }
@@ -196,9 +196,8 @@
   .right {
     flex: 0.6;
     position: relative;
-    padding-left: 5vw;
-    padding-top: 5vw;
-    padding-bottom: 5vw;
+    padding-left:$mainPadding;
+    padding-top:$mainPadding;
     padding-right: calc(60vw - $contentWidth - 10vw);
 
     @media screen and (orientation: portrait) {
@@ -208,7 +207,7 @@
     }
 
     > * {
-      margin-bottom: 5vw;
+      margin-bottom:$mainPadding;
     }
   }
 }

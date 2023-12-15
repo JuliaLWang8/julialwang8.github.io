@@ -24,7 +24,7 @@ export default function About() {
           through hard work, commitment to quality, and a growth mindset. I have previously
           worked as a software engineer at <b>Intel</b> and as a data engineer at a <b>start-up</b>.</p>
           <p>
-            When I am not coding, you will most likely find me reading books or playing board games with friends. 
+            When I am not coding, you will most likely find me reading books, trying new food, or playing board games with friends. 
           </p>
         
         
