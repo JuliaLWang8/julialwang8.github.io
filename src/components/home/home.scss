@@ -81,7 +81,7 @@
       font-size: 50px;
       color: $mainColor;
       padding-top: 20px;
-      
+
       @include mobile {
         font-size: 40px;
       }
@@ -157,7 +157,8 @@
       .link-wrapper {
         display: flex;
         align-items: center;
-        padding-right: 10px;
+        padding-right: 15px;
+        transition: all 1s ease out;
         a {
           text-decoration: none;
 
@@ -166,10 +167,11 @@
             width: 6vh;
             max-height: 40px;
             max-width: 40px;
-
-            color: $secondaryColor;
+            transition: all 1s ease out;
+            color: #bebebe;
 
             &:hover {
+                transition: all 1s ease out;
               color: $mainColor;
             }
           }
@@ -179,9 +181,10 @@
             width: 5vh;
             max-height: 30px;
             max-width: 30px;
-            color: $secondaryColor;
+            color: #bebebe;
 
             &:hover {
+                transition: all 1s ease out;
               color: $mainColor;
             }
           }

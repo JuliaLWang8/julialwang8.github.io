@@ -16,36 +16,18 @@ export default function About() {
       </div> */}
       <div className="description">
         <p>
-          I am a senior in Machine
-          Learning & Artificial Intelligence and have completed a minor in Business at the
-          University of Toronto. Passionate about innovation in technology, I am
-          eager make a global impact through hard work, commitment to quality, and a
-          growth mindset. I have worked as a software engineer at Intel  
-          and as a data engineer at a start-up. In the future, I hope to work at the intersection of business and machine learning.{" "}
-        </p>
-        {/* <p>
-          Want to know more about me? Download
-          <a
-            href="https://github.com/JuliaLWang8/JuliaLWang8/blob/main/JuliaWangResume.pdf"
-            target="_blank"
-            rel="noreferrer"
-          >
-            {" "}
-            my resume
-          </a>{" "}
-          or
-          <Link
-            to="contact"
-            className="contactt"
-            activeClass="active"
-            spy={true}
-            smooth={true}
-            duration={500}
-          >
-            {" "}
-            contact me
-          </Link>.
-        </p> */}
+          I am a senior Engineering Science student in <b>Machine Learning & Artificial Intelligence</b> and have completed a minor in Business at the <b>University of Toronto</b>.
+          </p>
+          <p>          
+          Passionate
+          about innovation in technology, I am eager make a global impact
+          through hard work, commitment to quality, and a growth mindset. I have previously
+          worked as a software engineer at <b>Intel</b> and as a data engineer at a <b>start-up</b>.</p>
+          <p>
+            When I am not coding, you will most likely find me reading books or playing board games with friends. 
+          </p>
+        
+        
       </div>
     </div>
   );

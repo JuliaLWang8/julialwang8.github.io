@@ -14,14 +14,11 @@
         p {
             font-size: $mainSize;
             font-family: "Manrope";
-
-            .contactt, a {
-                color: $mainColor;
-                font-weight: bold;
-                cursor: pointer;
-                background-color: none;
-            }
+            color: #5a5a5a;
+            padding-bottom: 20px;
         }
     }
+
+    margin-bottom: calc(5vw - 20px);
 
 }

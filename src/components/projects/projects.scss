@@ -121,7 +121,7 @@
           font-family: $mainFont;
           font-size: $mainSize - 3;
           color: black;
-          margin-bottom: 10px;
+          margin-bottom: 0;
         }
 
         .arrow {
@@ -147,7 +147,10 @@
           color: #5a5a5a;
           font-size: $mainSize - 3;
           font-family: "Manrope";
-          margin-bottom: 0;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          line-height: 24px;
+
           @include mobile {
             font-size: 15px;
           }
