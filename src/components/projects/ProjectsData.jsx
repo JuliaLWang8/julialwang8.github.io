@@ -9,7 +9,7 @@ export const listProjects = [
     button1Type: "fab fa-github",
     button1Link: "https://github.com/Gene2Lead-Ltd/DeepLinC",
     img: "https://github.com/JuliaLWang8/julialwang8.github.io/blob/master/src/media/proteinReactivity.png?raw=true",
-    tech: ["Python", "PyTorch", "XGBoost", "3D CNN", "Deep CNN"],
+    tech: ["Python", "PyTorch", "3D CNN", "Deep CNN"],
     startDate: "Sep",
     endDate: "Dec 2023"
   },

@@ -2,12 +2,12 @@ import "./App.scss";
 import "./global.scss";
 import Navbar from "./components/navbar/navbar";
 import Home from "./components/home/home";
-import About from "./components/about/about";
-import Resume from "./components/resume/resume";
-import Projects from "./components/projects/projects";
-import Contact from "./components/contact/contact";
+import { useEffect } from "react";
+import { useState } from "react";
+import { motion } from "framer-motion";
 
 function App() {
+
   return (
     <div className="App">
       <Navbar />

@@ -1,7 +1,10 @@
 @import "../../global.scss";
 
 .home {
-  background-color: $offWhiteColor;
+//   background-color: radial-gradient(at 0%0%, $offWhiteColor, red);
+    // background: radial-gradient(circle at 8rem 14px, #e66465, #9198e5);
+background-color: $offWhiteColor;
+color: $offWhiteColor;
   display: flex;
   scroll-snap-align: start;
   width: 100%;
@@ -79,13 +82,13 @@
         }
       }
     }
-    h1 {
+    .name {
       position: sticky;
       font-family: "Inter";
       font-weight: bold;
       font-size: 50px;
       color: $mainColor;
-      padding-top: 20px;
+      margin-top: 20px;
 
       @include mobile {
         font-size: 40px;
@@ -229,4 +232,16 @@
       margin-bottom: $mainPadding;
     }
   }
+  .cursor {
+    background: transparent;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 999;
+  }
+  
 }
