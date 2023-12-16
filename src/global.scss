@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Manrope:regular,bold,italic);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:regular,bold,italic);
-@import url(https://fonts.googleapis.com/css?family=Manrope:regular,bold,italic);
+@import url(https://fonts.googleapis.com/css?family=Inter:regular,bold,italic);
 
 
 $mainColor: #7f5463;
@@ -8,10 +8,13 @@ $secondaryColor: #797979;
 $mainLightColor: #faf7f8;
 $offWhiteColor: #f2f2f2;
 $mainSize: 20px;
+$mainFont: "Manrope";
+$contentWidth: 575px;
+$mainPadding: 5vw;
 
-$width: 750px;
+$mobileWidth: 942px;
 @mixin mobile {
-    @media (max-width: #{$width}){
+    @media (max-width: #{$mobileWidth}){
         @content
     }
 }

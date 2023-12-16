@@ -2,6 +2,29 @@ export const marble = require("../../media/MeWithRobot.jpg");
 
 export const listProjects = [
   {
+    id: 14,
+    title: "Covalent Reactivity of Proteins",
+    subtitle: "UofT Bioinformatics Research 2023",
+    description: "Developed and validated machine learning models to predict covalent reactivity of amino acid active sites towards optimizing drug design processes.",
+    button1Type: "fab fa-github",
+    button1Link: "https://github.com/Gene2Lead-Ltd/DeepLinC",
+    img: "https://github.com/JuliaLWang8/julialwang8.github.io/blob/master/src/media/proteinReactivity.png?raw=true",
+    tech: ["Python", "PyTorch", "3D CNN", "Deep CNN"],
+    startDate: "Sep",
+    endDate: "Dec 2023"
+  },
+  {
+    id: 13,
+    title: "Events Hub Web App",
+    description: "Developed and deployed an events hub, implementing a robust CI/CD flow and automated unit, regression, and load testing for seamless deployment and reliability.",
+    button1Type: "fab fa-github",
+    img: "https://github.com/JuliaLWang8/julialwang8.github.io/blob/master/src/media/beaverbuzz.png?raw=true",
+    button1Link: "https://github.com/ECE444-2023Fall/project-1-web-application-design-group22-premium-potatoes",
+    tech: ["React", "Flask", "PostgreSQL", "CSS"],
+    startDate: "Sep. 2023",
+    endDate: "Nov 2023"
+  },
+  {
     id: 12,
     title: "Custom Keyboard",
     subtitle: "RP2040 Stamp Microcontroller",

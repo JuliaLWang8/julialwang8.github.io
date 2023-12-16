@@ -7,70 +7,27 @@ import { Link } from "react-scroll";
 export default function About() {
   return (
     <div className="about" id="about">
-      <div className="title">
+      {/* <div className="title">
         <h1>ABOUT</h1>
         <h2>ME.</h2>
       </div>
       <div className="subtitle">
         <h4>SWE @ Intel • ML and AI Engineering @ UofT</h4>
-      </div>
+      </div> */}
       <div className="description">
         <p>
-          I am a senior in Machine
-          Learning & Artificial Intelligence and have completed a minor in Business at the
-          University of Toronto. Passionate about innovation in technology, I am
-          eager make a global impact through hard work, commitment to quality, and a
-          growth mindset. I have worked as a software engineer at Intel Corporation 
-          and as a data engineer at a start-up. In the future, I hope to work at the intersection of business and machine learning.{" "}
-        </p>
-        <p>
-          Want to know more about me? Download
-          <a
-            href="https://github.com/JuliaLWang8/JuliaLWang8/blob/main/JuliaWangResume.pdf"
-            target="_blank"
-            rel="noreferrer"
-          >
-            {" "}
-            my resume
-          </a>{" "}
-          or
-          <Link
-            to="contact"
-            className="contactt"
-            activeClass="active"
-            spy={true}
-            smooth={true}
-            duration={500}
-          >
-            {" "}
-            contact me
-          </Link>.
-        </p>
-      </div>
-      <div className="links">
-        <div className="link-wrapper">
-          <a
-            href="https://www.linkedin.com/in/julia-long-wang/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <LinkedInIcon className="link" />
-          </a>
-        </div>
-        <div className="link-wrapper">
-          <a
-            href="https://github.com/JuliaLWang8"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <GitHubIcon className="link-smaller" />
-          </a>
-        </div>
-        <div className="link-wrapper">
-          <a href="mailto:julialong.wang@mail.utoronto.ca">
-            <EmailIcon className="link" />
-          </a>
-        </div>
+          I am a senior Engineering Science student in <b>Machine Learning & Artificial Intelligence</b> and have completed a minor in Business at the <b>University of Toronto</b>.
+          </p>
+          <p>          
+          Passionate
+          about innovation in technology, I am eager make a global impact
+          through hard work, commitment to quality, and a growth mindset. I have previously
+          worked as a software engineer at <b>Intel</b> and as a data engineer at a <b>start-up</b>.</p>
+          <p>
+            When I am not coding, you will most likely find me reading books, trying new food, or playing board games with friends. 
+          </p>
+        
+        
       </div>
     </div>
   );

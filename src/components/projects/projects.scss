@@ -1,54 +1,11 @@
 @import "../../global.scss";
 
 .projects {
-  background-color: $mainLightColor;
-  // height: 100vh;
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding-bottom: 45px;
+  align-items: flex-start;
 
-  .title {
-    display: flex;
-    flex-direction: row;
-    margin-top: 10px;
-    @include mobile {
-      align-items: center;
-    }
-
-    h1 {
-      font-family: "Montserrat";
-      font-weight: lighter;
-      font-size: 60px;
-      margin: 10px 0;
-      color: black;
-      margin-right: 15px;
-      @include mobile {
-        font-size: 40px;
-      }
-    }
-    h2 {
-      font-family: "Montserrat";
-      font-weight: lighter;
-      font-size: 60px;
-      margin: 10px 0;
-      color: $mainColor;
-      @include mobile {
-        font-size: 40px;
-      }
-    }
-  }
-  p {
-    font-family: "Manrope";
-    font-size: $mainSize;
-    margin-bottom: 20px;
-    @include mobile {
-      // margin: $mainSize;
-      margin-right: $mainSize;
-    }
-  }
-  
   .card-wrapper {
     display: flex;
     flex-direction: row;
@@ -59,22 +16,21 @@
     gap: 20px;
 
     .proj {
-      background-color: white;
       width: 45vw;
-      max-width: 550px;
+      max-width: $contentWidth;
       margin: 0.5vw;
       display: flex;
       flex-direction: row;
       white-space: normal;
       object-fit: cover;
-      transition: all 0.5s ease;
+      transition: all 0.2s ease;
       position: relative;
       border-radius: 10px;
-      border-color: #e3e4e6;
       border-style: solid;
       border-width: thin;
       height: auto;
       overflow: hidden;
+      border-color: transparent;
 
       @include mobile {
         width: 80vw;
@@ -85,126 +41,155 @@
 
       &:hover {
         // transform: scale(1.05);
-        border-color: transparent;
-        box-shadow:0 4px 8px 0 $mainColor, 0 6px 20px 0 $mainColor;
+        background-color: rgba(255, 255, 255, 0.4);
+        border-color: #e3e4e6;
+        // box-shadow:0 4px 8px 0 $mainColor, 0 6px 20px 0 $mainColor;
       }
 
-.left {
-  bottom: -2px;
-  right: 3vw;
-  width: 150px; // set width to 150px
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  z-index: 5;
-  padding: 1vw;
+      @include mobile {
+        background-color: rgba(255, 255, 255, 0.4);
+        border-color: #e3e4e6;
+        &:hover {
+          // transform: scale(1.05);
+          box-shadow:0 4px 8px 0 $mainColor, 0 6px 20px 0 $mainColor;
+        }
+      }
 
-  img {
-    display: block;
-    width: 133px;
-    height: 75px;
-    object-fit: cover;
-    position: relative;
-    object-position: bottom;
-  }
+      .left {
+        bottom: -2px;
+        right: 3vw;
+        width: 150px; // set width to 150px
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        z-index: 5;
+        padding: 1vw;
 
-  @include mobile {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    img {
-      width: 100%;
-      height: 50%;
-      max-height: 25vh;
-      object-fit: cover;
-      object-position: bottom;
-    }
-  }
-}
+        p {
+          font-family: $mainFont;
+          font-weight: bold;
+          font-size: 17px;
+          color: $secondaryColor;
 
-.right {
-  flex: 1; // set flex to 1 to take up the rest of the width
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  padding-left: 1vw;
-  padding-top: 1vw;
-  padding-bottom: 1vw;
-  padding-right: 1vw;
+          @include mobile {
+            font-size: 15px;
+            padding-top: 10px;
+          }
+        }
 
-  @include mobile {
-    padding: 20px;
-    margin: 0;
-  }
+        img {
+          display: block;
+          width: 133px;
+          height: 75px;
+          object-fit: cover;
+          position: relative;
+          object-position: bottom;
+          border: transparent;
+        }
 
-  .project-title {
-    color: $mainColor;
-    font-size: $mainSize;
-    font-family: "Montserrat";
-    margin-bottom: 0;
-    font-weight: bold;
+        @include mobile {
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+          padding: 0;
+          margin: 0;
+          img {
+            width: 100%;
+            height: 50%;
+            max-height: 25vh;
+            object-fit: cover;
+            object-position: bottom;
+          }
+        }
+      }
 
-    a {
-      color: $secondaryColor;
-      
-    }
-  }
+      .right {
+        flex: 1; // set flex to 1 to take up the rest of the width
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding-left: 1vw;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        padding-right: 1vw;
 
-  .arrow {
-    color: $secondaryColor;
-    font-family: Arial, Helvetica, sans-serif;
+        @include mobile {
+          padding: 20px;
+          margin: 0;
+        }
 
-    &::after {
-        display: inline-block;
-        content: "\2197"; // arrow unicode
-        padding-left: 1px;
-        -webkit-transition: transform 0.2s ease-out;
-        -moz-transition: transform 0.2s ease-out;
-        -ms-transition: transform 0.2s ease-out;
-        -o-transition: transform 0.2s ease-out;
-        transition: transform 0.2s ease-out;
-    }
+        .project-title {
+          color: $mainColor;
+          font-size: $mainSize;
+          font-family: "Inter";
+          margin-bottom: 0;
+          font-weight: bold;
 
-    @include mobile {
+          a {
+            color: $secondaryColor;
+          }
+        }
 
-    }
+        .project-company{
+          font-family: $mainFont;
+          font-size: $mainSize - 3;
+          color: black;
+          margin-bottom: 0;
+        }
 
-}
+        .arrow {
+          color: $secondaryColor;
+          font-family: "Inter";
 
+          &::after {
+            display: inline-block;
+            content: "\2197"; // arrow unicode
+            padding-left: 1px;
+            -webkit-transition: transform 0.2s ease-out;
+            -moz-transition: transform 0.2s ease-out;
+            -ms-transition: transform 0.2s ease-out;
+            -o-transition: transform 0.2s ease-out;
+            transition: transform 0.2s ease-out;
+          }
 
-  .project-description {
-    color: black;
-    font-size: $mainSize - 3;
-    font-family: "Manrope";
-    margin-bottom: 0;
-    @include mobile {
-      font-size: 15px;
-    }
-  }
+          @include mobile {
+          }
+        }
 
-  ul {
-    margin-top: 1vh;
-  li {
-    display: inline-block;
-    margin-right: 4px;
-    background-color: $mainColor;
-    color: white;
-    border-radius: 12px;
-    padding: 3px;
-    font-family: "Manrope";
-    font-size: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
+        .project-description {
+          color: #5a5a5a;
+          font-size: $mainSize - 3;
+          font-family: "Manrope";
+          margin-top: 10px;
+          margin-bottom: 10px;
+          line-height: 24px;
 
-  @media screen and (orientation:portrait) {
-    justify-content: center;
-  }
-}
-      
+          @include mobile {
+            font-size: 15px;
+          }
+        }
+
+        ul {
+          margin-top: 1vh;
+          margin-bottom: 0;
+          li {
+            display: inline-block;
+            margin-right: 4px;
+            background-color: $mainColor;
+            color: white;
+            border-radius: 12px;
+            padding: 3px;
+            font-family: $mainFont;
+            font-size: 14px;
+            padding-left: 10px;
+            padding-right: 10px;
+          }
+        }
+
+        @media screen and (orientation: portrait) {
+          justify-content: center;
+        }
+      }
     }
 
     .proj:hover > .right .project-title a {
@@ -214,19 +199,17 @@
     .proj:hover > .right .arrow {
       color: $mainColor;
 
-        &::after {
-            -webkit-transform: translate(4px, -4px);
-            -moz-transform: translate(4px, -4px);
-            -ms-transform: translate(4px, -4px);
-            -o-transform: translate(4px, -4px);
-            transform: translate(4px, -4px);
-   
-        }
+      &::after {
+        -webkit-transform: translate(4px, -4px);
+        -moz-transform: translate(4px, -4px);
+        -ms-transform: translate(4px, -4px);
+        -o-transform: translate(4px, -4px);
+        transform: translate(4px, -4px);
+      }
     }
     .proj:hover > .left img {
-        box-shadow: 0 0 0 #9d9d9d, 0 2px 7px 0 #9d9d9d;
-        // box-shadow:0 0 0 3px #9d9d9d;
-        transition: 0.5s ease-out;
+      border: 1px solid #e3e4e6;
+      transition: all 0.2s ease-out;
     }
   }
 
@@ -234,17 +217,25 @@
     margin-top: 30px;
     background-color: transparent;
     border: none;
-    font-family: "Montserrat";
+    font-family: "Inter";
     color: $secondaryColor;
     font-size: $mainSize;
     font-weight: bold;
     padding-left: 10px;
     padding-right: 10px;
+    margin-bottom: 10px;
+
+    a {
+      color: $secondaryColor;
+      &:hover {
+        color: $mainColor;
+      }
+    }
 
     &::after {
       display: inline-block;
       padding-left: 8px;
-      content: "\0279E"; // arrow right unicode
+      content: "\2192"; // arrow right unicode
       -webkit-transition: transform 0.2s ease-out;
       -moz-transition: transform 0.2s ease-out;
       -ms-transition: transform 0.2s ease-out;
@@ -253,18 +244,46 @@
     }
 
     &:hover {
-        color: $mainColor;
-        text-decoration: underline;
-        text-underline-position: below;
-        cursor: pointer;
+      color: $mainColor;
+      text-decoration: underline;
+      text-underline-position: below;
+      cursor: pointer;
 
-        &::after {
-            -webkit-transform: translateX(5px);
-            -moz-transform: translateX(5px);
-            -ms-transform: translateX(5px);
-            -o-transform: translateX(5px);
-            transform: translateX(5px);
-        }
+      &::after {
+        -webkit-transform: translateX(5px);
+        -moz-transform: translateX(5px);
+        -ms-transform: translateX(5px);
+        -o-transform: translateX(5px);
+        transform: translateX(5px);
+      }
+    }
+  }
+
+  p {
+    font-family: $mainFont;
+    font-size: $mainSize;
+    max-width: $contentWidth;
+
+    a {
+      color: $mainColor;
+      font-weight: bold;
+      cursor: pointer;
+      background-color: none;
+    }
+  }
+
+  .bot {
+    font-family: $mainFont;
+    font-size: $mainSize;
+    max-width: $contentWidth;
+    color: $secondaryColor;
+    margin-bottom: 10px;
+
+    a {
+      color: $mainColor;
+      font-weight: bold;
+      cursor: pointer;
+      background-color: none;
     }
   }
 }

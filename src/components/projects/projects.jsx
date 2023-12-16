@@ -10,10 +10,6 @@ export default function Projects() {
 
   return (
     <div className="projects" id="projects">
-      <div className="title">
-        <h1>MY</h1>
-        <h2>PROJECTS.</h2>
-      </div>
       
       <div className="card-wrapper">
         
@@ -42,7 +38,13 @@ export default function Projects() {
       {!showAll && (
         <button className="right-arrow" onClick={() => setShowAll(true)}>Show More</button>
       )}
-      
+      {/* <p className="bot">Like this website? Check out the code on <a
+                href="https://github.com/JuliaLWang8/julialwang8.github.io"
+                target="_blank"
+                rel="noreferrer"
+              >
+                GitHub
+              </a>.</p> */}
     </div>
   );
 }

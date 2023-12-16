@@ -1,181 +1,247 @@
-@import '../../global.scss';
+@import "../../global.scss";
 
 .home {
-    background-color: $offWhiteColor;
-    height: 100vh;
+//   background-color: radial-gradient(at 0%0%, $offWhiteColor, red);
+    // background: radial-gradient(circle at 8rem 14px, #e66465, #9198e5);
+background-color: $offWhiteColor;
+color: $offWhiteColor;
+  display: flex;
+  scroll-snap-align: start;
+  width: 100%;
+
+  @include mobile {
+    flex-direction: column;
+    padding-top: 65px;
+      align-items: center;
+      justify-content: center;
+  }
+  @media screen and (orientation: portrait) {
+    flex-direction: column;
+    display: flex-start;
+  }
+
+  .left {
+    flex: 0.4;
     display: flex;
-    scroll-snap-align: start;
-    width: 100%;
+    justify-content: space-between;
+    // align-items: center;
+    flex-direction: column;
 
-    @include mobile{
-        flex-direction: column;
-        padding-top: 65px;
-        height: calc(100vh - 65px);
-    //   align-items: center;
-    }
-    @media screen and (orientation:portrait) {
-        flex-direction: column;
-        display: flex-start;
-        // padding-top: 70px;
-        // height: calc(100vh - 65px);
-    }
+    padding-left: calc(40vw - min(25vw, 350px));
+    padding-top: $mainPadding;
+    padding-bottom: $mainPadding;
+    text-align: left;
 
-    .left {
-        flex: 0.5;
-        overflow: hidden;
+    @media screen and (orientation: portrait) {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      padding: $mainPadding;
+    }
+    .left-top {
+      position: sticky;
+      top: $mainPadding;
+      right: 0;
+
+      @include mobile {
         position: relative;
+        top: 0;
+      }
+
+      .img-container {
+        bottom: -2px;
+        right: 3vw;
+        width: 25vw;
+        height: 25vw;
+        max-height: 300px;
+        max-width: 300px;
+
+        background-color: $mainColor;
+        border-radius: 50%;
         display: flex;
-        align-items: flex-end;
         justify-content: center;
-        @media screen and (orientation:portrait) {
-            align-items: center;
-            justify-content: center;
-            display: flex;
+        align-items: flex-end;
+        z-index: 5;
+        overflow: hidden;
+
+        @include mobile {
+          height: 80vw;
+          width: 80vw;
+          max-height: 400px;
+          max-width: 400px;
+        }
+        @media screen and (orientation: portrait) {
+          height: 80vw;
+          width: 80vw;
+          max-height: 400px;
+          max-width: 400px;
         }
 
-        .img-container {
-            bottom: -2px;
-            right: 3vw;
-            width: 35vw;
-            height: 35vw;
-            background-color: $mainColor;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-            z-index: 5;
-
-            @include mobile{
-                height: 80vw;
-                width: 80vw;
-                max-height: 400px;
-                max-width: 400px;
-                // align-items: flex-start;
-            }
-            @media screen and (orientation:portrait) {
-                height: 80vw;
-                width: 80vw;
-                max-height: 400px;
-                max-width: 400px;
-            }
-
-            img {
-                width: 75%;
-            }
+        img {
+          width: 70%;
         }
+      }
     }
+    .name {
+      position: sticky;
+      font-family: "Inter";
+      font-weight: bold;
+      font-size: 50px;
+      color: $mainColor;
+      margin-top: 20px;
 
-    .right {
-        flex: 0.5;
+      @include mobile {
+        font-size: 40px;
+        text-align: center;
         position: relative;
-        @media screen and (orientation:portrait) {
-            justify-content: center;
-            align-items: center;
-            display: flex;
-        }
-        .wrapper {
-            // width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            padding-left: 50px;
-            justify-content: center;
-            @include mobile {
-                display: flex-start;
-                justify-content: flex-start;
-            }
-
-            h2 {
-                font-family: 'Manrope';
-                font-size: 35px;
-                font-weight: normal;
-                color: $mainColor;
-                @include mobile {
-                    font-size: 30px;
-                    margin-top: $mainSize;
-                }
-            }
-
-            h1 {
-                font-family: 'Montserrat';
-                font-weight: lighter;
-                font-size: 60px;
-                margin: 10px 0;
-                @include mobile {
-                    font-size: 40px;
-                }
-            }
-
-            h3 {
-                font-family: 'Manrope';
-                font-weight: normal;
-                font-size: 30px;
-                height: 90px;
-
-                @include mobile {
-                    font-size: 25px;
-                }
-                span {
-                    color: $mainColor;
-                    font-size: inherit;
-                }
-
-                .ityped-cursor {
-                    animation: blink 1s infinite;
-
-                    @keyframes blink {
-                        50% {
-                            opacity: 1;
-                        }
-                        100% {
-                            opacity: 0;
-                        }
-    
-                    }
-                }
-            
-            }
-        }
-        
-        .arrow-container {
-            width: 25px;
-            animation: bounce 2500ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
-            cursor: pointer;
-            height: 20px;
-            position: absolute;
-            bottom: 20px;
-            left: 30%;
-
-            @include mobile {
-                left: 48%;
-            }
-            @media screen and (orientation:portrait) {
-                left: 50%;
-            }
-            @keyframes bounce {
-                50% {
-                    transform: translateY(-15px);
-                }
-            }
-        }
-        .arrow-down {
-            height: 3px;
-            background: $mainColor;
-            transform: rotate(45deg);
-            transform-origin: 0% 0%;
-            border-radius: 5px;
-            &:after {
-                content: '';
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                bottom: 0;
-                left: 100%;
-                border-radius: 5px;
-                background: $mainColor;
-                transform: rotate(-90deg);
-                transform-origin: 0% 100%;
-            }
-        }
+      }
     }
+    h2 {
+      position: sticky;
+      font-family: $mainFont;
+      color: $secondaryColor;
+      font-weight: normal;
+      font-size: 30px;
+
+      @include mobile {
+        font-size: 20px;
+        text-align: center;
+        position: relative;
+      }
+    }
+    .nav {
+      // border: 1px solid black;
+      position: sticky;
+      margin-top: 40px;
+
+      @include mobile {
+        position: relative;
+      }
+
+      .nav-list {
+        text-decoration: none;
+        list-style-type: none;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 120px;
+        display: inline-block;
+
+        .nav-element {
+          margin-bottom: 10px;
+
+          .nav-links {
+            cursor: pointer;
+            color: $secondaryColor;
+            font-family: "Manrope";
+            font-weight: bold;
+            text-decoration: none;
+            font-size: $mainSize;
+
+            &::before {
+              display: inline-block;
+              content: "";
+              border-top: 1.5px solid $secondaryColor;
+              width: 30px;
+              transform: translateY(-5px);
+              justify-content: center;
+              margin-right: 5px;
+            }
+
+            &:hover {
+              color: $mainColor;
+            }
+
+            &.active {
+              color: $mainColor;
+              &::before {
+                transition: all 0.7s ease;
+                border-top: 1.5px solid $mainColor;
+                width: 50px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .links {
+      display: flex;
+      flex-direction: row;
+      position: sticky;
+      bottom: $mainPadding;
+
+      @include mobile {
+        margin-top: 60px;
+        position: relative;
+      }
+
+      .link-wrapper {
+        display: flex;
+        align-items: center;
+        padding-right: 15px;
+        transition: all 1s ease out;
+        a {
+          text-decoration: none;
+
+          .link {
+            height: 6vh;
+            width: 6vh;
+            max-height: 40px;
+            max-width: 40px;
+            transition: all 1s ease out;
+            color: #bebebe;
+
+            &:hover {
+              transition: all 1s ease out;
+              color: $mainColor;
+            }
+          }
+
+          .link-smaller {
+            height: 5vh;
+            width: 5vh;
+            max-height: 30px;
+            max-width: 30px;
+            color: #bebebe;
+
+            &:hover {
+              transition: all 1s ease out;
+              color: $mainColor;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .right {
+    flex: 0.6;
+    position: relative;
+    padding-left: $mainPadding;
+    padding-top: $mainPadding;
+    padding-right: calc(60vw - $contentWidth - 10vw);
+
+    @media screen and (orientation: portrait) {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    > * {
+      margin-bottom: $mainPadding;
+    }
+  }
+  .cursor {
+    background: transparent;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 999;
+  }
+  
 }
