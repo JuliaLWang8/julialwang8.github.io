@@ -5,6 +5,7 @@
     display: flex; 
     flex-direction: column;
     align-items: center;
+    padding-top: $mainPadding;
 
     .description {
         max-width: $contentWidth;
