@@ -149,7 +149,11 @@ color: $offWhiteColor;
             }
 
             &:hover {
-              color: $mainColor;
+              &::before {
+                transition: all 0.7s ease;
+                border-top: 1.5px solid $secondaryColor;
+                width: 50px;
+              }
             }
 
             &.active {
@@ -190,7 +194,7 @@ color: $offWhiteColor;
             max-height: 40px;
             max-width: 40px;
             transition: 0.3s;
-            color: #bebebe;
+            color: #bababa;
 
             &:hover {
               transition: 0.3s;
@@ -203,7 +207,7 @@ color: $offWhiteColor;
             width: 5vh;
             max-height: 30px;
             max-width: 30px;
-            color: #bebebe;
+            color: #bababa;
             transition: 0.3s;
 
             &:hover {
@@ -231,7 +235,7 @@ color: $offWhiteColor;
     }
 
     > * {
-      margin-bottom: $mainPadding;
+      padding-bottom: $mainPadding;
     }
   }
   .cursor {

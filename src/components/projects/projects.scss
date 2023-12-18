@@ -123,6 +123,7 @@
           font-size: $mainSize;
           font-family: "Inter";
           margin-bottom: 0;
+          padding-bottom: 0;
           font-weight: bold;
 
           a {
@@ -135,6 +136,7 @@
           font-size: $mainSize - 3;
           color: black;
           margin-bottom: 0;
+          padding-bottom: 0;
         }
 
         .arrow {
@@ -161,7 +163,8 @@
           font-size: $mainSize - 3;
           font-family: "Manrope";
           margin-top: 10px;
-          margin-bottom: 10px;
+          // margin-bottom: 10px;
+          padding-bottom: 10px;
           line-height: 24px;
 
           @include mobile {
@@ -172,6 +175,7 @@
         ul {
           margin-top: 1vh;
           margin-bottom: 0;
+          padding-bottom: 0;
           li {
             display: inline-block;
             margin-right: 4px;
