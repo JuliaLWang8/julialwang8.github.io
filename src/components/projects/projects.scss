@@ -8,12 +8,22 @@
 
   .card-wrapper {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
     gap: 20px;
+
+    @keyframes slideInFromRight {
+      0% {
+        transform: translateX(30px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
 
     .proj {
       width: 45vw;
@@ -50,10 +60,15 @@
         background-color: rgba(255, 255, 255, 0.4);
         border-color: #e3e4e6;
         &:hover {
-          // transform: scale(1.05);
-          box-shadow:0 4px 8px 0 $mainColor, 0 6px 20px 0 $mainColor;
+          box-shadow: 0 4px 8px 0 $mainColor, 0 6px 20px 0 $mainColor;
         }
       }
+
+      animation: slideInFromRight 0.7s 0.8s ease-in backwards;
+
+      // &:nth-child(n) {
+      //   animation-delay: 0.2s;
+      // }
 
       .left {
         bottom: -2px;
@@ -130,7 +145,7 @@
           }
         }
 
-        .project-company{
+        .project-company {
           font-family: $mainFont;
           font-size: $mainSize - 3;
           color: black;

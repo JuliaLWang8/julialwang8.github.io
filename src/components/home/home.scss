@@ -80,6 +80,19 @@ color: $offWhiteColor;
         img {
           width: 70%;
         }
+
+        animation: fade-down 1s ease-in backwards;
+        @keyframes fade-down {
+          0% {
+            opacity: 0;
+            transform: translateY(-20px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0px);
+          }
+          
+        }
       }
     }
     .name {
@@ -89,12 +102,25 @@ color: $offWhiteColor;
       font-size: 50px;
       color: $mainColor;
       margin-top: 20px;
+      animation: fade 1s ease-in;
+      pointer-events: none;
 
       @include mobile {
         font-size: 40px;
         text-align: center;
         position: relative;
       }
+
+      @keyframes fade {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+        
+      }
+
     }
     h2 {
       position: sticky;
@@ -102,11 +128,22 @@ color: $offWhiteColor;
       color: $secondaryColor;
       font-weight: normal;
       font-size: 30px;
+      animation: fade 1s 0.4s ease-in backwards;
+      pointer-events: none;
 
       @include mobile {
         font-size: 20px;
         text-align: center;
         position: relative;
+      }
+
+      @keyframes fade {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
       }
     }
     .nav {
@@ -125,6 +162,17 @@ color: $offWhiteColor;
         position: sticky;
         top: 120px;
         display: inline-block;
+        animation: fade 1s 0.8s ease-in backwards;
+
+        @keyframes fade {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+          
+        }
 
         .nav-element {
           margin-bottom: 10px;
@@ -169,10 +217,23 @@ color: $offWhiteColor;
       flex-direction: row;
       position: sticky;
       bottom: $mainPadding;
+      animation: fade-up 0.3s 1.4s ease-in backwards;
 
       @include mobile {
         margin-top: 60px;
         position: relative;
+      }
+
+      @keyframes fade-up {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0px);
+        }
+        
       }
 
       .link-wrapper {
