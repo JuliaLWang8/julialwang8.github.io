@@ -193,10 +193,15 @@ color: $offWhiteColor;
               transform: translateY(-5px);
               justify-content: center;
               margin-right: 5px;
+              transition: all 0.7s ease;
             }
 
             &:hover {
-              color: $mainColor;
+              &::before {
+                transition: all 0.7s ease;
+                border-top: 1.5px solid $secondaryColor;
+                width: 50px;
+              }
             }
 
             &.active {
@@ -240,7 +245,7 @@ color: $offWhiteColor;
         display: flex;
         align-items: center;
         padding-right: 15px;
-        transition: all 1s ease out;
+        transition: 0.3s;
         a {
           text-decoration: none;
 
@@ -249,12 +254,12 @@ color: $offWhiteColor;
             width: 6vh;
             max-height: 40px;
             max-width: 40px;
-            transition: all 1s ease out;
-            color: #bebebe;
+            transition: 0.3s;
+            color: #bababa;
 
             &:hover {
-              transition: all 1s ease out;
-              color: $mainColor;
+              transition: 0.3s;
+              color: #b5909d;
             }
           }
 
@@ -263,11 +268,12 @@ color: $offWhiteColor;
             width: 5vh;
             max-height: 30px;
             max-width: 30px;
-            color: #bebebe;
+            color: #bababa;
+            transition: 0.3s;
 
             &:hover {
-              transition: all 1s ease out;
-              color: $mainColor;
+              transition: 0.3s;
+              color: #b5909d;
             }
           }
         }
@@ -279,7 +285,7 @@ color: $offWhiteColor;
     flex: 0.6;
     position: relative;
     padding-left: $mainPadding;
-    padding-top: $mainPadding;
+    // padding-top: $mainPadding;
     padding-right: calc(60vw - $contentWidth - 10vw);
 
     @media screen and (orientation: portrait) {
@@ -290,7 +296,7 @@ color: $offWhiteColor;
     }
 
     > * {
-      margin-bottom: $mainPadding;
+      padding-bottom: $mainPadding;
     }
   }
   .cursor {

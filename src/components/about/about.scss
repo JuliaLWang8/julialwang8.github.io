@@ -5,6 +5,7 @@
     display: flex; 
     flex-direction: column;
     align-items: center;
+    padding-top: $mainPadding;
 
     .description {
         max-width: $contentWidth;
@@ -33,6 +34,6 @@
         }
     }
 
-    margin-bottom: calc($mainPadding - 20px);
+    padding-bottom: calc($mainPadding - 20px);
 
 }
