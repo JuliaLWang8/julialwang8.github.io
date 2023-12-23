@@ -32,7 +32,7 @@ color: $offWhiteColor;
     padding-bottom: $mainPadding;
     text-align: left;
 
-    @media screen and (orientation: portrait) {
+    @include mobile {
       align-items: center;
       justify-content: center;
       display: flex;
@@ -69,12 +69,7 @@ color: $offWhiteColor;
           width: 80vw;
           max-height: 400px;
           max-width: 400px;
-        }
-        @media screen and (orientation: portrait) {
-          height: 80vw;
-          width: 80vw;
-          max-height: 400px;
-          max-width: 400px;
+          animation: none;
         }
 
         img {
@@ -109,6 +104,7 @@ color: $offWhiteColor;
         font-size: 40px;
         text-align: center;
         position: relative;
+        animation: none;
       }
 
       @keyframes fade {
@@ -135,6 +131,7 @@ color: $offWhiteColor;
         font-size: 20px;
         text-align: center;
         position: relative;
+        animation: none;
       }
 
       @keyframes fade {
@@ -163,6 +160,10 @@ color: $offWhiteColor;
         top: 120px;
         display: inline-block;
         animation: fade 1s 0.8s ease-in backwards;
+
+        @include mobile {
+          animation: none;
+        }
 
         @keyframes fade {
           0% {
@@ -227,6 +228,7 @@ color: $offWhiteColor;
       @include mobile {
         margin-top: 60px;
         position: relative;
+        animation: none;
       }
 
       @keyframes fade-up {

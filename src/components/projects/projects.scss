@@ -114,6 +114,7 @@
             max-height: 25vh;
             object-fit: cover;
             object-position: bottom;
+            padding-bottom: 20px;
           }
         }
       }
@@ -129,7 +130,7 @@
         padding-right: 1vw;
 
         @include mobile {
-          padding: 20px;
+          padding: 0 20px 20px 20px;
           margin: 0;
         }
 

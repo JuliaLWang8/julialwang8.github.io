@@ -32,8 +32,8 @@
   max-width: 1500px;
 
   p {
-    font-family: "Montserrat";
-    // font-weight: bold;
+    font-family: $secondaryFont;
+    font-weight: bold;
     font-size: 30px;
     color: $secondaryColor;
   }
@@ -86,7 +86,7 @@
       text-decoration: none;
       font-size: $mainSize;
       padding: 0.5rem 1rem;
-      font-family: "Montserrat";
+      font-family: $secondaryFont;
       // font-weight: bold;
 
       @include mobile {
@@ -100,9 +100,7 @@
         @include mobile {
           text-decoration: underline #ccb3bb;
         }
-        @media screen and (orientation: portrait) {
-          text-decoration: underline #ccb3bb;
-        }
+
       }
 
       &.active {
@@ -163,7 +161,7 @@
     width: 300px;
     background-color: #737373;
     position: fixed;
-    right: -200%;
+    right: -300px;
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -175,7 +173,7 @@
     right: 0;
     transition: all 1s ease;
     z-index: 1;
-    height: calc(100vh - min(60px, 20vw));
+    height: calc(100vh - min(65px, 20vw));
   }
   .nav-item {
     height: 20vw;
@@ -189,7 +187,7 @@
     display: table;
     height: 10vw;
     color: white;
-    font-family: "Montserrat";
+    font-family: $mainFont;
     &:hover {
       background-color: #fff;
       border-radius: 0;
@@ -251,7 +249,7 @@
     font-size: 50vw;
     // background-color: #242424;
     // color: #fff;
-    transition: all 0.5s ease-out;
+    transition: all 1s ease-out;
     &:hover {
       background: #fff;
       color: #242424;
@@ -321,7 +319,7 @@
     height: 10vw;
     margin-top: 30px;
     color: white;
-    font-family: "Montserrat";
+    font-family: $mainFont;
     &:hover {
       background-color: #fff;
       border-radius: 0;

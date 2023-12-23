@@ -21,6 +21,10 @@
 
         animation: fade-down 0.6s 0.4s ease-in backwards;
 
+        @include mobile {
+            animation: none;
+        }
+
         @keyframes fade-down {
             0% {
                 opacity: 0;
