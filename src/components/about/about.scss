@@ -7,6 +7,10 @@
     align-items: center;
     padding-top: $mainPadding;
 
+    @include mobile {
+        padding-top: 0;
+    }
+
     .description {
         max-width: $contentWidth;
         display: flex;  
@@ -19,7 +23,7 @@
             padding-bottom: 20px;
         }
 
-        animation: fade-down 0.6s 0.4s ease-in backwards;
+        animation: fade-down 0.7s ease-in backwards;
 
         @include mobile {
             animation: none;

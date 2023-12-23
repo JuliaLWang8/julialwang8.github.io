@@ -97,6 +97,7 @@
       }
       &:hover {
         text-decoration: underline $mainColor;
+        color: $mainColor;
         @include mobile {
           text-decoration: underline #ccb3bb;
         }
@@ -314,9 +315,7 @@
   .nav-links {
     text-align: center;
     align-items: center;
-    width: 300px;
     display: table;
-    height: 10vw;
     margin-top: 30px;
     color: white;
     font-family: $mainFont;

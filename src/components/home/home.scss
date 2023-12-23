@@ -15,10 +15,7 @@ color: $offWhiteColor;
       align-items: center;
       justify-content: center;
   }
-  @media screen and (orientation: portrait) {
-    flex-direction: column;
-    display: flex-start;
-  }
+
 
   .left {
     flex: 0.4;
@@ -46,6 +43,10 @@ color: $offWhiteColor;
       @include mobile {
         position: relative;
         top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
       }
 
       .img-container {
@@ -72,11 +73,19 @@ color: $offWhiteColor;
           animation: none;
         }
 
+        @media (max-height: 700px) {
+          height: 30vh;
+          width: 30vh;
+          max-height: 300px;
+          max-width: 300px;
+          animation: none;
+        }
+
         img {
           width: 70%;
         }
 
-        animation: fade-down 1s ease-in backwards;
+        animation: fade-down 0.7s ease-in backwards;
         @keyframes fade-down {
           0% {
             opacity: 0;
@@ -97,13 +106,18 @@ color: $offWhiteColor;
       font-size: 50px;
       color: $mainColor;
       margin-top: 20px;
-      animation: fade 1s ease-in;
+      animation: fade .3s ease-in;
       pointer-events: none;
 
       @include mobile {
         font-size: 40px;
         text-align: center;
         position: relative;
+        animation: none;
+      }
+
+      @media (max-height: 700px) {
+        font-size: 8vh;
         animation: none;
       }
 
@@ -124,13 +138,18 @@ color: $offWhiteColor;
       color: $secondaryColor;
       font-weight: normal;
       font-size: 30px;
-      animation: fade 1s 0.4s ease-in backwards;
+      animation: fade 0.4s 0.3s ease-in backwards;
       pointer-events: none;
 
       @include mobile {
         font-size: 20px;
         text-align: center;
         position: relative;
+        animation: none;
+      }
+
+      @media (max-height: 700px) {
+        font-size: calc(max(20px, 5vh));
         animation: none;
       }
 
@@ -147,9 +166,14 @@ color: $offWhiteColor;
       // border: 1px solid black;
       position: sticky;
       margin-top: 40px;
+      animation-delay: 1s;
 
       @include mobile {
         position: relative;
+      }
+
+      @media (max-height: 700px) {
+        margin-top: calc(min(20px, 5vh));
       }
 
       .nav-list {
@@ -159,7 +183,7 @@ color: $offWhiteColor;
         position: sticky;
         top: 120px;
         display: inline-block;
-        animation: fade 1s 0.8s ease-in backwards;
+        animation: fade 0.7s ease-in backwards;
 
         @include mobile {
           animation: none;
@@ -223,7 +247,7 @@ color: $offWhiteColor;
       flex-direction: row;
       position: sticky;
       bottom: $mainPadding;
-      animation: fade-up 0.3s 1.4s ease-in backwards;
+      animation: fade-up 0.5s 0.7s ease-in backwards;
 
       @include mobile {
         margin-top: 60px;
