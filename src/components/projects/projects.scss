@@ -207,7 +207,7 @@
 
       &--animate {
         @extend .proj;
-        animation: slideInFromRight 0.4s 0.3s ease-in backwards;
+        animation: slideInFromRight 0.4s ease-in backwards;
 
         @include mobile {
           animation: none;
