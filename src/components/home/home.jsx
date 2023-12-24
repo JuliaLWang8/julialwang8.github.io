@@ -9,8 +9,7 @@ import { Link } from "react-scroll";
 import About from "../about/about";
 import Resume from "../resume/resume";
 import Projects from "../projects/projects";
-// import { motion } from "framer-motion";
-// import { set } from "immutable";
+
 
 export default function Home() {
   const [navBar, setNavBar] = useState(false);

@@ -86,7 +86,7 @@
       text-decoration: none;
       font-size: $mainSize;
       padding: 0.5rem 1rem;
-      font-family: $secondaryFont;
+      font-family: $mainFont;
       // font-weight: bold;
 
       @include mobile {
@@ -305,7 +305,7 @@
     transition: all 1s ease;
     z-index: 1;
     height: calc(100vh - 65px);
-    padding-bottom: 30px;
+    padding-bottom: 50px;
   }
   .nav-item {
     height: 20vw;

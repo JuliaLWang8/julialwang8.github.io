@@ -64,12 +64,6 @@
         }
       }
 
-      animation: slideInFromRight 0.7s 0.8s ease-in backwards;
-
-      // &:nth-child(n) {
-      //   animation-delay: 0.2s;
-      // }
-
       .left {
         bottom: -2px;
         right: 3vw;
@@ -210,6 +204,25 @@
           justify-content: center;
         }
       }
+
+      &--animate {
+        @extend .proj;
+        animation: slideInFromRight 0.4s 0.3s ease-in backwards;
+
+        @include mobile {
+          animation: none;
+        }
+      }
+
+      &--transparent {
+        @extend .proj;
+        opacity: 0;
+        &:hover {
+          background-color: transparent;
+          border-color: transparent;
+          box-shadow: none;
+        }
+      }
     }
 
     .proj:hover > .right .project-title a {
@@ -231,6 +244,8 @@
       border: 1px solid #e3e4e6;
       transition: all 0.2s ease-out;
     }
+
+    ////////////////////////////////////////////////
   }
 
   .right-arrow {
@@ -276,34 +291,6 @@
         -o-transform: translateX(5px);
         transform: translateX(5px);
       }
-    }
-  }
-
-  p {
-    font-family: $mainFont;
-    font-size: $mainSize;
-    max-width: $contentWidth;
-
-    a {
-      color: $mainColor;
-      font-weight: bold;
-      cursor: pointer;
-      background-color: none;
-    }
-  }
-
-  .bot {
-    font-family: $mainFont;
-    font-size: $mainSize;
-    max-width: $contentWidth;
-    color: $secondaryColor;
-    margin-bottom: 10px;
-
-    a {
-      color: $mainColor;
-      font-weight: bold;
-      cursor: pointer;
-      background-color: none;
     }
   }
 }

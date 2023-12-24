@@ -35,10 +35,20 @@ color: $offWhiteColor;
       display: flex;
       padding: $mainPadding;
     }
+
+    @media (max-height: 700px) {
+      padding-top: calc(min(20px, 5vh));
+      padding-bottom: calc(min(20px, 5vh));
+    }
+
     .left-top {
       position: sticky;
       top: $mainPadding;
       right: 0;
+
+      @media (max-height: 700px) {
+        top: calc(min(20px, 5vh));
+      }
 
       @include mobile {
         position: relative;
@@ -78,14 +88,13 @@ color: $offWhiteColor;
           width: 30vh;
           max-height: 300px;
           max-width: 300px;
-          animation: none;
         }
 
         img {
           width: 70%;
         }
 
-        animation: fade-down 0.7s ease-in backwards;
+        // animation: fade-down 0.7s ease-in backwards;
         @keyframes fade-down {
           0% {
             opacity: 0;
@@ -106,7 +115,7 @@ color: $offWhiteColor;
       font-size: 50px;
       color: $mainColor;
       margin-top: 20px;
-      animation: fade .3s ease-in;
+      // animation: fade .3s ease-in;
       pointer-events: none;
 
       @include mobile {
@@ -118,7 +127,6 @@ color: $offWhiteColor;
 
       @media (max-height: 700px) {
         font-size: 8vh;
-        animation: none;
       }
 
       @keyframes fade {
@@ -138,7 +146,7 @@ color: $offWhiteColor;
       color: $secondaryColor;
       font-weight: normal;
       font-size: 30px;
-      animation: fade 0.4s 0.3s ease-in backwards;
+      // animation: fade 0.4s 0.3s ease-in backwards;
       pointer-events: none;
 
       @include mobile {
@@ -150,7 +158,6 @@ color: $offWhiteColor;
 
       @media (max-height: 700px) {
         font-size: calc(max(20px, 5vh));
-        animation: none;
       }
 
       @keyframes fade {
@@ -247,7 +254,7 @@ color: $offWhiteColor;
       flex-direction: row;
       position: sticky;
       bottom: $mainPadding;
-      animation: fade-up 0.5s 0.7s ease-in backwards;
+      // animation: fade-up 0.5s 0.7s ease-in backwards;
 
       @include mobile {
         margin-top: 60px;

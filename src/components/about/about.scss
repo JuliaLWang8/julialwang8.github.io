@@ -11,6 +11,10 @@
         padding-top: 0;
     }
 
+    @media (max-height: 700px) {
+        padding-top: calc(min(20px, 5vh));
+    }
+
     .description {
         max-width: $contentWidth;
         display: flex;  
@@ -23,7 +27,7 @@
             padding-bottom: 20px;
         }
 
-        animation: fade-down 0.7s ease-in backwards;
+        // animation: fade-down 0.7s ease-in backwards;
 
         @include mobile {
             animation: none;
