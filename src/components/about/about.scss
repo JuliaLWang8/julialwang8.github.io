@@ -1,51 +1,49 @@
-@import '../../global.scss';
+@import "../../global.scss";
 
 .about {
-    position: relative;
-    display: flex; 
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: $mainPadding;
+
+  @include mobile {
+    padding-top: 0;
+  }
+
+  @media (max-height: 700px) {
+    padding-top: calc(min(20px, 5vh));
+  }
+
+  .description {
+    max-width: $contentWidth;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: $mainPadding;
+    p {
+      font-size: $mainSize;
+      font-family: "Manrope";
+      color: #5a5a5a;
+      padding-bottom: 20px;
+    }
+
+    // animation: fade-down 0.7s ease-in backwards;
 
     @include mobile {
-        padding-top: 0;
+      animation: none;
     }
 
-    @media (max-height: 700px) {
-        padding-top: calc(min(20px, 5vh));
+    @keyframes fade-down {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0px);
+      }
     }
+  }
 
-    .description {
-        max-width: $contentWidth;
-        display: flex;  
-        flex-direction: column;
-        align-items: center;
-        p {
-            font-size: $mainSize;
-            font-family: "Manrope";
-            color: #5a5a5a;
-            padding-bottom: 20px;
-        }
-
-        // animation: fade-down 0.7s ease-in backwards;
-
-        @include mobile {
-            animation: none;
-        }
-
-        @keyframes fade-down {
-            0% {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0px);
-            }
-            
-        }
-    }
-
-    padding-bottom: calc($mainPadding - 20px);
-
+  padding-bottom: calc($mainPadding - 20px);
 }

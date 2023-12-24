@@ -10,7 +10,6 @@ import About from "../about/about";
 import Resume from "../resume/resume";
 import Projects from "../projects/projects";
 
-
 export default function Home() {
   const [navBar, setNavBar] = useState(false);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
@@ -68,7 +67,9 @@ export default function Home() {
       className="home"
       id="home"
       style={{
-        backgroundImage: `radial-gradient( circle at ${mousePos.x}px ${mousePos.y + window.scrollY}px, #f0ebeb , #f2f2f2 10% )`,
+        backgroundImage: `radial-gradient( circle at ${mousePos.x}px ${
+          mousePos.y + window.scrollY
+        }px, #f0ebeb , #f2f2f2 10% )`,
       }}
     >
       {/* <motion.div
@@ -81,7 +82,11 @@ export default function Home() {
           <div className="img-container">
             <img src={Photo} alt="" />
           </div>
-          <h1 onMouseEnter={textEnter} onMouseLeave={textLeave} className='name'>
+          <h1
+            onMouseEnter={textEnter}
+            onMouseLeave={textLeave}
+            className="name"
+          >
             Julia L. Wang
           </h1>
           <h2>Software Engineer</h2>

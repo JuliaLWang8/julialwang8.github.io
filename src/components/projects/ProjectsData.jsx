@@ -5,24 +5,27 @@ export const listProjects = [
     id: 14,
     title: "Covalent Reactivity of Proteins",
     subtitle: "UofT Bioinformatics Research 2023",
-    description: "Developed and validated machine learning models to predict covalent reactivity of amino acid active sites towards optimizing drug design processes.",
+    description:
+      "Developed and validated machine learning models to predict covalent reactivity of amino acid active sites towards optimizing drug design processes.",
     button1Type: "fab fa-github",
     button1Link: "https://github.com/Gene2Lead-Ltd/DeepLinC",
     img: "https://github.com/JuliaLWang8/julialwang8.github.io/blob/master/src/media/proteinReactivity.png?raw=true",
     tech: ["Python", "PyTorch", "3D CNN", "Deep CNN"],
     startDate: "Sep",
-    endDate: "Dec 2023"
+    endDate: "Dec 2023",
   },
   {
     id: 13,
     title: "Events Hub Web App",
-    description: "Developed and deployed an events hub, implementing a robust CI/CD flow and automated unit, regression, and load testing for seamless deployment and reliability.",
+    description:
+      "Developed and deployed an events hub, implementing a robust CI/CD flow and automated unit, regression, and load testing for seamless deployment and reliability.",
     button1Type: "fab fa-github",
     img: "https://github.com/JuliaLWang8/julialwang8.github.io/blob/master/src/media/beaverbuzz.png?raw=true",
-    button1Link: "https://github.com/ECE444-2023Fall/project-1-web-application-design-group22-premium-potatoes",
+    button1Link:
+      "https://github.com/ECE444-2023Fall/project-1-web-application-design-group22-premium-potatoes",
     tech: ["React", "Flask", "PostgreSQL", "CSS"],
     startDate: "Sep. 2023",
-    endDate: "Nov 2023"
+    endDate: "Nov 2023",
   },
   {
     id: 12,
@@ -33,7 +36,7 @@ export const listProjects = [
     img: "https://github.com/JuliaLWang8/Custom-Keyboard/blob/main/Keyboard.jpg?raw=true",
     button1Type: "fab fa-github",
     button1Link: "https://github.com/JuliaLWang8/Custom-Keyboard",
-    tech : ["Python", "C++", "RP2040"],
+    tech: ["Python", "C++", "RP2040"],
   },
   {
     id: 11,
@@ -44,7 +47,7 @@ export const listProjects = [
     img: "https://github.com/JuliaLWang8/julialwang8.github.io/blob/master/src/media/GCN.png?raw=true",
     button1Type: "fab fa-github",
     button1Link: "https://github.com/JuliaLWang8/RetailRecommender",
-    tech : ["Python", "PyTorch", "sBERT", "GCN"],
+    tech: ["Python", "PyTorch", "sBERT", "GCN"],
   },
   {
     id: 10,
@@ -55,7 +58,7 @@ export const listProjects = [
     img: "https://github.com/JuliaLWang8/julialwang8.github.io/blob/master/src/media/NAS.png?raw=true",
     button1Type: "fab fa-github",
     button1Link: "https://github.com/JuliaLWang8/Predicting-Recidivism",
-    tech : ["Python", "Pytorch", "NAS", "RL", "RNN"],
+    tech: ["Python", "Pytorch", "NAS", "RL", "RNN"],
   },
   {
     id: 9,
@@ -65,7 +68,7 @@ export const listProjects = [
     img: "https://github.com/JuliaLWang8/julialwang8.github.io/blob/master/src/media/PokemonRL.png?raw=true",
     button1Type: "fab fa-github",
     button1Link: "https://github.com/JuliaLWang8/Pokemon-Battling-RL",
-    tech : ["Python", "Keras", "RL"],
+    tech: ["Python", "Keras", "RL"],
   },
   {
     id: 1,
@@ -79,7 +82,7 @@ export const listProjects = [
       "https://drive.google.com/drive/u/0/folders/1fNZNdVjtwI-BbeOmP8N2J_77IMrn-yvH",
     button1Type: "fab fa-github",
     button1Link: "https://github.com/JuliaLWang8/DotsLogistics",
-    tech : ["React.js"],
+    tech: ["React.js"],
   },
   {
     id: 2,
@@ -88,10 +91,10 @@ export const listProjects = [
     description:
       "Arduino (C++) robot designed within 8 hours to follow a marked route via IR sensors and deliver marbles via servo motor to houses upon detection.",
     img: "https://github.com/JuliaLWang8/julialwang8.github.io/blob/master/src/media/MeWithRobot.jpg?raw=true",
-     class: "vertical",
-     button1Type: "fab fa-github",
-     button1Link: "https://github.com/JuliaLWang8/Timbit-Dispenser-Robot",
-    tech : ["Arduino", "C++"],
+    class: "vertical",
+    button1Type: "fab fa-github",
+    button1Link: "https://github.com/JuliaLWang8/Timbit-Dispenser-Robot",
+    tech: ["Arduino", "C++"],
   },
   {
     id: 6,
@@ -103,8 +106,9 @@ export const listProjects = [
     button1Type: "fab fa-github",
     button1Link: "https://github.com/JuliaLWang8/Clarity-Robot",
     button2Type: "fas fa-file-alt",
-    button2Link: "https://drive.google.com/file/d/1qRTZm6vK-2Qr4DaVgmjPikN4IiorYhOx/view?usp=sharing",
-    tech : ["Arduino", "C++"],
+    button2Link:
+      "https://drive.google.com/file/d/1qRTZm6vK-2Qr4DaVgmjPikN4IiorYhOx/view?usp=sharing",
+    tech: ["Arduino", "C++"],
   },
 
   {
@@ -117,7 +121,7 @@ export const listProjects = [
     button1Type: "fas fa-video",
     button1Link:
       "https://drive.google.com/file/d/1arArSZtApMOUZ98M3RPNkBzbZBE-N-c8/view?usp=sharing",
-      tech : ["Arduino", "C++"],
+    tech: ["Arduino", "C++"],
   },
   {
     id: 4,
@@ -128,7 +132,7 @@ export const listProjects = [
     img: "https://raw.githubusercontent.com/ntnox/steadymate/master/Steadmate_Device.jpg",
     button1Type: "fab fa-github",
     button1Link: "https://github.com/ntnox/steadymate",
-    tech : ["Arduino", "C++"],
+    tech: ["Arduino", "C++"],
   },
   {
     id: 8,
@@ -146,11 +150,11 @@ export const listProjects = [
     id: 7,
     title: "Projectile Slingshot",
     subtitle: "Praxis Design Challenge 2019",
-    description: "Designed and prototyped a slingshot to launch a projectile at a specified target using a 3D printer, wood, and elastics.",
+    description:
+      "Designed and prototyped a slingshot to launch a projectile at a specified target using a 3D printer, wood, and elastics.",
     img: "https://github.com/JuliaLWang8/julialwang8.github.io/blob/master/src/media/Pikachu.jpg?raw=true",
     class: "zoom",
   },
-
 
   {
     id: 5,
@@ -164,7 +168,7 @@ export const listProjects = [
       "https://drive.google.com/file/d/1jkT2NdkLkELFpUprD6_Fn6JfBXkQmBAX/view?usp=sharing",
     button2Type: "fab fa-google-drive",
     button2Link:
-      "https://drive.google.com/drive/folders/1OUF_zQq6GR_U6VQ_y9f2YZPLVO1Jy56a?usp=sharing"
+      "https://drive.google.com/drive/folders/1OUF_zQq6GR_U6VQ_y9f2YZPLVO1Jy56a?usp=sharing",
   },
   // {
   //   id: 8,

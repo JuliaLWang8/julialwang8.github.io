@@ -2,7 +2,6 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:regular,bold,italic);
 @import url(https://fonts.googleapis.com/css?family=Inter:regular,bold,italic);
 
-
 $mainColor: #7f5463;
 $secondaryColor: #797979;
 $mainLightColor: #faf7f8;
@@ -15,13 +14,13 @@ $mainPadding: 5vw;
 
 $mobileWidth: 942px;
 @mixin mobile {
-    @media (max-width: #{$mobileWidth}){
-        @content
-    }
+  @media (max-width: #{$mobileWidth}) {
+    @content;
+  }
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
