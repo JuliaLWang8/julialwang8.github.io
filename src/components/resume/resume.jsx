@@ -55,7 +55,7 @@ export default function Resume() {
 
       <button className="right-arrow">
         <a
-          href="https://github.com/JuliaLWang8/JuliaLWang8/blob/main/JuliaWangResume.pdf"
+          href="https://julia-wang.dev/JuliaWangResume.pdf"
           target="_blank"
           rel="noreferrer"
         >
