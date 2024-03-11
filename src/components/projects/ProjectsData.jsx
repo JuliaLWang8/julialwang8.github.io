@@ -8,7 +8,7 @@ export const listProjects = [
     description:
       "Developed and validated machine learning models to predict covalent reactivity of amino acid active sites towards optimizing drug design processes.",
     button1Type: "fab fa-github",
-    button1Link: "https://github.com/Gene2Lead-Ltd/DeepLinC",
+    button1Link: "https://julia-wang.dev/ProteinReactivity.pdf",
     img: "https://github.com/JuliaLWang8/julialwang8.github.io/blob/master/src/media/proteinReactivity.png?raw=true",
     tech: ["Python", "PyTorch", "3D CNN", "Deep CNN"],
     startDate: "Sep",
