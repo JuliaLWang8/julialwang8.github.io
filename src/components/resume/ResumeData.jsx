@@ -1,5 +1,20 @@
 export const listExperiences = [
   {
+    startDate: "JUN 2024 - PRESENT",
+    title: "Associate Full-Stack Software Engineer",
+    company: "Manulife • Toronto",
+    description:
+      "Develop and maintain APIs for an annuities processing system. Migrating from Mainframe to Cloud, including developing a new UI and setting up Azure APIM.",
+    tasks: [
+      "",
+    ],
+    additionalInfo: [
+      "",
+    ],
+    tech: ["C#", "Next.js", "AKS"],
+    button1Link: "https://www.manulife.ca/personal.html",
+  },
+  {
     startDate: "MAY 2022 - MAY 2023",
     title: "Software Engineer Co-op",
     company: "Intel • San Francisco Bay Area",

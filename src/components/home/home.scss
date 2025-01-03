@@ -325,6 +325,9 @@
     > * {
       padding-bottom: $mainPadding;
     }
+    hr {
+      padding-bottom: 0;
+    }
   }
   .cursor {
     background: transparent;

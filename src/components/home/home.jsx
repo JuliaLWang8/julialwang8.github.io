@@ -12,8 +12,6 @@ import Projects from "../projects/projects";
 
 export default function Home() {
   const [navBar, setNavBar] = useState(false);
-  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
-  const [otherCursor, setOtherCursor] = useState("default");
 
   const handleResize = () => {
     if (window.innerWidth > 942) {
@@ -24,67 +22,29 @@ export default function Home() {
   };
 
   useEffect(() => {
-    const mouseMoveHandler = (e) => {
-      setMousePos({ x: e.clientX, y: e.clientY });
-    };
 
-    window.addEventListener("mousemove", mouseMoveHandler);
     handleResize();
     window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener("mousemove", mouseMoveHandler);
       window.removeEventListener("resize", handleResize);
     };
   }, []);
 
   window.addEventListener("resize", handleResize);
 
-  const variants = {
-    default: {
-      x: mousePos.x - 16,
-      y: mousePos.y - 16,
-      transition: {
-        ease: "linear",
-      },
-    },
-    grey: {
-      x: mousePos.x - 16,
-      y: mousePos.y - 16,
-      backgroundColor: "#f2f2f2",
-      mixBlendMode: "difference",
-      transition: {
-        ease: "linear",
-      },
-    },
-  };
-
-  const textEnter = () => setOtherCursor("grey");
-  const textLeave = () => setOtherCursor("default");
 
   return (
     <div
       className="home"
       id="home"
-      style={{
-        backgroundImage: `radial-gradient( circle at ${mousePos.x}px ${
-          mousePos.y + window.scrollY
-        }px, #f0ebeb , #f2f2f2 10% )`,
-      }}
     >
-      {/* <motion.div
-        className="cursor"
-        variants={variants}
-        animate={otherCursor}
-      ></motion.div> */}
       <div className="left">
         <div className="left-top">
           <div className="img-container">
             <img src={Photo} alt="" />
           </div>
           <h1
-            onMouseEnter={textEnter}
-            onMouseLeave={textLeave}
             className="name"
           >
             Julia L. Wang
@@ -158,7 +118,7 @@ export default function Home() {
             </a>
           </div>
           <div className="link-wrapper">
-            <a href="mailto:wang.julia08@gmail.com">
+            <a href="mailto:julialong.wang@alumni.utoronto.ca">
               <EmailIcon className="link" />
             </a>
           </div>
@@ -166,7 +126,9 @@ export default function Home() {
       </div>
       <div className="right">
         <About />
+        <hr></hr>
         <Resume />
+        <hr></hr>
         <Projects />
       </div>
     </div>
